@@ -1,0 +1,16 @@
+{
+  "chunks": 1286,
+  "documents": 28,
+  "dimension": 384,
+  "model_id": [
+    "sentence-transformers/all-MiniLM-L6-v2"
+  ],
+  "model_revision": [
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "chunk_config": {
+    "tokens": 220,
+    "overlap": 40
+  },
+  "content_digest": "b514371259cb98ed"
+}

@@ -1,0 +1,148 @@
+{
+  "seed": 20261015,
+  "query": "What indentation width does the style guide recommend?",
+  "query_id": "QR-63320850b7c67fb7",
+  "results": {
+    "8.1": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "dimension": 384,
+      "max_tokens": 256,
+      "files_checked": 11,
+      "hashes_matched": 11
+    },
+    "8.2": {
+      "vectors": 1286,
+      "shape": [
+        1286,
+        384
+      ],
+      "min_norm_stored": 1.0,
+      "max_norm_stored": 1.0,
+      "non_finite": 0,
+      "encode_seconds": 28.99,
+      "min_norm_fresh": 1.0,
+      "max_norm_fresh": 1.0,
+      "stored_vs_fresh_max_abs_diff": 0.0,
+      "non_finite_fresh": 0
+    },
+    "8.3": {
+      "similarity": 0.02886799,
+      "distance": 0.97113201,
+      "pair": "chunk0 vs chunk1",
+      "dot_form": 0.02886799,
+      "delta": 1.862645149230957e-09,
+      "query_chunk_similarity": 0.089606,
+      "query_chunk_distance": 0.910394
+    },
+    "8.4": {
+      "top_doc": "PEP-0008",
+      "top3": [
+        "PEP-0008",
+        "PEP-0572",
+        "PEP-0498"
+      ],
+      "scores": [
+        0.1381,
+        0.0679,
+        0.0644
+      ]
+    },
+    "8.5": {
+      "top_doc": "PEP-0008",
+      "top3": [
+        "PEP-0008",
+        "PEP-0572",
+        "PEP-0257"
+      ],
+      "shared": 2,
+      "shared_docs": [
+        "PEP-0008",
+        "PEP-0572"
+      ],
+      "cosine_top": 0.4899,
+      "lexical_top": 0.1381
+    },
+    "8.6": {
+      "top_doc": "PEP-0008",
+      "top3": [
+        "PEP-0008",
+        "PEP-0572",
+        "PEP-0257"
+      ],
+      "gold_present": true,
+      "rrf_top": 0.032787
+    },
+    "8.7": {
+      "vectors_stored": 1286,
+      "dimension_readback": 384,
+      "rows_stable": true
+    },
+    "8.8": {
+      "top1_same": true,
+      "max_readback_error": 0.0,
+      "top_chunk": "PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712"
+    },
+    "8.9": {
+      "tenant_leak": 0,
+      "admin_visible_internal": 2,
+      "t0_docs": [
+        "LAB-OLD",
+        "LAB-T0",
+        "LAB-PUBLIC"
+      ],
+      "t1_docs": [
+        "LAB-OLD",
+        "LAB-T1",
+        "LAB-PUBLIC"
+      ]
+    },
+    "8.10": {
+      "tokens": 692,
+      "selected": 3,
+      "dropped": 7,
+      "truncated": true
+    },
+    "8.11": {
+      "lexical": {
+        "p50": 1.469,
+        "p95": 2.545,
+        "n": 30
+      },
+      "dense": {
+        "p50": 14.352,
+        "p95": 18.279,
+        "n": 30
+      },
+      "hybrid": {
+        "p50": 16.117,
+        "p95": 17.277,
+        "n": 30
+      },
+      "cold_ms": 16.1,
+      "warm_single_ms": 15.4,
+      "queries": 30
+    },
+    "8.12": {
+      "rejected": 3,
+      "fingerprint": {
+        "chunks": 1286,
+        "documents": 28,
+        "dimension": 384,
+        "model_id": [
+          "sentence-transformers/all-MiniLM-L6-v2"
+        ],
+        "model_revision": [
+          "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+        ],
+        "chunk_config": {
+          "tokens": 220,
+          "overlap": 40
+        },
+        "content_digest": "b514371259cb98ed"
+      },
+      "config_fingerprint": "c5e394f16e15039f"
+    }
+  }
+}

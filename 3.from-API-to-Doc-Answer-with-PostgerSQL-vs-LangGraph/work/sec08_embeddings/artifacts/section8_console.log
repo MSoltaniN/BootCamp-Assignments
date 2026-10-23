@@ -1,0 +1,151 @@
+
+==============================================================================
+8.1  model version, license, output dimension, token ceiling, file hashes
+==============================================================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2258.01it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (692 > 256). Running this sequence through the model will result in indexing errors
+model id       : sentence-transformers/all-MiniLM-L6-v2
+revision       : 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+license        : Apache-2.0
+dimension      : 384
+token ceiling  : 256
+files hashed   : 11 of 11
+hashes matching: 11
+tokenizer ceiling vs chunk length: chunk = 220 tokens, so every chunk fits
+
+==============================================================================
+8.2  batch encode every chunk, L2-normalise, report shape/norms
+==============================================================================
+index metadata: {
+  "chunks": 1286,
+  "documents": 28,
+  "dimension": 384,
+  "model_ids": [
+    "sentence-transformers/all-MiniLM-L6-v2"
+  ],
+  "model_revisions": [
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "unreadable_vectors": 0
+}
+vectors       : 1286
+matrix shape  : (1286, 384)
+min norm      : 1.0
+max norm      : 1.0
+non-finite    : 0
+fresh encode  : shape (1286, 384) | seconds 28.99 | min norm 1.0 | max norm 1.0 | non-finite 0
+stored vs fresh max abs diff: 0.0
+
+==============================================================================
+8.3  cosine by explicit formula and by normalised dot product
+==============================================================================
+pair A (chunk0 vs chunk1):
+  explicit formula : 0.02886799
+  normalised dot   : 0.02886799
+  delta            : 1.862645149230957e-09
+  distance (1 - sim): 0.97113201
+pair B (query vs chunk0):
+  similarity       : 0.089606
+  distance         : 0.910394
+smaller distance = closer; larger similarity = closer, so sort direction is inverted
+
+==============================================================================
+8.4  TF-IDF baseline, top-3 distinct documents for the indentation query
+==============================================================================
+query: What indentation width does the style guide recommend?
+  1. PEP-0008   score=0.1381 best_chunk=PEP-0008:vb80c7bf8:0-953:09ae98921c849e6c
+  2. PEP-0572   score=0.0679 best_chunk=PEP-0572:vb80c7bf8:34628-35590:ac12de959d9dc7b4
+  3. PEP-0498   score=0.0644 best_chunk=PEP-0498:vb80c7bf8:12380-13013:2bac930e7de1a966
+
+==============================================================================
+8.5  dense cosine for the same query, compared with the baseline
+==============================================================================
+  1. PEP-0008   cosine=0.4899 best_chunk=PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712
+  2. PEP-0572   cosine=0.3199 best_chunk=PEP-0572:vb80c7bf8:35401-36322:d4115bcea32453f1
+  3. PEP-0257   cosine=0.2685 best_chunk=PEP-0257:vb80c7bf8:7871-8797:f699f1f54bd78eda
+gold document: PEP-0008
+lexical top-3: ['PEP-0008', 'PEP-0572', 'PEP-0498']
+dense   top-3: ['PEP-0008', 'PEP-0572', 'PEP-0257']
+shared documents in both top-3: 2 ['PEP-0008', 'PEP-0572']
+scores are not comparable: TF-IDF 0.1381 vs cosine 0.4899
+
+==============================================================================
+8.6  RRF fusion of the two rankings, k = 60
+==============================================================================
+  1. PEP-0008   rrf=0.032787
+  2. PEP-0572   rrf=0.032258
+  3. PEP-0257   rrf=0.031258
+hybrid top-3: ['PEP-0008', 'PEP-0572', 'PEP-0257']
+gold PEP-0008 present: True
+RRF uses ranks only; raw scores from the two methods are never added
+
+==============================================================================
+8.7  store vectors in SQLite as float32 BLOB, rerun must not add rows
+==============================================================================
+rows before: 1286 | after first: 1286 | after second: 1286
+stored BLOB bytes: 1536 = 384 float32
+read-back dimension: 384
+
+==============================================================================
+8.8  read one vector back and reproduce the local top-1
+==============================================================================
+max read-back error: 0.0
+top-1 from in-memory vectors : PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712
+top-1 from SQLite read-back  : PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712
+identical: True
+
+==============================================================================
+8.9  ACL applied before top-k; T-0 must never see T-1 internal policy
+==============================================================================
+T-0 visible policy docs: ['LAB-OLD', 'LAB-T0', 'LAB-PUBLIC']
+T-1 visible policy docs: ['LAB-OLD', 'LAB-T1', 'LAB-PUBLIC']
+admin visible internal : 2 of 2
+T-0 leak of T-1: 0
+T-1 leak of T-0: 0
+
+==============================================================================
+8.10  700-token context from top-10 evidence
+==============================================================================
+evidence offered : 10
+evidence selected: 3
+evidence dropped : 7
+context tokens   : 692 | reported: 692
+truncated last   : True
+order effect: evidence is packed in rank order, so the strongest chunk occupies the
+earliest position; prompt cost grows linearly with tokens kept
+
+==============================================================================
+8.11  p50/p95 latency for lexical, dense, hybrid after warm-up
+==============================================================================
+warm-up queries: 30
+lexical : p50=1.469 ms  p95=2.545 ms
+dense   : p50=14.352 ms  p95=18.279 ms
+hybrid  : p50=16.117 ms  p95=17.277 ms
+cold single embedding: 16.1 ms | warm single: 15.4 ms
+
+==============================================================================
+8.12  reject an index whose metadata disagrees with the configuration
+==============================================================================
+valid fingerprint: {
+  "chunks": 1286,
+  "documents": 28,
+  "dimension": 384,
+  "model_id": [
+    "sentence-transformers/all-MiniLM-L6-v2"
+  ],
+  "model_revision": [
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "chunk_config": {
+    "tokens": 220,
+    "overlap": 40
+  },
+  "content_digest": "b514371259cb98ed"
+}
+correct metadata   -> accepted
+wrong revision     -> rejected: model revision ['1110a243fdf4706b3f48f1d95db1a4f5529b4d41'] != expected 0000000000000000000000000000000000000000
+wrong dimension    -> rejected: dimension 384 != expected 768
+wrong model id     -> rejected: model id ['sentence-transformers/all-MiniLM-L6-v2'] != expected some/other-model
+mismatched configurations rejected: 3 of 3
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec08_embeddings\artifacts
