@@ -1,0 +1,42 @@
+{
+  "python": "3.12.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "C:\\Users\\pc\\source\\repos\\AI\\BootCamp Assignments\\3.from-API-to-Doc-Answer-with-PostgerSQL-va-LangGraph\\.venv\\Scripts\\python.exe",
+  "in_venv": true,
+  "sqlite_version": "3.45.3",
+  "packages": {
+    "numpy": "2.4.2",
+    "pandas": "3.0.0",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "torch": "2.13.0",
+    "matplotlib": "3.10.8",
+    "sentence_transformers": "6.1.0",
+    "transformers": "5.19.0",
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "uvicorn": "0.54.0",
+    "langgraph": "1.2.15",
+    "pydantic": "2.14.1",
+    "jwt": "2.10.1",
+    "pypdf": "6.15.0",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2"
+  },
+  "optional": {
+    "jupyterlab": "4.6.4",
+    "huggingface_hub": "1.33.0"
+  },
+  "model": {
+    "status": "ok",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimensions": 384,
+    "max_sequence_length": 256,
+    "license": "Apache-2.0",
+    "files_checked": 11,
+    "files_expected": 11,
+    "problems": [],
+    "dir": "C:\\Users\\pc\\source\\repos\\AI\\BootCamp Assignments\\3.from-API-to-Doc-Answer-with-PostgerSQL-va-LangGraph\\resources\\embedding_model"
+  }
+}

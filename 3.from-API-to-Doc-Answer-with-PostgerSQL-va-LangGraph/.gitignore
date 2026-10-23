@@ -1,0 +1,27 @@
+# محیط پایتون و کش نصب
+# نکته: .venv یک junction به ..\.venv-day3 است (مسیر کوتاه برای محدودیت MAX_PATH ویندوز)
+.venv/
+.pip-tmp/
+artifacts/pip-tmp/
+artifacts/tmp*/
+
+# پایتون
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# نوت‌بوک
+.ipynb_checkpoints/
+
+# لاگ‌ها
+artifacts/*.log
+
+# مدل embedding (حدود ۹۰ مگابایت؛ جدا دانلود می‌شود)
+resources/embedding_model/
+
+# محیط واقعی
+.env
+
+# پس‌ماندهٔ آزمون‌های موقت
+.pytest_cache/
+*.tmp

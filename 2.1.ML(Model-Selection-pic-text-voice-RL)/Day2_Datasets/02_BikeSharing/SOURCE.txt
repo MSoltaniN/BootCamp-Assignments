@@ -1,0 +1,2 @@
+Bike Sharing (Fanaee-T & Gama, 2013), UCI Machine Learning Repository,
+https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset, license CC BY 4.0. See Readme.txt for the columns.

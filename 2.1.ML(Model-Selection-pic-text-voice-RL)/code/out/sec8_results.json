@@ -1,0 +1,124 @@
+{
+  "n_rows": 5574,
+  "n_unique_texts": 5171,
+  "n_duplicate_rows": 403,
+  "spam_pct": 13.4,
+  "length_chars": {
+    "mean": 80.5,
+    "median": 62.0,
+    "p95": 160.0,
+    "max": 910
+  },
+  "length_words": {
+    "mean": 15.6,
+    "median": 12.0,
+    "max": 171
+  },
+  "split": {
+    "train": {
+      "rows": 3913,
+      "spam": 531,
+      "spam_pct": 13.57
+    },
+    "val": {
+      "rows": 828,
+      "spam": 105,
+      "spam_pct": 12.68
+    },
+    "test": {
+      "rows": 833,
+      "spam": 111,
+      "spam_pct": 13.33
+    }
+  },
+  "overlap_train_val": 0,
+  "overlap_train_test": 0,
+  "baseline_val": {
+    "precision": 0.9879518072289156,
+    "recall": 0.780952380952381,
+    "macro_f1": 0.9279958258449765,
+    "pr_auc": 0.9728052732147624,
+    "fit_seconds": 0.379
+  },
+  "vocab_size": 10964,
+  "models_val": {
+    "logreg": {
+      "name": "LogisticRegression",
+      "precision": 0.9782608695652174,
+      "recall": 0.8571428571428571,
+      "macro_f1": 0.9510268837219011,
+      "pr_auc": 0.9764744386384989,
+      "fit_seconds": 0.309,
+      "params": "C=3.0"
+    },
+    "naive_bayes": {
+      "name": "MultinomialNB",
+      "precision": 0.979381443298969,
+      "recall": 0.9047619047619048,
+      "macro_f1": 0.9661704822476745,
+      "pr_auc": 0.9909545371305726,
+      "fit_seconds": 0.243,
+      "params": "alpha=0.1"
+    },
+    "linear_svc": {
+      "name": "LinearSVC",
+      "precision": 1.0,
+      "recall": 0.8380952380952381,
+      "macro_f1": 0.9501485697286078,
+      "pr_auc": 0.9832986271876034,
+      "fit_seconds": 0.193,
+      "params": "C=1.0"
+    }
+  },
+  "probabilistic_model": "MultinomialNB",
+  "threshold": 0.16,
+  "threshold_val": {
+    "precision": 0.9099099099099099,
+    "recall": 0.9619047619047619
+  },
+  "test": {
+    "threshold": 0.16,
+    "precision": 0.9351851851851852,
+    "recall": 0.9099099099099099,
+    "macro_f1": 0.955312992082501,
+    "pr_auc": 0.9584318219807577,
+    "accuracy": 0.9795918367346939
+  },
+  "confusion": [
+    [
+      715,
+      7
+    ],
+    [
+      10,
+      101
+    ]
+  ],
+  "errors": [
+    {
+      "type": "FP",
+      "p": 0.617,
+      "text": "We have sent JD for Customer Service cum Accounts Executive to ur mail id, For details contact us"
+    },
+    {
+      "type": "FP",
+      "p": 0.424,
+      "text": "Can u get pic msgs to your phone?"
+    },
+    {
+      "type": "FP",
+      "p": 0.196,
+      "text": "I'm at work. Please call"
+    },
+    {
+      "type": "FN",
+      "p": 0.132,
+      "text": "LookAtMe!: Thanks for your purchase of a video clip from LookAtMe!, you've been charged 35p. Think you can do better? Why not send a video in a MMSto 32323."
+    },
+    {
+      "type": "FN",
+      "p": 0.075,
+      "text": "Am new 2 club & dont fink we met yet Will B gr8 2 C U Please leave msg 2day wiv ur area 09099726553 reply promised CARLIE x Calls£1/minMobsmore LKPOBOX177HP51FL"
+    }
+  ]
+}

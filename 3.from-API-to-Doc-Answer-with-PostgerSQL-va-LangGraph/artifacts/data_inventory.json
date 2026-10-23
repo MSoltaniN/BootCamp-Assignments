@@ -1,0 +1,212 @@
+{
+  "seed": 20261015,
+  "root": "C:\\Users\\pc\\source\\repos\\AI\\BootCamp Assignments\\3.from-API-to-Doc-Answer-with-PostgerSQL-va-LangGraph",
+  "corpus": {
+    "documents_in_manifest": 24,
+    "sha256_verified": 24,
+    "sha256_mismatched": [],
+    "files_missing": [],
+    "distinct_versions": [
+      "b80c7bf8d5a89fc47b732504a9e1219b79677531"
+    ],
+    "source_commit": "b80c7bf8d5a89fc47b732504a9e1219b79677531",
+    "source_repository": "https://github.com/python/peps",
+    "pdf_fixtures": [
+      {
+        "name": "evidencelab_policy.pdf",
+        "bytes": 2747
+      },
+      {
+        "name": "scan_only_fixture.pdf",
+        "bytes": 8935
+      }
+    ],
+    "raw_bytes": 842399
+  },
+  "evaluation": {
+    "queries_total": 90,
+    "queries_by_split": {
+      "dev": 30,
+      "test": 30,
+      "train": 30
+    },
+    "qrels_rows_total": 60,
+    "qrels_by_split": {
+      "dev": 30,
+      "train": 30
+    },
+    "labels": {
+      "train": {
+        "rows": 30,
+        "answerable": 24,
+        "unanswerable": 6,
+        "query_families": 30
+      },
+      "dev": {
+        "rows": 30,
+        "answerable": 24,
+        "unanswerable": 6,
+        "query_families": 30
+      }
+    },
+    "test_labels_present_in_pack": false,
+    "queries_without_public_label": 30,
+    "exact_duplicate_query_texts": 0
+  },
+  "application": {
+    "users": 20,
+    "roles": {
+      "admin": 1,
+      "student": 19
+    },
+    "tenants": {
+      "T-0": 10,
+      "T-1": 10
+    },
+    "cases": 120,
+    "distinct_case_owners": 19,
+    "cases_per_owner_max": 7,
+    "u002_cases": 7,
+    "policies": 4,
+    "policy_doc_ids": [
+      "LAB-PUBLIC",
+      "LAB-T0",
+      "LAB-T1",
+      "LAB-OLD"
+    ],
+    "policy_access": {
+      "public": 2,
+      "internal": 2
+    },
+    "policy_tenants": {
+      "all": 2,
+      "T-0": 1,
+      "T-1": 1
+    }
+  },
+  "api": {
+    "requests": 2400,
+    "unique_request_id": 2400,
+    "duplicate_request_id": 0,
+    "status_distribution": {
+      "200": 993,
+      "400": 221,
+      "401": 204,
+      "403": 196,
+      "422": 187,
+      "429": 202,
+      "500": 202,
+      "503": 195
+    },
+    "status_groups": {
+      "client_validation_4xx": 808,
+      "rate_limit_429": 202,
+      "server_5xx": 397,
+      "success_2xx": 993
+    },
+    "error_rate": 0.5863,
+    "providers": {
+      "provider_a": 1200,
+      "provider_b": 1200
+    },
+    "endpoints": {
+      "/v1/answers": 2400
+    },
+    "retry_scenarios": 6,
+    "retry_scenario_names": [
+      "success",
+      "rate_limit",
+      "transient",
+      "unauthorized",
+      "invalid_input",
+      "exhausted"
+    ],
+    "provider_config_keys": [
+      "currency",
+      "pricing_is_fictional",
+      "provider_a",
+      "provider_b",
+      "unit"
+    ],
+    "pricing_is_fictional": true
+  },
+  "router": {
+    "requests": 480,
+    "by_split": {
+      "dev": {
+        "rows": 80,
+        "template_groups": 8,
+        "routes": 4
+      },
+      "test": {
+        "rows": 80,
+        "template_groups": 8,
+        "routes": 4
+      },
+      "train": {
+        "rows": 320,
+        "template_groups": 32,
+        "routes": 4
+      }
+    },
+    "route_distribution": {
+      "both": 120,
+      "history": 120,
+      "research": 120,
+      "unsupported": 120
+    },
+    "shared_template_groups_between_splits": 0,
+    "distinct_template_groups": 48,
+    "majority_class_share_test": 0.25
+  },
+  "robustness": {
+    "attacks": 30,
+    "attack_types": {
+      "citation_forgery": 5,
+      "cross_tenant": 5,
+      "document_instruction": 5,
+      "exfiltration": 5,
+      "role_spoof": 5,
+      "tool_injection": 5
+    },
+    "expected_actions": {
+      "reject_instruction_keep_data": 30
+    },
+    "answer_candidates": 4,
+    "candidate_ids": [
+      "GOOD",
+      "UNKNOWN_ID",
+      "MISSING_CITATION",
+      "BAD_QUOTE"
+    ],
+    "candidates_claims": {
+      "GOOD": 1,
+      "UNKNOWN_ID": 1,
+      "MISSING_CITATION": 1,
+      "BAD_QUOTE": 1
+    }
+  },
+  "observability": {
+    "events": 4800,
+    "traces": 800,
+    "events_per_trace_min": 6,
+    "events_per_trace_max": 6,
+    "event_types": {
+      "answer_generated": 800,
+      "citations_validated": 800,
+      "question_received": 800,
+      "response_sent": 800,
+      "retrieval_completed": 800,
+      "route_selected": 800
+    },
+    "status_distribution": {
+      "error": 22,
+      "ok": 4778
+    },
+    "events_containing_TEST_ONLY_SECRET": 54,
+    "metadata_keys": [
+      "api_key",
+      "prompt_version"
+    ]
+  }
+}

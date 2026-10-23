@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Superstore Sales — BI Dashboard</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <div class="brand-mark">SS</div>
+    <div class="title-wrap">
+      <h1>Superstore Sales — Business Intelligence Dashboard</h1>
+      <div class="sub">Where sales and profit are healthy — and where they are not · FY2014–FY2017 · 1,163 line items</div>
+    </div>
+    <div class="top-right">
+      <div class="stamp">
+        <div>Snapshot <b id="stamp-time">__BUILD_TIME__</b></div>
+        <div>Data hash <b>__DATA_HASH__</b></div>
+      </div>
+      <button class="btn" id="rebuild" type="button" title="Re-read the embedded source data and recompute every figure">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <path d="M13.6 8a5.6 5.6 0 1 1-1.7-4"/><path d="M13.9 2.2v3.3h-3.3"/>
+        </svg>
+        Rebuild from data
+      </button>
+    </div>
+  </header>
+
+  <div class="slicers">
+    <div class="slicer"><label for="f-year">Year</label><select id="f-year"></select></div>
+    <div class="slicer"><label for="f-region">Region</label><select id="f-region"></select></div>
+    <div class="slicer"><label for="f-category">Category</label><select id="f-category"></select></div>
+    <div class="slicer"><label for="f-segment">Segment</label><select id="f-segment"></select></div>
+    <button class="slicer-clear" id="clear" type="button">Reset filters</button>
+    <div class="scope"><span class="dot" id="scope-dot"></span><span id="scope-text">All data in scope</span></div>
+  </div>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="grid-mid">
+    <div class="card">
+      <div class="card-h"><h2>Sales &amp; profit over time</h2><span class="hint right" id="trend-hint">monthly</span></div>
+      <div class="card-b" id="c-trend"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h2>Profit by region &amp; category</h2><span class="hint right">$ per cell · red = loss</span></div>
+      <div class="card-b" id="c-heat"></div>
+    </div>
+  </section>
+
+  <section class="grid-low">
+    <div class="card">
+      <div class="card-h"><h2>Category &amp; sub-category</h2><span class="hint right">bars = profit · sorted by profit</span></div>
+      <div class="card-b" id="c-catsub"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h2>Geographic view — sales by state</h2><span class="hint right">grey = no orders</span></div>
+      <div class="card-b" id="c-map"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h2>Top states</h2><span class="hint right">by sales</span></div>
+      <div class="card-b" id="c-states"></div>
+    </div>
+  </section>
+
+  <section class="grid-foot">
+    <div class="card">
+      <div class="card-h"><h2>Margin by discount depth</h2><span class="hint right">flips at 30% discount</span></div>
+      <div class="card-b" id="c-disc"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h2>Profit by year</h2><span class="hint right">order date</span></div>
+      <div class="card-b" id="c-year"></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>Source <b>superstore-sales.csv</b> · CC BY 4.0</span>
+    <span class="sep">|</span>
+    <span id="integrity">checking against reference…</span>
+    <span class="pipe">
+      <span>pipeline</span><code>CSV</code>→<code>aggregate</code>→<code>SVG</code>→<code>PDF</code>
+    </span>
+  </footer>
+
+</div>
+
+<script type="text/csv" id="raw-csv">__CSV_DATA__</script>
+<script>window.__REF__ = __REFERENCE__;</script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

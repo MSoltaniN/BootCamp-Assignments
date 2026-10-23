@@ -1,0 +1,11 @@
+# python packages installed locally so the scripts can run without a system-wide install
+.pkgs/
+_wheels/
+_tmp/
+
+# ParsBERT weights (can be re-downloaded with _download_model.py)
+model/
+
+# heavy training checkpoints; run/ keeps the small artefacts (json/png/csv)
+run/model_best/
+run/model_state.pt

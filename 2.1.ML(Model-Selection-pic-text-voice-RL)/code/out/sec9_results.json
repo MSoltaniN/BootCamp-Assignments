@@ -1,0 +1,129 @@
+{
+  "n_files": 3000,
+  "sample_rate": 8000,
+  "duration": {
+    "mean": 0.437,
+    "min": 0.143,
+    "max": 2.283,
+    "median": 0.42
+  },
+  "per_digit": {
+    "0": 300,
+    "1": 300,
+    "2": 300,
+    "3": 300,
+    "4": 300,
+    "5": 300,
+    "6": 300,
+    "7": 300,
+    "8": 300,
+    "9": 300
+  },
+  "per_speaker": {
+    "george": 500,
+    "jackson": 500,
+    "lucas": 500,
+    "nicolas": 500,
+    "theo": 500,
+    "yweweler": 500
+  },
+  "splits": {
+    "random": {
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "speaker": {
+      "train": 2000,
+      "val": 500,
+      "test": 500
+    }
+  },
+  "features": {
+    "n_features": 57,
+    "mfcc": 13,
+    "n_mels": 40
+  },
+  "svm": {
+    "random": {
+      "best_params": {
+        "C": "10",
+        "gamma": "scale"
+      },
+      "cv_macro_f1": 0.977683276761048,
+      "val_macro_f1": 0.9862685133140685,
+      "test_macro_f1": 0.9931741831569258,
+      "fit_seconds": 2.14
+    },
+    "speaker": {
+      "best_params": {
+        "C": "10",
+        "gamma": "0.01"
+      },
+      "cv_macro_f1": 0.6886102863083351,
+      "val_macro_f1": 0.6854744905709517,
+      "test_macro_f1": 0.6347869205883792,
+      "fit_seconds": 2.06
+    }
+  },
+  "cnn": {
+    "random": {
+      "val_macro_f1": 0.9612204789442055,
+      "test_macro_f1": 0.9833457891169237,
+      "train_seconds": 37.4
+    },
+    "speaker": {
+      "val_macro_f1": 0.8036126999271949,
+      "test_macro_f1": 0.6279269244480296,
+      "train_seconds": 35.5
+    }
+  },
+  "summary": [
+    {
+      "scheme": "random",
+      "svm_val": 0.9862685133140685,
+      "svm_test": 0.9931741831569258,
+      "cnn_val": 0.9612204789442055,
+      "cnn_test": 0.9833457891169237
+    },
+    {
+      "scheme": "speaker",
+      "svm_val": 0.6854744905709517,
+      "svm_test": 0.6347869205883792,
+      "cnn_val": 0.8036126999271949,
+      "cnn_test": 0.6279269244480296
+    }
+  ],
+  "improvement_no_c0": {
+    "random": {
+      "val_macro_f1": 0.9839687216025121,
+      "test_macro_f1": 0.9953605733856936
+    },
+    "speaker": {
+      "val_macro_f1": 0.780311938115781,
+      "test_macro_f1": 0.6375402266378593
+    }
+  },
+  "loso": {
+    "george": 0.5177,
+    "jackson": 0.7112,
+    "lucas": 0.6178,
+    "nicolas": 0.2174,
+    "theo": 0.8532,
+    "yweweler": 0.6922
+  },
+  "loso_mean": 0.6016,
+  "per_digit_recall_unseen": {
+    "0": 0.86,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.34,
+    "4": 1.0,
+    "5": 0.3,
+    "6": 0.46,
+    "7": 0.88,
+    "8": 0.86,
+    "9": 0.0
+  },
+  "best_model_unseen": "SVM"
+}

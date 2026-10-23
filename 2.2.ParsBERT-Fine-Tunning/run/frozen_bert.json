@@ -1,0 +1,9 @@
+{
+  "acc": 0.7516666666666667,
+  "macro_f1": 0.7531826605161518,
+  "epoch_time_s": 145.50790977478027,
+  "lr": 0.001,
+  "trainable_params": 4614,
+  "epochs": 1,
+  "steps_per_epoch": 188
+}

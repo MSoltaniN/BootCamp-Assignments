@@ -1,0 +1,234 @@
+{
+  "n_rows": 41188,
+  "n_cols": 21,
+  "positive_count": 4640,
+  "positive_rate_pct": 11.2654,
+  "unknown_counts": {
+    "job": 330,
+    "marital": 80,
+    "education": 1731,
+    "default": 8597,
+    "housing": 990,
+    "loan": 990
+  },
+  "pdays_999": 39673,
+  "pdays_999_pct": 96.32,
+  "split": {
+    "train": [
+      28831,
+      5.57
+    ],
+    "val": [
+      6178,
+      10.65
+    ],
+    "test": [
+      6179,
+      38.45
+    ]
+  },
+  "engineered": [
+    "was_contacted_before",
+    "pdays_since",
+    "total_contacts",
+    "prev_success",
+    "is_recession",
+    "age_bin"
+  ],
+  "cv": {
+    "majority_baseline": {
+      "pr_auc": 0.06110301768990635,
+      "roc_auc": 0.5,
+      "f1_pos": 0.0,
+      "pr_auc_std": 0.021680750242405726,
+      "fold_pos_rate": 0.055703929797787106
+    },
+    "logistic_regression": {
+      "pr_auc": 0.08934293973647334,
+      "roc_auc": 0.5506003554419239,
+      "f1_pos": 0.046222377687083996,
+      "pr_auc_std": 0.07070317760729658,
+      "fold_pos_rate": 0.055703929797787106
+    },
+    "random_forest": {
+      "pr_auc": 0.06400554480651192,
+      "roc_auc": 0.5143287972252215,
+      "f1_pos": 0.1059253763549433,
+      "pr_auc_std": 0.02258274062052259,
+      "fold_pos_rate": 0.055703929797787106
+    },
+    "hist_gradient_boosting_extra": {
+      "pr_auc": 0.07317551438271296,
+      "roc_auc": 0.5129716110524948,
+      "f1_pos": 0.0,
+      "pr_auc_std": 0.04051512232764152,
+      "fold_pos_rate": 0.055703929797787106
+    }
+  },
+  "train": {
+    "majority_baseline": {
+      "pr_auc": 0.055703929797787106,
+      "roc_auc": 0.5,
+      "f1_pos": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 27225,
+      "fp": 0,
+      "fn": 1606,
+      "tp": 0,
+      "cost": 8030.0
+    },
+    "logistic_regression": {
+      "pr_auc": 0.17434952615964416,
+      "roc_auc": 0.659500941716497,
+      "f1_pos": 0.08554913294797688,
+      "precision": 0.5967741935483871,
+      "recall": 0.0460772104607721,
+      "tn": 27175,
+      "fp": 50,
+      "fn": 1532,
+      "tp": 74,
+      "cost": 7710.0
+    },
+    "random_forest": {
+      "pr_auc": 0.18855095355292312,
+      "roc_auc": 0.7416807952730062,
+      "f1_pos": 0.2125984251968504,
+      "precision": 0.13247470101195952,
+      "recall": 0.5379825653798257,
+      "tn": 21567,
+      "fp": 5658,
+      "fn": 742,
+      "tp": 864,
+      "cost": 9368.0
+    },
+    "hist_gradient_boosting_extra": {
+      "pr_auc": 0.19395815996767463,
+      "roc_auc": 0.7006003085307965,
+      "f1_pos": 0.04288266825491364,
+      "precision": 0.4931506849315068,
+      "recall": 0.0224159402241594,
+      "tn": 27188,
+      "fp": 37,
+      "fn": 1570,
+      "tp": 36,
+      "cost": 7887.0
+    }
+  },
+  "val": {
+    "majority_baseline": {
+      "pr_auc": 0.10650696018128844,
+      "roc_auc": 0.5,
+      "f1_pos": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 5520,
+      "fp": 0,
+      "fn": 658,
+      "tp": 0,
+      "cost": 3290.0
+    },
+    "logistic_regression": {
+      "pr_auc": 0.2042692193730364,
+      "roc_auc": 0.6611110193383551,
+      "f1_pos": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 5520,
+      "fp": 0,
+      "fn": 658,
+      "tp": 0,
+      "cost": 3290.0
+    },
+    "random_forest": {
+      "pr_auc": 0.1987670091906667,
+      "roc_auc": 0.6452302486674595,
+      "f1_pos": 0.192510239906378,
+      "precision": 0.10650696018128844,
+      "recall": 1.0,
+      "tn": 0,
+      "fp": 5520,
+      "fn": 0,
+      "tp": 658,
+      "cost": 5520.0
+    },
+    "hist_gradient_boosting_extra": {
+      "pr_auc": 0.1628078342313018,
+      "roc_auc": 0.6099793235980794,
+      "f1_pos": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 5520,
+      "fp": 0,
+      "fn": 658,
+      "tp": 0,
+      "cost": 3290.0
+    }
+  },
+  "selected_model": "logistic_regression",
+  "threshold": {
+    "best": 0.145,
+    "reported": {
+      "0.500": {
+        "threshold": 0.5,
+        "tn": 5520,
+        "fp": 0,
+        "fn": 658,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "cost": 3290.0
+      },
+      "0.145": {
+        "threshold": 0.145,
+        "tn": 4678,
+        "fp": 842,
+        "fn": 406,
+        "tp": 252,
+        "precision": 0.2303473491773309,
+        "recall": 0.3829787234042553,
+        "f1": 0.2876712328767123,
+        "cost": 2872.0
+      }
+    }
+  },
+  "test": {
+    "pr_auc": 0.4729446762208896,
+    "roc_auc": 0.6101168026128584,
+    "f1_pos": 0.5493704440026508,
+    "precision": 0.4530054644808743,
+    "recall": 0.6978114478114478,
+    "tn": 1801,
+    "fp": 2002,
+    "fn": 718,
+    "tp": 1658,
+    "cost": 5592.0
+  },
+  "test_at_05": {
+    "pr_auc": 0.4729446762208896,
+    "roc_auc": 0.6101168026128584,
+    "f1_pos": 0.16548295454545456,
+    "precision": 0.5295454545454545,
+    "recall": 0.09806397306397306,
+    "tn": 3596,
+    "fp": 207,
+    "fn": 2143,
+    "tp": 233,
+    "cost": 10922.0
+  },
+  "importance": {
+    "previous": 0.05562014063257127,
+    "month": 0.03344600733447864,
+    "was_contacted_before": 0.024157853040614963,
+    "pdays": 0.024126294684154878,
+    "poutcome": 0.01692889010946655,
+    "contact": 0.00862513628254262,
+    "age": 0.00451076287938855,
+    "age_bin": 0.003731164788996044,
+    "cons.price.idx": 0.002506531925906344,
+    "total_contacts": 0.002287326962468625,
+    "cons.conf.idx": 0.0022729587903616705,
+    "campaign": 0.002084107665961843
+  }
+}
