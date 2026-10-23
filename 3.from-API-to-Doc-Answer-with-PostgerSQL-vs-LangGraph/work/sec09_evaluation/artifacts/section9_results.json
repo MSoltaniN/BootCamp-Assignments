@@ -1,0 +1,154 @@
+{
+  "seed": 20261015,
+  "results": {
+    "9.1": {
+      "queries": 90,
+      "duplicates": 0,
+      "splits": {
+        "train": 30,
+        "dev": 30,
+        "test": 30
+      },
+      "families": 30
+    },
+    "9.2": [
+      {
+        "case": "gold={A}, ranking=[B,A,C]",
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309
+      },
+      {
+        "case": "gold={A}, ranking=[B,C,D]",
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    ],
+    "9.3": {
+      "lexical": {
+        "k": 3,
+        "queries": 24,
+        "recall@3": 0.9583,
+        "mrr@3": 0.8958,
+        "ndcg@3": 0.9122
+      },
+      "dense": {
+        "k": 3,
+        "queries": 24,
+        "recall@3": 0.9583,
+        "mrr@3": 0.8958,
+        "ndcg@3": 0.9122
+      },
+      "hybrid": {
+        "k": 3,
+        "queries": 24,
+        "recall@3": 0.9583,
+        "mrr@3": 0.9167,
+        "ndcg@3": 0.9276
+      }
+    },
+    "9.4": {
+      "method": "hybrid",
+      "mrr_dev": 0.9167,
+      "config_hash": "62ec5a52e66383fb"
+    },
+    "9.5": [
+      {
+        "k": 1,
+        "recall": 0.875,
+        "mrr": 0.875,
+        "ndcg": 0.875
+      },
+      {
+        "k": 3,
+        "recall": 0.9583,
+        "mrr": 0.9167,
+        "ndcg": 0.9276
+      },
+      {
+        "k": 5,
+        "recall": 1.0,
+        "mrr": 0.925,
+        "ndcg": 0.9437
+      }
+    ],
+    "9.6": {
+      "errors": 1,
+      "examples": [
+        {
+          "query_id": "QR-90a3af1b96760890",
+          "query": "How can int and str be combined with a vertical bar?",
+          "gold": [
+            "PEP-0604"
+          ],
+          "top1": "PEP-0484",
+          "gold_rank": 5,
+          "error_type": "ranking",
+          "evidence_cue": "|",
+          "passage_contains_cue": true
+        }
+      ],
+      "types": {
+        "ranking": 1
+      }
+    },
+    "9.7": {
+      "predictions": 30,
+      "path": "deliverables\\test_predictions.jsonl",
+      "sample": {
+        "query_id": "QR-5080cee2b3923962",
+        "ranked_doc_ids": [
+          "PEP-0498",
+          "PEP-0572",
+          "PEP-0484"
+        ]
+      }
+    },
+    "9.8": {
+      "low": 0.875,
+      "high": 1.0,
+      "n": 24,
+      "resamples": 2000,
+      "seed": 20261015,
+      "mean": 0.9583
+    },
+    "9.9": {
+      "threshold": 0.390957,
+      "balanced_accuracy": 0.9792,
+      "accepted": 23,
+      "rejected": 7,
+      "true_positives": 23,
+      "false_accepts": 0,
+      "false_rejects": 1,
+      "true_negatives": 6
+    },
+    "9.10": {
+      "decisions": 30,
+      "accepted": 24,
+      "abstained": 6,
+      "threshold": 0.390957,
+      "path": "deliverables\\answerability_predictions.jsonl"
+    },
+    "9.11": {
+      "ablation": {
+        "220-token": {
+          "recall@3": 1.0,
+          "mrr@3": 0.9167,
+          "vectors": 1286
+        },
+        "110-token": {
+          "recall@3": 1.0,
+          "mrr@3": 0.9167,
+          "vectors": 3279
+        }
+      },
+      "queries": 6,
+      "vector_ratio": 2.55
+    },
+    "9.12": {
+      "limitations": 6,
+      "report": "work\\sec09_evaluation\\artifacts\\evaluation_report.json"
+    }
+  }
+}

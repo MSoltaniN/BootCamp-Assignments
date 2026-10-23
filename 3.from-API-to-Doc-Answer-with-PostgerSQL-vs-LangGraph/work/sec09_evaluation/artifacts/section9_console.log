@@ -1,0 +1,119 @@
+
+==============================================================================
+9.1  split sizes, answerable distribution, exact duplicates
+==============================================================================
+queries per split: {'train': 30, 'dev': 30, 'test': 30}
+public qrels rows: 60
+  train: 30 labelled, answerable=24, unanswerable=6
+  dev  : 30 labelled, answerable=24, unanswerable=6
+test rows present in public qrels: 0 (labels withheld by design)
+exact duplicate query texts: 0
+distinct query families in public qrels: 30
+largest family sizes: [('pep-0008', 2), ('pep-0020', 2), ('pep-0257', 2)]
+
+==============================================================================
+9.2  Recall@3, MRR@3, nDCG@3 on two hand-checked examples
+==============================================================================
+gold={A}, ranking=[B,A,C]: recall=1.0 mrr=0.5 ndcg=0.6309
+gold={A}, ranking=[B,C,D]: recall=0.0 mrr=0.0 ndcg=0.0
+gold A at rank 2  -> recall 1, mrr 0.5, ndcg 0.6309
+gold A absent     -> recall 0, mrr 0,    ndcg 0
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2074.93it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (12682 > 256). Running this sequence through the model will result in indexing errors
+
+==============================================================================
+9.3  lexical vs dense vs hybrid on dev, k=3
+==============================================================================
+dev answerable queries: 24
+lexical  recall@3=0.9583  mrr@3=0.8958  ndcg@3=0.9122
+dense    recall@3=0.9583  mrr@3=0.8958  ndcg@3=0.9122
+hybrid   recall@3=0.9583  mrr@3=0.9167  ndcg@3=0.9276
+
+==============================================================================
+9.4  choose the method on MRR@3 only, then lock
+==============================================================================
+MRR@3 per method: {'lexical': 0.8958, 'dense': 0.8958, 'hybrid': 0.9167}
+tie-break order: lexical -> dense -> hybrid
+selected method: hybrid | MRR@3 on dev: 0.9167
+lock written: {
+  "locked": true,
+  "method": "hybrid",
+  "mrr@3_dev": 0.9167,
+  "selection_rule": "highest MRR@3 on dev; tie-break lexical, then dense, then hybrid",
+  "config_hash": "62ec5a52e66383fb",
+  "fingerprint": "08cae258264e65ba",
+  "seed": 20261015,
+  "test_files_built": false
+}
+
+==============================================================================
+9.5  sensitivity to k = 1, 3, 5 for the locked method
+==============================================================================
+k=1: recall=0.875  mrr=0.875  ndcg=0.875
+k=3: recall=0.9583  mrr=0.9167  ndcg=0.9276
+k=5: recall=1.0  mrr=0.925  ndcg=0.9437
+recall cannot decrease as k grows because it asks only whether a relevant doc is inside k
+mrr can move either way: a relevant doc found earlier lowers it, a newly included one raises it
+
+==============================================================================
+9.6  first three dev errors of the locked method
+==============================================================================
+recall@3 failures in dev: 1
+  QR-90a3af1b96760890  gold=['PEP-0604']  top1=PEP-0484  gold_rank=5  type=ranking
+     Q: How can int and str be combined with a vertical bar?
+     evidence cue '|' in gold doc's best chunk: True
+error types: {'ranking': 1}
+
+==============================================================================
+9.7  build test predictions after the lock
+==============================================================================
+lock present: True | config hash: 62ec5a52e66383fb
+test predictions: 30
+sample: {"query_id": "QR-5080cee2b3923962", "ranked_doc_ids": ["PEP-0498", "PEP-0572", "PEP-0484"]}
+distinct document count per row is enforced by an assert
+
+==============================================================================
+9.8  bootstrap 95% interval for Recall@3 on dev
+==============================================================================
+per-query recall values: 24 | mean: 0.9583
+95% CI: [0.875, 1.0] from 2000 resamples
+caveat: several dev queries paraphrase the same source, so the interval is optimistic
+
+==============================================================================
+9.9  choose the abstention threshold on dev by balanced accuracy
+==============================================================================
+dev queries scored: 30 | answerable: 24
+{
+  "threshold": 0.390957,
+  "balanced_accuracy": 0.9792,
+  "accepted": 23,
+  "rejected": 7,
+  "true_positives": 23,
+  "false_accepts": 0,
+  "false_rejects": 1,
+  "true_negatives": 6
+}
+
+==============================================================================
+9.10  apply the fixed threshold to the test questions
+==============================================================================
+decisions: 30 | accepted: 24 | abstained: 6
+threshold used: 0.390957 (chosen on dev, not on test)
+
+==============================================================================
+9.11  ablation on six dev queries: 110 vs 220 token chunks (real re-chunking)
+==============================================================================
+ablation queries: 6
+re-chunked at 110 tokens: 3279 chunks from 24 documents
+220-token  recall@3=1.0  mrr@3=0.9167  vectors=1286
+110-token  recall@3=1.0  mrr@3=0.9167  vectors=3279
+vector-count ratio 110/220: 2.55x  -> index size and retrieval cost scale the same way
+this ablation runs on 6 dev queries and is reported separately from the locked test result
+
+==============================================================================
+9.12  machine-readable evaluation report
+==============================================================================
+limitations recorded: 6
+report written to work\sec09_evaluation\artifacts\evaluation_report.json
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec09_evaluation\artifacts

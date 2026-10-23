@@ -1,0 +1,10 @@
+{
+  "locked": true,
+  "method": "hybrid",
+  "mrr@3_dev": 0.9167,
+  "selection_rule": "highest MRR@3 on dev; tie-break lexical, then dense, then hybrid",
+  "config_hash": "62ec5a52e66383fb",
+  "fingerprint": "08cae258264e65ba",
+  "seed": 20261015,
+  "test_files_built": true
+}

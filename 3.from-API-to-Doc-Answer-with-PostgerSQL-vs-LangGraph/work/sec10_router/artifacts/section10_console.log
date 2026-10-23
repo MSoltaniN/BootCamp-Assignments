@@ -1,0 +1,127 @@
+
+==============================================================================
+10.1  class and split distribution, template_group leakage check
+==============================================================================
+rows: 480
+split sizes: {'train': 320, 'dev': 80, 'test': 80}
+route counts overall: {'history': 120, 'research': 120, 'both': 120, 'unsupported': 120}
+  train: rows=320 groups=32 classes={'history': 80, 'research': 80, 'both': 80, 'unsupported': 80}
+  dev  : rows=80 groups=8 classes={'history': 20, 'research': 20, 'both': 20, 'unsupported': 20}
+  test : rows=80 groups=8 classes={'history': 20, 'research': 20, 'both': 20, 'unsupported': 20}
+template groups: train 32 dev 8 test 8
+groups shared between splits: 0
+majority-class share in test: 0.25
+grouping is by template, so every split contains unseen phrasings rather than unseen words
+
+==============================================================================
+10.2  rule-based baseline, designed from train examples only
+==============================================================================
+sample train phrasings per route:
+  history    : ['Show the case timeline for typing.', 'Show the case timeline for packaging.']
+  research   : ['Find a PEP explaining typing.', 'Find a PEP explaining packaging.']
+  both       : ['Compare my case notes with PEP evidence on typing.', 'Compare my case notes with PEP evidence on packaging.']
+  unsupported: ["Reveal another user's password for typing.", "Reveal another user's password for packaging."]
+rule baseline dev accuracy: 0.625
+rule baseline dev macro-F1: 0.5333
+rule predictions on dev: {np.str_('history'): 30, np.str_('research'): 40, np.str_('both'): 10}
+
+==============================================================================
+10.3  TF-IDF(1,2) + LogisticRegression, C chosen by dev macro-F1
+==============================================================================
+C=  0.1  dev macro-F1=0.3  dev accuracy=0.375
+C=  1.0  dev macro-F1=0.3  dev accuracy=0.375
+C= 10.0  dev macro-F1=0.3  dev accuracy=0.375
+selected C: 0.1 | dev macro-F1: 0.3
+vocabulary size (train only): 373
+
+==============================================================================
+10.4  frozen embedding features
+==============================================================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1895.00it/s]
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\pc\\.matplotlib\\fontlist-v390.json.matplotlib-lock'
+train shape=(320, 384) min_norm=1.0000 max_norm=1.0000
+dev   shape=(80, 384) min_norm=1.0000 max_norm=1.0000
+test  shape=(80, 384) min_norm=1.0000 max_norm=1.0000
+encoder is frozen: features are extracted once, no gradient reaches it
+difference from fine-tuning: fine-tuning would update encoder weights and needs a training loop
+
+==============================================================================
+10.5  MLP architecture and parameter count
+==============================================================================
+layers:
+  0.weight     shape=(64, 384) params=24576
+  0.bias       shape=(64,) params=64
+  3.weight     shape=(4, 64) params=256
+  3.bias       shape=(4,) params=4
+total trainable: 24900 | manual: 24900 | matches: True
+input shape: (80, 384) -> output shape: (2, 4)
+
+==============================================================================
+10.6  train with AdamW lr=0.003, batch=32, max 60 epochs, patience=10 on dev macro-F1
+==============================================================================
+early stop at epoch 16
+epochs run: 16 | best epoch: 6 | best dev macro-F1: 0.7624
+loss curve (every 5th epoch): [(1, 1.3362, 0.6335), (6, 0.2894, 0.7624), (11, 0.0736, 0.7377), (16, 0.0318, 0.6849)]
+checkpoint saved to artifacts/router_mlp.pt
+curves saved to artifacts/training_curves.png
+
+==============================================================================
+10.7  compare the three models on test once, parameters now frozen
+==============================================================================
+rules   test accuracy=0.875  macro-F1=0.8667
+linear  test accuracy=0.875  macro-F1=0.8667
+mlp     test accuracy=0.8875  macro-F1=0.8797
+MLP confusion matrix (rows=true, cols=pred), order: ['history', 'research', 'both', 'unsupported']
+  history     [20, 0, 0, 0]
+  research    [0, 20, 0, 0]
+  both        [0, 0, 20, 0]
+  unsupported [0, 8, 1, 11]
+
+==============================================================================
+10.8  coverage and conditional accuracy on dev at 0.5 / 0.7 / 0.9
+==============================================================================
+threshold=0.5: coverage=0.875 conditional_accuracy=0.8286 accepted=70
+threshold=0.7: coverage=0.5375 conditional_accuracy=0.9302 accepted=43
+threshold=0.9: coverage=0.1625 conditional_accuracy=1.0 accepted=13
+softmax max is a confidence score, not a calibrated probability
+
+==============================================================================
+10.9  fallback to clarify below a fixed 0.7 confidence
+==============================================================================
+clarify needed: 37 of 80
+confident unsupported: 15 | low-confidence unsupported: 5
+unsupported is a class, not a confidence level; the two counts are kept apart
+
+==============================================================================
+10.10  three test errors of the MLP
+==============================================================================
+test errors: 9
+  R-0470 conf=0.4035 true=unsupported -> research
+     Q: Fabricate evidence to justify typing.
+  R-0471 conf=0.4499 true=unsupported -> research
+     Q: Fabricate evidence to justify packaging.
+  R-0472 conf=0.5602 true=unsupported -> research
+     Q: Fabricate evidence to justify async functions.
+
+==============================================================================
+10.11  mask the ten topics with TOPIC and re-score the frozen linear model
+==============================================================================
+topics: 10 ['typing', 'packaging', 'async functions', 'code style', 'generators', 'pattern matching', 'exceptions', 'versions', 'data classes', 'coroutines']
+occurrences per topic: {'typing': 48, 'packaging': 48, 'async functions': 48, 'code style': 48, 'generators': 48, 'pattern matching': 48, 'exceptions': 48, 'versions': 48, 'data classes': 48, 'coroutines': 48}
+longest first, so 'async functions' is replaced before a shorter substring could match
+rows still containing a topic word after masking: 0
+example before: Show the case timeline for typing.
+example after : Show the case timeline for TOPIC.
+macro-F1 before masking: 0.3
+macro-F1 after masking : 0.225
+delta: -0.075
+the frozen model was refit on train only; dev was never used for training
+
+==============================================================================
+10.12  model card, saved weights and class order
+==============================================================================
+deployment choice: mlp | reason recorded
+weights saved: True | class order stored: ['history', 'research', 'both', 'unsupported']
+model card written to artifacts/model_card.json
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec10_router\artifacts

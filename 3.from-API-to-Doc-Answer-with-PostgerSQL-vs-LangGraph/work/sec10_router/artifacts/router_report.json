@@ -1,0 +1,311 @@
+{
+  "seed": 20261015,
+  "results": {
+    "10.1": {
+      "requests": 480,
+      "shared_groups": 0,
+      "splits": {
+        "train": 320,
+        "dev": 80,
+        "test": 80
+      },
+      "groups": {
+        "train": 32,
+        "dev": 8,
+        "test": 8
+      }
+    },
+    "10.2": {
+      "dev_accuracy": 0.625,
+      "dev_macro_f1": 0.5333
+    },
+    "10.3": {
+      "C": 0.1,
+      "dev_macro_f1": 0.3,
+      "grid": [
+        {
+          "C": 0.1,
+          "dev_macro_f1": 0.3,
+          "dev_accuracy": 0.375
+        },
+        {
+          "C": 1.0,
+          "dev_macro_f1": 0.3,
+          "dev_accuracy": 0.375
+        },
+        {
+          "C": 10.0,
+          "dev_macro_f1": 0.3,
+          "dev_accuracy": 0.375
+        }
+      ],
+      "vocab": 373
+    },
+    "10.4": {
+      "train_shape": [
+        320,
+        384
+      ],
+      "dev_shape": [
+        80,
+        384
+      ],
+      "test_shape": [
+        80,
+        384
+      ]
+    },
+    "10.5": {
+      "trainable_params": 24900,
+      "manual": 24900,
+      "matches": true,
+      "layers": [
+        [
+          "0.weight",
+          [
+            64,
+            384
+          ],
+          24576
+        ],
+        [
+          "0.bias",
+          [
+            64
+          ],
+          64
+        ],
+        [
+          "3.weight",
+          [
+            4,
+            64
+          ],
+          256
+        ],
+        [
+          "3.bias",
+          [
+            4
+          ],
+          4
+        ]
+      ]
+    },
+    "10.6": {
+      "epochs": 16,
+      "best_epoch": 6,
+      "best_dev_macro_f1": 0.7624,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.3362,
+          "dev_macro_f1": 0.6335
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.1303,
+          "dev_macro_f1": 0.7179
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8524,
+          "dev_macro_f1": 0.7527
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.6008,
+          "dev_macro_f1": 0.7407
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.4137,
+          "dev_macro_f1": 0.7148
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.2894,
+          "dev_macro_f1": 0.7624
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.2129,
+          "dev_macro_f1": 0.7591
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.1489,
+          "dev_macro_f1": 0.7498
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.118,
+          "dev_macro_f1": 0.7377
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.0894,
+          "dev_macro_f1": 0.7591
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.0736,
+          "dev_macro_f1": 0.7377
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.0582,
+          "dev_macro_f1": 0.7148
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.0462,
+          "dev_macro_f1": 0.7377
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.0409,
+          "dev_macro_f1": 0.6873
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.0331,
+          "dev_macro_f1": 0.7121
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.0318,
+          "dev_macro_f1": 0.6849
+        }
+      ]
+    },
+    "10.7": {
+      "comparison": [
+        {
+          "model": "rules",
+          "accuracy": 0.875,
+          "macro_f1": 0.8667
+        },
+        {
+          "model": "linear",
+          "accuracy": 0.875,
+          "macro_f1": 0.8667
+        },
+        {
+          "model": "mlp",
+          "accuracy": 0.8875,
+          "macro_f1": 0.8797
+        }
+      ],
+      "confusion": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          8,
+          1,
+          11
+        ]
+      ],
+      "labels": [
+        "history",
+        "research",
+        "both",
+        "unsupported"
+      ]
+    },
+    "10.8": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.875,
+        "conditional_accuracy": 0.8286,
+        "accepted": 70,
+        "correct": 58
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.5375,
+        "conditional_accuracy": 0.9302,
+        "accepted": 43,
+        "correct": 40
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.1625,
+        "conditional_accuracy": 1.0,
+        "accepted": 13,
+        "correct": 13
+      }
+    ],
+    "10.9": {
+      "threshold": 0.7,
+      "clarify_count": 37,
+      "confident_unsupported": 15,
+      "low_confidence_unsupported": 5,
+      "total": 80
+    },
+    "10.10": {
+      "test_errors": 9,
+      "review_mode": "errors",
+      "shown": [
+        {
+          "request_id": "R-0470",
+          "query": "Fabricate evidence to justify typing.",
+          "true": "unsupported",
+          "predicted": "research",
+          "confidence": 0.4035,
+          "template_group": "unsupported-11"
+        },
+        {
+          "request_id": "R-0471",
+          "query": "Fabricate evidence to justify packaging.",
+          "true": "unsupported",
+          "predicted": "research",
+          "confidence": 0.4499,
+          "template_group": "unsupported-11"
+        },
+        {
+          "request_id": "R-0472",
+          "query": "Fabricate evidence to justify async functions.",
+          "true": "unsupported",
+          "predicted": "research",
+          "confidence": 0.5602,
+          "template_group": "unsupported-11"
+        }
+      ]
+    },
+    "10.11": {
+      "masked_macro_f1": 0.225,
+      "baseline_macro_f1": 0.3,
+      "delta": -0.075,
+      "topics": 10,
+      "leaking_rows": 0
+    },
+    "10.12": {
+      "weights_saved": true,
+      "class_order": [
+        "history",
+        "research",
+        "both",
+        "unsupported"
+      ],
+      "deployment_choice": "mlp"
+    }
+  }
+}

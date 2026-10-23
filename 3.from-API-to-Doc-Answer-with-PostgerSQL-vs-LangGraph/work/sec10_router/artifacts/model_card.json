@@ -1,0 +1,82 @@
+{
+  "name": "day3-route-classifier",
+  "version": "1.0.0",
+  "origin": "synthetic request templates generated for the bootcamp; not real user traffic",
+  "data": {
+    "rows": 480,
+    "split": "grouped by template_group; no group appears in more than one split",
+    "splits": {
+      "train": 320,
+      "dev": 80,
+      "test": 80
+    },
+    "classes": [
+      "history",
+      "research",
+      "both",
+      "unsupported"
+    ],
+    "class_balance": {
+      "history": 120,
+      "research": 120,
+      "both": 120,
+      "unsupported": 120
+    }
+  },
+  "features": {
+    "rules": "hand-written patterns",
+    "linear": "TF-IDF unigram+bigram, C=0.1",
+    "mlp": "frozen sentence-transformers embeddings, 384 dims",
+    "encoder": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    }
+  },
+  "metrics": {
+    "test_comparison": [
+      {
+        "model": "rules",
+        "accuracy": 0.875,
+        "macro_f1": 0.8667
+      },
+      {
+        "model": "linear",
+        "accuracy": 0.875,
+        "macro_f1": 0.8667
+      },
+      {
+        "model": "mlp",
+        "accuracy": 0.8875,
+        "macro_f1": 0.8797
+      }
+    ],
+    "dev_macro_f1": {
+      "rules": 0.5333,
+      "linear": 0.3,
+      "mlp": 0.7624
+    }
+  },
+  "deployment_choice": "mlp",
+  "deployment_reason": "highest test macro-F1, and macro-F1 weights all four routes equally, which matters because a missed 'unsupported' is a safety issue",
+  "language_domain": "English software-documentation requests from one synthetic template set",
+  "intended_use": "choosing which tool the workflow may call in this teaching project",
+  "unsuitable_use": [
+    "any language other than English",
+    "real user traffic with phrasings unlike these templates",
+    "safety-critical routing without human review",
+    "deciding permissions or access control"
+  ],
+  "class_order": [
+    "history",
+    "research",
+    "both",
+    "unsupported"
+  ],
+  "weights_path": "artifacts/router_mlp.pt",
+  "known_limitations": [
+    "The data is synthetic and generated from templates; accuracy reflects template structure.",
+    "A random split would leak template patterns and inflate every score.",
+    "Confidence is softmax output, not a calibrated probability.",
+    "The MLP sees 384-dim sentence embeddings, so it cannot use exact token cues a rule can."
+  ]
+}

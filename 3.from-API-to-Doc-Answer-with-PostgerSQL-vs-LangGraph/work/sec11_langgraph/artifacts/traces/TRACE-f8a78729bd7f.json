@@ -1,0 +1,92 @@
+{
+  "request": {
+    "query": "What does PEP-8 say about indentation width?",
+    "user_id": "U-002",
+    "case_id": "C-001",
+    "mode": "rag"
+  },
+  "trace": [
+    {
+      "seq": 1,
+      "node": "authorize",
+      "detail": "allowed",
+      "correlation_id": "TRACE-f8a78729bd7f",
+      "status": 200,
+      "owner": "U-002"
+    },
+    {
+      "seq": 2,
+      "node": "route",
+      "detail": "research:source_cue",
+      "correlation_id": "TRACE-f8a78729bd7f"
+    },
+    {
+      "seq": 3,
+      "node": "research_tool",
+      "detail": "hits:5",
+      "correlation_id": "TRACE-f8a78729bd7f",
+      "chunks": [
+        "PEP-0008:vb80c7bf8:6025-6870:68e88481320278af",
+        "PEP-0008:vb80c7bf8:49849-50648:a79906bbb693f2b7",
+        "PEP-0008:vb80c7bf8:3858-4727:2db2e06912c21c56",
+        "PEP-0008:vb80c7bf8:0-953:09ae98921c849e6c",
+        "PEP-0008:vb80c7bf8:2317-3280:79ddeabcbb0d10b3"
+      ]
+    },
+    {
+      "seq": 4,
+      "node": "generate",
+      "detail": "claims:3",
+      "correlation_id": "TRACE-f8a78729bd7f",
+      "mode": "rag"
+    },
+    {
+      "seq": 5,
+      "node": "validate",
+      "detail": "accepted:3 rejected:0",
+      "correlation_id": "TRACE-f8a78729bd7f"
+    }
+  ],
+  "answer": {
+    "status": "answered",
+    "mode": "rag",
+    "claims": [
+      {
+        "text": "---------------\n\nSpaces are the preferred indentation method.",
+        "citation_ids": [
+          "C-PEP-0008:vb80c7bf8:6025-"
+        ],
+        "quote": "---------------\n\nSpaces are the preferred indentation method.",
+        "source": "PEP-0008"
+      },
+      {
+        "text": "`526` is accepted for Python 3.6, the variable annotation\n  syntax is the preferred syntax for stub files on all versions of Python\n  (see :pep:`484` for details).",
+        "citation_ids": [
+          "C-PEP-0008:vb80c7bf8:49849"
+        ],
+        "quote": "`526` is accepted for Python 3.6, the variable annotation\n  syntax is the preferred syntax for stub files on all versions of Python\n  (see :pep:`484` for details).",
+        "source": "PEP-0008"
+      },
+      {
+        "text": "This PEP takes no\nexplicit position",
+        "citation_ids": [
+          "C-PEP-0008:vb80c7bf8:3858-"
+        ],
+        "quote": "This PEP takes no\nexplicit position",
+        "source": "PEP-0008"
+      }
+    ],
+    "limitations": [],
+    "abstained": false
+  },
+  "validation": {
+    "accepted": 3,
+    "rejected": 0,
+    "reasons": [],
+    "structural_only": {
+      "accepted": 3,
+      "rejected": 0,
+      "reasons": []
+    }
+  }
+}
