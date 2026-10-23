@@ -1,0 +1,135 @@
+
+==============================================================================
+6.1  connect, PRAGMA foreign_keys=ON, SELECT 1, sqlite_version()
+==============================================================================
+connected: True
+PRAGMA foreign_keys = 1
+SELECT 1 -> 1
+sqlite_version(): 3.45.3
+connection timeout: 5.0 s
+missing-file handling: FileNotFoundError: database file not found: C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\does_not_exist.sqlite
+no synthetic success is reported when the file cannot be opened
+
+==============================================================================
+6.2  contract tables + idempotent seed of 20 users and 120 cases
+==============================================================================
+source users: 20 | source cases: 120
+seed run 1: users=20 cases=120
+seed run 2: users=20 cases=120
+rerun created no duplicates
+
+==============================================================================
+6.3  foreign key rejects an orphan case owner, connection still usable
+==============================================================================
+IntegrityError: FOREIGN KEY constraint failed
+orphan rejected: True
+cases before/after: 120 120
+connection usable afterwards: True
+
+==============================================================================
+6.4  transaction rollback: valid session then message with a bad session_id
+==============================================================================
+IntegrityError: FOREIGN KEY constraint failed
+sessions before/after: 0 0
+whole transaction rolled back: True
+
+==============================================================================
+6.5  parameterised query vs SQL injection string
+==============================================================================
+attack string: U-002' OR '1'='1
+parameterised matches: 0 (treated as a value)
+string-concatenated matches: 20 (treated as SQL)
+users total before/after: 20 20
+
+==============================================================================
+6.6  ownership logic: owner, other student, admin
+==============================================================================
+U-002  (student) owner of C-001   -> 200
+U-003  (student) other student    -> 403
+U-000  (admin  ) admin            -> 200
+
+==============================================================================
+6.7  owner_id index and EXPLAIN QUERY PLAN
+==============================================================================
+index on cases.owner_id: True
+  plan: SEARCH cases USING INDEX idx_cases_owner (owner_id=?)
+first plan line: SEARCH cases USING INDEX idx_cases_owner (owner_id=?)
+
+==============================================================================
+6.8  document metadata UPSERT twice + real 384-dim vectors stored in the file
+==============================================================================
+manifest documents: 24
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3194.42it/s]
+embedding model: sentence-transformers/all-MiniLM-L6-v2 | dim: 384 | max_seq_length: 256
+upsert run 1: documents=24 chunks=24
+upsert run 2: documents=24 chunks=24
+vector bytes per chunk: 1536 = 1536
+model metadata rows complete: True
+
+==============================================================================
+6.9  signed test tokens: signature, issuer, audience, expiry
+==============================================================================
+valid                ok=True  reason=ok              expected_ok=True
+wrong issuer         ok=False reason=bad_issuer      expected_ok=False
+wrong audience       ok=False reason=bad_audience    expected_ok=False
+expired              ok=False reason=expired         expected_ok=False
+tampered signature   ok=False reason=bad_signature   expected_ok=False
+invalid tokens rejected: 4
+naive decode would have accepted the expired token: U-002 (no signature/expiry check)
+
+==============================================================================
+6.10  login scope and cookie contract (config, no real secret)
+==============================================================================
+login scopes: ['openid', 'email', 'profile']
+cookie contract: {
+  "name": "__Host-day3_session",
+  "httponly": true,
+  "secure": true,
+  "samesite": "Lax",
+  "path": "/",
+  "max_age_seconds": 3600,
+  "domain": null
+}
+email report consent is a separate flag; the app keeps working when it is off
+config written to artifacts/auth_config.json
+
+==============================================================================
+6.11  recursive sanitisation of nested metadata
+==============================================================================
+events scanned: 4800 | events containing the test secret: 54
+nested sample before: {"event_type": "retrieval_completed", "metadata": {"api_key": "TEST-ONLY-SECRET", "prompt_version": "v1", "provider": {"name": "provider_a", "credentials": {"api_key": "TEST-ONLY-SECRET"}}, "history": [{"api_key": "TEST-ONLY-SECRET"}, {"note": "kept TEST-ONLY-SECRET inside text"}]}}
+nested sample after : {"event_type": "retrieval_completed", "metadata": {"prompt_version": "v1", "provider": {"name": "provider_a", "credentials": {}}, "history": [{}, {"note": "[REDACTED]"}]}}
+remaining test secret occurrences across all events: 0
+first 200 sanitised events written to artifacts/sanitised_events.jsonl
+
+==============================================================================
+6.12  check_day3_db.py on day3.sqlite, plus the three exit codes
+==============================================================================
+OK   sqlite_file_ok
+OK   integrity_ok
+OK   schema_users
+OK   schema_cases
+OK   schema_sessions
+OK   schema_messages
+OK   schema_documents
+OK   schema_chunks
+OK   seed_users
+OK   seed_cases
+OK   seed_documents
+OK   seed_chunks
+OK   no_orphan_cases
+OK   no_orphan_chunks
+OK   foreign_keys_declared
+OK   owner_index
+OK   idempotency_unique
+OK   documents_unique
+OK   embedding_dimensions
+OK   embedding_metadata_present
+OK   fk_rejects_orphan_case
+OK   transaction_rollback
+status: passed
+status: passed | exit code: 0 | checks: 22 | passed: 22
+Traceback (most recent call last):
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec06_sqlite\run_section6.py", line 392, in <module>
+    empty.execute("CREATE TABLE t (x INTEGER)")
+sqlite3.OperationalError: table t already exists

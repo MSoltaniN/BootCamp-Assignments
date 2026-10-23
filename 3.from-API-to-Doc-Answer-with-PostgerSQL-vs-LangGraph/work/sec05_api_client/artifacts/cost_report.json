@@ -1,0 +1,30 @@
+{
+  "pricing": {
+    "pricing_is_fictional": true,
+    "currency": "USD",
+    "unit": "per million tokens",
+    "provider_a": {
+      "input": 0.4,
+      "output": 1.2
+    },
+    "provider_b": {
+      "input": 0.1,
+      "output": 0.4
+    }
+  },
+  "totals": {
+    "provider_a": {
+      "requests": 1200,
+      "input_tokens": 923827,
+      "output_tokens": 229752,
+      "cost_usd": 0.645233
+    },
+    "provider_b": {
+      "requests": 1200,
+      "input_tokens": 937950,
+      "output_tokens": 235225,
+      "cost_usd": 0.187885
+    }
+  },
+  "grand_total_usd": 0.833118
+}

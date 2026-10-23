@@ -1,0 +1,12 @@
+{
+  "config_fingerprint": "d5af852843a2d410",
+  "corpus_version": "b80c7bf8d5a89fc47b732504a9e1219b79677531",
+  "documents": 24,
+  "policies": 4,
+  "chunks": 1286,
+  "chunk_tokens": 220,
+  "chunk_overlap": 40,
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "chunks_jsonl_sha256": "a668290d1f44f9e75b66263aeec93fdf65d5c57761419f9503022460ece83b3b"
+}

@@ -1,0 +1,227 @@
+{
+  "seed": 20261015,
+  "results": {
+    "5.1": {
+      "rows": 2400,
+      "unique_request_id": 2400,
+      "duplicate_ids": 0,
+      "error_rate": 0.5863
+    },
+    "5.2": {
+      "status_counts": {
+        "200": 993,
+        "400": 221,
+        "401": 204,
+        "403": 196,
+        "422": 187,
+        "429": 202,
+        "500": 202,
+        "503": 195
+      },
+      "retryable": 599,
+      "needs_request_fix": 808,
+      "rate_limited": 202,
+      "server": 397
+    },
+    "5.3": {
+      "rejected_inputs": 6,
+      "invalid_cases": 6
+    },
+    "5.4": {
+      "collected": 7,
+      "unique": 7,
+      "duplicates": 0,
+      "pages": 2,
+      "applied_limits": [
+        5,
+        5
+      ],
+      "ground_truth": 7
+    },
+    "5.5": [
+      {
+        "scenario": "missing identity",
+        "method": "GET",
+        "path": "/api/cases",
+        "status": 401
+      },
+      {
+        "scenario": "unknown identity",
+        "method": "GET",
+        "path": "/api/cases",
+        "status": 401
+      },
+      {
+        "scenario": "wrong owner",
+        "method": "GET",
+        "path": "/api/cases/C-002",
+        "status": 403
+      },
+      {
+        "scenario": "nonexistent case",
+        "method": "GET",
+        "path": "/api/cases/C-999",
+        "status": 404
+      },
+      {
+        "scenario": "invalid cursor",
+        "method": "GET",
+        "path": "/api/cases?cursor=C-999",
+        "status": 422
+      },
+      {
+        "scenario": "invalid limit",
+        "method": "GET",
+        "path": "/api/cases?limit=0",
+        "status": 422
+      }
+    ],
+    "5.6": {
+      "successful_scenarios": 3,
+      "attempts_401": 1,
+      "timeline": [
+        {
+          "scenario": "success",
+          "statuses": [
+            200
+          ],
+          "attempts": 1,
+          "ok": true,
+          "waits": [],
+          "reason": "success"
+        },
+        {
+          "scenario": "rate_limit",
+          "statuses": [
+            429,
+            200
+          ],
+          "attempts": 2,
+          "ok": true,
+          "waits": [
+            2
+          ],
+          "reason": "success"
+        },
+        {
+          "scenario": "transient",
+          "statuses": [
+            503,
+            503,
+            200
+          ],
+          "attempts": 3,
+          "ok": true,
+          "waits": [
+            0.5,
+            1.0
+          ],
+          "reason": "success"
+        },
+        {
+          "scenario": "unauthorized",
+          "statuses": [
+            401
+          ],
+          "attempts": 1,
+          "ok": false,
+          "waits": [],
+          "reason": "non_retryable_401"
+        },
+        {
+          "scenario": "invalid_input",
+          "statuses": [
+            422
+          ],
+          "attempts": 1,
+          "ok": false,
+          "waits": [],
+          "reason": "non_retryable_422"
+        },
+        {
+          "scenario": "exhausted",
+          "statuses": [
+            503,
+            503,
+            503,
+            503
+          ],
+          "attempts": 3,
+          "ok": false,
+          "waits": [
+            0.5,
+            1.0
+          ],
+          "reason": "attempts_exhausted"
+        }
+      ]
+    },
+    "5.7": {
+      "same_session_id": true,
+      "conflict_status": 409,
+      "sessions_for_key": 1,
+      "first_status": 201,
+      "second_status": 200
+    },
+    "5.8": {
+      "attempts": 3,
+      "backoff_sum": 1.5,
+      "deadline_reason": "deadline_would_be_exceeded",
+      "deadline_waits": [
+        0.5
+      ]
+    },
+    "5.9": {
+      "timeout_controlled": true,
+      "pre_expired_rejected": true,
+      "message": "read timeout after 0.3s (connect timeout was 0.5s); 3.00s of the total budget remained"
+    },
+    "5.10": {
+      "total_cost_usd": 0.833118,
+      "per_provider": {
+        "provider_a": 0.645233,
+        "provider_b": 0.187885
+      },
+      "currency": "USD",
+      "unit": "per million tokens"
+    },
+    "5.11": {
+      "configs_tested": 2,
+      "live_llm_calls": 0,
+      "models": [
+        "chat-a-large",
+        "chat-b-mini"
+      ]
+    },
+    "5.12": {
+      "checks": 2,
+      "statuses": [
+        401,
+        422
+      ],
+      "all_shaped": true,
+      "details": [
+        {
+          "case": "401 missing identity",
+          "status": 401,
+          "keys": [
+            "code",
+            "correlation_id",
+            "message"
+          ],
+          "shaped": true
+        },
+        {
+          "case": "422 top_k out of range",
+          "status": 422,
+          "keys": [
+            "code",
+            "correlation_id",
+            "message"
+          ],
+          "shaped": true
+        }
+      ]
+    }
+  }
+}

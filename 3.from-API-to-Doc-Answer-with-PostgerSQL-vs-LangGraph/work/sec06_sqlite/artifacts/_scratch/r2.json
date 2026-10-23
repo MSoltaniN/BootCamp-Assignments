@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "engine": "SQLite",
+  "status": "error",
+  "checks": [],
+  "credentials_included": false,
+  "message": "Not a SQLite database file."
+}

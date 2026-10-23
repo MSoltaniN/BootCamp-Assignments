@@ -1,0 +1,121 @@
+Matplotlib is building the font cache; this may take a moment.
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\pc\\.matplotlib\\fontlist-v390.json.matplotlib-lock'
+
+================================================================================
+5.1  audit request_logs.csv
+================================================================================
+rows: 2400
+unique request_id: 2400
+duplicate request_id: 0
+error rate (status>=400): 0.5863
+synthetic flag values: ['True']
+
+================================================================================
+5.2  status distribution and retry groups
+================================================================================
+status distribution: {200: 993, 400: 221, 401: 204, 403: 196, 422: 187, 429: 202, 500: 202, 503: 195}
+validation/auth (400,401,403,422): 808
+rate limit (429): 202
+server (500,503): 397
+retryable total (429+500+503): 599
+chart: artifacts/status_distribution.png
+
+================================================================================
+5.3  search request schema
+================================================================================
+valid           -> 200
+query_too_short -> 422
+query_too_long  -> 422
+top_k_zero      -> 422
+top_k_eleven    -> 422
+bad_method      -> 422
+extra_field     -> 422
+rejected inputs (out of 6 invalid): 6
+valid case -> 200
+
+================================================================================
+5.4  stable pagination, all cases of U-002
+================================================================================
+ground truth cases owned by U-002: 7 ['C-001', 'C-020', 'C-039', 'C-058', 'C-077', 'C-096', 'C-115']
+pages walked: 2
+cases collected: 7
+unique cases: 7
+duplicates: 0
+backend applied limits: [5, 5]
+
+================================================================================
+5.5  HTTP status for negative scenarios
+================================================================================
+missing identity   GET   /api/cases                 -> 401  code=unauthenticated
+unknown identity   GET   /api/cases                 -> 401  code=unauthenticated
+wrong owner        GET   /api/cases/C-002           -> 403  code=forbidden
+nonexistent case   GET   /api/cases/C-999           -> 404  code=not_found
+invalid cursor     GET   /api/cases?cursor=C-999    -> 422  code=validation_error
+invalid limit      GET   /api/cases?limit=0         -> 422  code=validation_error
+
+================================================================================
+5.6  six retry scenarios, max three attempts, no real sleep
+================================================================================
+success        statuses=[200] attempts=1 ok=True waits=[] reason=success
+rate_limit     statuses=[429, 200] attempts=2 ok=True waits=[2] reason=success
+transient      statuses=[503, 503, 200] attempts=3 ok=True waits=[0.5, 1.0] reason=success
+unauthorized   statuses=[401] attempts=1 ok=False waits=[] reason=non_retryable_401
+invalid_input  statuses=[422] attempts=1 ok=False waits=[] reason=non_retryable_422
+exhausted      statuses=[503, 503, 503, 503] attempts=3 ok=False waits=[0.5, 1.0] reason=attempts_exhausted
+successful scenarios: 3
+attempts for the 401 scenario: 1
+
+================================================================================
+5.7  idempotency: same key, same body vs different body
+================================================================================
+first : 201 {'session_id': 'S-16463ba5be', 'replayed': False, 'case_id': 'C-001'}
+second: 200 {'session_id': 'S-16463ba5be', 'replayed': True, 'case_id': 'C-001'}
+conflict: 409 {'error': {'code': 'conflict', 'message': 'This Idempotency-Key was already used with a different request body.', 'correlation_id': 'CORR-9099aa24d4b4'}}
+same session_id: True
+sessions stored for that key: 1
+
+================================================================================
+5.8  attempt cap and scheduled backoff sum
+================================================================================
+attempts used: 3
+planned waits: [0.5, 1.0] sum: 1.5
+naive sum of three backoffs: 1.5
+stopped reason: attempts_exhausted
+with inner deadline 1.2s -> waits: [0.5] reason: deadline_would_be_exceeded
+300 attempts x 5s cap would be 1500 seconds: a cap alone never bounds total time
+
+================================================================================
+5.9  ReadTimeout is surfaced, never turned into success
+================================================================================
+controlled error: read timeout after 0.3s (connect timeout was 0.5s); 3.00s of the total budget remained
+pre-expired budget: deadline of 0.0s already exhausted before the call
+connect vs read timeout are separate values; total budget is a third, independent limit
+
+================================================================================
+5.10  fictional cost accounting
+================================================================================
+provider_a: requests=1200 in=923827 out=229752 cost=$0.6452
+provider_b: requests=1200 in=937950 out=235225 cost=$0.1879
+total fictional cost USD: 0.833118
+unit: per million tokens | currency: USD | pricing_is_fictional: True
+example request REQ-00000 -> 0.000498 USD
+
+================================================================================
+5.11  one provider interface, two endpoints, MockTransport only
+================================================================================
+provider_a: url=https://api.provider-a.example/v1/chat/completions model=chat-a-large tokens=12/7 text='canned answer'
+provider_b: url=https://api.provider-b.example/v1/chat/completions model=chat-b-mini tokens=12/7 text='canned answer'
+configurations tested: 2
+request contract identical except url/model: True | models: ['chat-a-large', 'chat-b-mini']
+real LLM calls: 0
+
+================================================================================
+5.12  fixed error envelope for 401 and 422
+================================================================================
+401 missing identity     -> 401 keys=['code', 'correlation_id', 'message'] shaped=True
+    {'code': 'unauthenticated', 'message': 'Missing X-User-ID header.', 'correlation_id': 'CORR-deb8c9374e91'}
+422 top_k out of range   -> 422 keys=['code', 'correlation_id', 'message'] shaped=True
+    {'code': 'validation_error', 'message': 'top_k: Input should be less than or equal to 10', 'correlation_id': 'CORR-981f7b87e1a7'}
+envelope checks: 2 | all shaped: True | statuses: [401, 422]
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec05_api_client\artifacts

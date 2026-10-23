@@ -1,0 +1,97 @@
+{
+  "seed": 20261015,
+  "database": "day3.sqlite",
+  "results": {
+    "6.1": {
+      "connected": true,
+      "sqlite_version": "3.45.3",
+      "missing_file": "FileNotFoundError: database file not found: C:\\Users\\pc\\source\\repos\\AI\\BootCamp Assignments\\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\\does_not_exist.sqlite",
+      "timeout_seconds": 5.0
+    },
+    "6.2": {
+      "users": 20,
+      "cases": 120,
+      "idempotent": true
+    },
+    "6.3": {
+      "rejected": true,
+      "cases_before": 120,
+      "cases_after": 120,
+      "connection_usable": true
+    },
+    "6.4": {
+      "rolled_back": true,
+      "sessions_before": 0,
+      "sessions_after": 0,
+      "atomic": true
+    },
+    "6.5": {
+      "attack_matches_parameterised": 0,
+      "attack_matches_concatenated": 20,
+      "users_unchanged": true
+    },
+    "6.6": [
+      {
+        "user_id": "U-002",
+        "role": "student",
+        "label": "owner of C-001",
+        "status": 200
+      },
+      {
+        "user_id": "U-003",
+        "role": "student",
+        "label": "other student",
+        "status": 403
+      },
+      {
+        "user_id": "U-000",
+        "role": "admin",
+        "label": "admin",
+        "status": 200
+      }
+    ],
+    "6.7": {
+      "owner_index": true,
+      "first_plan_line": "SEARCH cases USING INDEX idx_cases_owner (owner_id=?)",
+      "plan": [
+        "SEARCH cases USING INDEX idx_cases_owner (owner_id=?)"
+      ]
+    },
+    "6.8": {
+      "documents_after_two_upserts": 24,
+      "chunks": 24,
+      "vectors_in_file": true,
+      "vector_bytes": 4,
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    "6.9": {
+      "invalid_rejected": 4,
+      "cases": 4,
+      "valid_accepted": true
+    },
+    "6.10": {
+      "scopes": [
+        "openid",
+        "email",
+        "profile"
+      ],
+      "secure_and_httponly": true,
+      "same_site": "Lax"
+    },
+    "6.11": {
+      "events_scanned": 4800,
+      "events_with_secret": 54,
+      "remaining_after": 0,
+      "nested_removed": true
+    },
+    "6.12": {
+      "exit_code": 1,
+      "status": "failed",
+      "checks_run": 22,
+      "checks_passed": 21,
+      "error_exit": 2,
+      "failed_exit": 1
+    }
+  }
+}

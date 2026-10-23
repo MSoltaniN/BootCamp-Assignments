@@ -1,0 +1,117 @@
+{
+  "seed": 20261015,
+  "results": {
+    "7.1": {
+      "documents": 24,
+      "valid_hashes": 24,
+      "corpus_version": "b80c7bf8d5a89fc47b732504a9e1219b79677531"
+    },
+    "7.2": {
+      "pdfs": 2,
+      "flagged": 1,
+      "detail": [
+        {
+          "path": "evidencelab_policy.pdf",
+          "pages": 2,
+          "chars": 802,
+          "chars_per_page": [
+            413,
+            389
+          ],
+          "needs_ocr": false
+        },
+        {
+          "path": "scan_only_fixture.pdf",
+          "pages": 1,
+          "chars": 0,
+          "chars_per_page": [
+            0
+          ],
+          "needs_ocr": true
+        }
+      ]
+    },
+    "7.3": {
+      "records": 24,
+      "sample_section": "Introduction",
+      "sample_doc": "PEP-0008"
+    },
+    "7.4": {
+      "chunks": 1282,
+      "max_tokens": 220,
+      "min_tokens": 43,
+      "mean_tokens": 218.4,
+      "max_chars": 1266,
+      "above_cap": 0
+    },
+    "7.5": {
+      "provenance_errors": 0,
+      "route": {
+        "chunk_id": "PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712",
+        "doc_id": "PEP-0008",
+        "doc_title": "Style Guide for Python Code",
+        "version": "b80c7bf8d5a89fc47b732504a9e1219b79677531",
+        "source_url": "https://peps.python.org/pep-0008/",
+        "local_path": "raw/pep-0008.rst",
+        "section": "Introduction",
+        "char_range": [
+          719,
+          1639
+        ],
+        "content_hash": "3342aeee32c0b68e8be037c5a58ac9d5a9e3194952b301c828cd5fa8016b6e9e",
+        "quote": "style guide evolves over time as additional conventions are identified and past conventions are rendered obsolete by changes in the language itself.  Many proje"
+      }
+    },
+    "7.6": {
+      "stable": true,
+      "ids": 1282,
+      "sample_id": "PEP-0008:vb80c7bf8:0-953:09ae98921c849e6c"
+    },
+    "7.7": {
+      "shared_ids": 0,
+      "source_unchanged": true,
+      "old_version": "b80c7bf8d5a89fc47b732504a9e1219b79677531",
+      "new_version": "b80c7bf8-draft2"
+    },
+    "7.8": {
+      "removed": 3,
+      "before": 1285,
+      "after": 1282
+    },
+    "7.9": {
+      "sizes": {
+        "110": {
+          "chunks": 3279,
+          "truncation_risk": 0,
+          "mean_tokens": 109.8
+        },
+        "220": {
+          "chunks": 1282,
+          "truncation_risk": 0,
+          "mean_tokens": 218.4
+        },
+        "440": {
+          "chunks": 583,
+          "truncation_risk": 572,
+          "mean_tokens": 432.4
+        }
+      },
+      "cap": 256
+    },
+    "7.10": {
+      "policy_chunks": 4,
+      "internal_policies": 2,
+      "policies": 4
+    },
+    "7.11": {
+      "chunks_stored": 1286,
+      "documents": 28,
+      "idempotent": true
+    },
+    "7.12": {
+      "records": 1286,
+      "short_hash": "a668290d1f44",
+      "fingerprint": "d5af852843a2d410"
+    }
+  }
+}

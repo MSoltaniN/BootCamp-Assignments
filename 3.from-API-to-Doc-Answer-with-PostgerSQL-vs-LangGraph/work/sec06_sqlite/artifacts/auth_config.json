@@ -1,0 +1,27 @@
+{
+  "login_scopes": [
+    "openid",
+    "email",
+    "profile"
+  ],
+  "cookie": {
+    "name": "__Host-day3_session",
+    "httponly": true,
+    "secure": true,
+    "samesite": "Lax",
+    "path": "/",
+    "max_age_seconds": 3600,
+    "domain": null
+  },
+  "email_report": {
+    "requires_explicit_consent": true,
+    "scope": "https://www.googleapis.com/auth/gmail.send",
+    "disabling_keeps_app_working": true
+  },
+  "secrets_from_environment": [
+    "SESSION_SECRET",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET"
+  ],
+  "client_secret_in_artifact": false
+}

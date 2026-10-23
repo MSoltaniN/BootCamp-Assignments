@@ -1,0 +1,90 @@
+{
+  "5.6": {
+    "successful_scenarios": 3,
+    "attempts_401": 1,
+    "timeline": [
+      {
+        "scenario": "success",
+        "statuses": [
+          200
+        ],
+        "attempts": 1,
+        "ok": true,
+        "waits": [],
+        "reason": "success"
+      },
+      {
+        "scenario": "rate_limit",
+        "statuses": [
+          429,
+          200
+        ],
+        "attempts": 2,
+        "ok": true,
+        "waits": [
+          2
+        ],
+        "reason": "success"
+      },
+      {
+        "scenario": "transient",
+        "statuses": [
+          503,
+          503,
+          200
+        ],
+        "attempts": 3,
+        "ok": true,
+        "waits": [
+          0.5,
+          1.0
+        ],
+        "reason": "success"
+      },
+      {
+        "scenario": "unauthorized",
+        "statuses": [
+          401
+        ],
+        "attempts": 1,
+        "ok": false,
+        "waits": [],
+        "reason": "non_retryable_401"
+      },
+      {
+        "scenario": "invalid_input",
+        "statuses": [
+          422
+        ],
+        "attempts": 1,
+        "ok": false,
+        "waits": [],
+        "reason": "non_retryable_422"
+      },
+      {
+        "scenario": "exhausted",
+        "statuses": [
+          503,
+          503,
+          503,
+          503
+        ],
+        "attempts": 3,
+        "ok": false,
+        "waits": [
+          0.5,
+          1.0
+        ],
+        "reason": "attempts_exhausted"
+      }
+    ]
+  },
+  "5.8": {
+    "attempts": 3,
+    "backoff_sum": 1.5,
+    "deadline_reason": "deadline_would_be_exceeded",
+    "deadline_waits": [
+      0.5
+    ]
+  }
+}

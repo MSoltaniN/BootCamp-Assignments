@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "engine": "SQLite",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "sqlite_file_ok",
+      "passed": true
+    },
+    {
+      "name": "integrity_ok",
+      "passed": true
+    },
+    {
+      "name": "schema_users",
+      "passed": false,
+      "missing_columns": [
+        "role",
+        "tenant",
+        "user_id"
+      ]
+    },
+    {
+      "name": "schema_cases",
+      "passed": false,
+      "missing_columns": [
+        "case_id",
+        "owner_id",
+        "summary",
+        "topic"
+      ]
+    },
+    {
+      "name": "schema_sessions",
+      "passed": false,
+      "missing_columns": [
+        "case_id",
+        "idempotency_key",
+        "owner_id",
+        "session_id"
+      ]
+    },
+    {
+      "name": "schema_messages",
+      "passed": false,
+      "missing_columns": [
+        "content",
+        "message_id",
+        "session_id"
+      ]
+    },
+    {
+      "name": "schema_documents",
+      "passed": false,
+      "missing_columns": [
+        "content_hash",
+        "doc_id",
+        "version"
+      ]
+    },
+    {
+      "name": "schema_chunks",
+      "passed": false,
+      "missing_columns": [
+        "chunk_id",
+        "content",
+        "doc_id",
+        "embedding",
+        "model_id",
+        "model_revision"
+      ]
+    }
+  ],
+  "credentials_included": false,
+  "sqlite_version": "3.45.3"
+}

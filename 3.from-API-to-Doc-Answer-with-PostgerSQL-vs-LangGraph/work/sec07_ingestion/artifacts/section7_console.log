@@ -1,0 +1,113 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1673.12it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (12682 > 256). Running this sequence through the model will result in indexing errors
+tokenizer: sentence-transformers/all-MiniLM-L6-v2 | max_seq_length: 256
+
+==============================================================================
+7.1  manifest vs raw files, SHA-256 of every document
+==============================================================================
+manifest documents: 24
+valid sha256: 24 of 24
+mismatched: none
+corpus version: b80c7bf8d5a89fc47b732504a9e1219b79677531
+
+==============================================================================
+7.2  PDF fixtures page by page
+==============================================================================
+evidencelab_policy.pdf     pages=2 chars=802 per_page=[413, 389] needs_Ocr=False
+scan_only_fixture.pdf      pages=1 chars=0 per_page=[0] needs_Ocr=True
+PDFs: 2 | flagged for OCR: 1
+flagged documents are excluded from the index rather than silently indexed empty
+
+==============================================================================
+7.3  title, id, version, RST sections, and the route back to the source
+==============================================================================
+metadata records: 24
+sample: {"doc_id": "PEP-0008", "title": "Style Guide for Python Code", "path": "raw/pep-0008.rst", "source_url": "https://peps.python.org/pep-0008/", "version": "b80c7bf8d5a89fc47b732504a9e1219b79677531", "section": "Introduction"}
+records missing title or source_url: none
+
+==============================================================================
+7.4  chunking with the embedding tokenizer: 220 tokens, 40 overlap
+==============================================================================
+chunks: 1282
+token length: min 43 max 220 mean 218.4
+max content chars: 1266
+chunks above the tokenizer cap: 0
+
+==============================================================================
+7.5  rebuild every chunk from start/end and verify hashes + citation route
+==============================================================================
+chunks checked: 1282
+provenance errors: 0
+example citation route:
+{
+  "chunk_id": "PEP-0008:vb80c7bf8:719-1639:a7a6a701bfbc6712",
+  "doc_id": "PEP-0008",
+  "doc_title": "Style Guide for Python Code",
+  "version": "b80c7bf8d5a89fc47b732504a9e1219b79677531",
+  "source_url": "https://peps.python.org/pep-0008/",
+  "local_path": "raw/pep-0008.rst",
+  "section": "Introduction",
+  "char_range": [
+    719,
+    1639
+  ],
+  "content_hash": "3342aeee32c0b68e8be037c5a58ac9d5a9e3194952b301c828cd5fa8016b6e9e",
+  "quote": "style guide evolves over time as additional conventions are identified and past conventions are rendered obsolete by changes in the language itself.  Many proje"
+}
+
+==============================================================================
+7.6  rerun chunking, chunk_id stability
+==============================================================================
+first run ids: 1282 | second run ids: 1282
+identical order and values: True
+sample id: PEP-0008:vb80c7bf8:0-953:09ae98921c849e6c
+id depends on doc + version + span + content hash
+
+==============================================================================
+7.7  a new version must not share chunk ids with the old one
+==============================================================================
+document: PEP-0008 | old chunks: 71 | new chunks: 71
+shared chunk ids between the two versions: 0
+original file untouched (hash still matches manifest): True
+
+==============================================================================
+7.8  duplicate three chunks and dedupe by chunk identity
+==============================================================================
+before: 1285 | after: 1282 | removed: 3
+exact duplicates are removed; same text under another version or access rule is kept
+
+==============================================================================
+7.9  compare 110 / 220 / 440 token chunk sizes
+==============================================================================
+size 110: chunks=3279 mean_tokens= 109.8 chunks over the 256-token cap=0
+size 220: chunks=1282 mean_tokens= 218.4 chunks over the 256-token cap=0
+size 440: chunks= 583 mean_tokens= 432.4 chunks over the 256-token cap=572
+a 440-token chunk is cut to 256 tokens by the encoder, silently losing the tail
+
+==============================================================================
+7.10  four synthetic policies with access and tenant metadata
+==============================================================================
+policies: 4 | internal: 2
+  LAB-PUBLIC   access=public   tenant=all  version=2026-01 chunks=1
+  LAB-T0       access=internal tenant=T-0  version=2026-01 chunks=1
+  LAB-T1       access=internal tenant=T-1  version=2026-01 chunks=1
+  LAB-OLD      access=public   tenant=all  version=2025-01 chunks=1
+filter columns available before top-k: doc access, tenant, archived flag
+LAB-OLD is kept as archived rather than deleted
+
+==============================================================================
+7.11  store chunk text and metadata in day3.sqlite, rerun without duplicates
+==============================================================================
+stale chunks removed: 24
+upsert run 1: chunks=1286
+upsert run 2: chunks=1286
+documents in file: 28
+
+==============================================================================
+7.12  reproducible artifact: chunks.jsonl + fingerprint
+==============================================================================
+artifact records: 1286
+chunks.jsonl sha256 (short): a668290d1f44
+config fingerprint: d5af852843a2d410
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec07_ingestion\artifacts

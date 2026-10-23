@@ -1,0 +1,24 @@
+{
+  "5.1": {
+    "rows": 2400,
+    "unique_request_id": 2400,
+    "duplicate_ids": 0,
+    "error_rate": 0.5863
+  },
+  "5.2": {
+    "status_counts": {
+      "200": 993,
+      "400": 221,
+      "401": 204,
+      "403": 196,
+      "422": 187,
+      "429": 202,
+      "500": 202,
+      "503": 195
+    },
+    "retryable": 599,
+    "needs_request_fix": 808,
+    "rate_limited": 202,
+    "server": 397
+  }
+}
