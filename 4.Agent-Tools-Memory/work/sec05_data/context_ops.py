@@ -441,6 +441,30 @@ def build_profile(employee_id: str) -> dict:
     }
 
 
+def profile_payload(employee_id: str) -> dict:
+    """The exact five-key body the trusted grader accepts.
+
+    `build_profile` carries extra convenience keys for the report; the graded
+    payload must contain only `employee_id`, `department`, `claims`,
+    `limitations`, `decision`, and each claim must quote the source verbatim.
+    """
+    built = build_profile(employee_id)
+    return {
+        "employee_id": built["employee_id"],
+        "department": built["department"],
+        "claims": [
+            {
+                "skill": claim["skill"],
+                "evidence_id": claim["evidence_id"],
+                "quote": claim["quote"],
+            }
+            for claim in built["claims"]
+        ],
+        "limitations": list(built["limitations"]),
+        "decision": DECISION_SCOPE,
+    }
+
+
 def validate_profile(profile: dict) -> dict:
     """Re-derive every claim from the dataset. Any drift is a rejection."""
     person = data.people_by_id().get(profile.get("employee_id"))

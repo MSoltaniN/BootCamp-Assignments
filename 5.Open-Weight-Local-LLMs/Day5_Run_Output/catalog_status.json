@@ -1,0 +1,135 @@
+{
+  "license": {
+    "policy_id": "exercise-policy-v1",
+    "statuses": {
+      "M01": "allow",
+      "M02": "allow",
+      "M03": "allow",
+      "M04": "allow",
+      "M05": "review",
+      "M06": "allow",
+      "M07": "review",
+      "M08": "allow",
+      "M09": "deny",
+      "M10": "review",
+      "M11": "allow",
+      "M12": "allow"
+    },
+    "counts": {
+      "allow": 8,
+      "review": 3,
+      "deny": 1
+    }
+  },
+  "names": {
+    "names_with_a": [
+      "Orchid-30B-A3B-Instruct",
+      "Orchid-120B-A5B-Thinking",
+      "Orchid-35B-A3B-Unreviewed"
+    ],
+    "count_with_a": 3,
+    "m04_active_over_total": 0.1,
+    "kind_by_id": {
+      "M01": "Instruct",
+      "M02": "Base",
+      "M03": "Instruct",
+      "M04": "Instruct",
+      "M05": "Thinking",
+      "M06": "other",
+      "M07": "Instruct",
+      "M08": "other",
+      "M09": "other",
+      "M10": "other",
+      "M11": "other",
+      "M12": "other"
+    }
+  },
+  "candidates": {
+    "candidates": [
+      "M01",
+      "M03",
+      "M04",
+      "M06"
+    ],
+    "count": 4
+  },
+  "artifacts": {
+    "records": [
+      {
+        "artifact": "safe_model.safetensors",
+        "format": "safetensors",
+        "trusted": true,
+        "expected_sha256": "0712622d4523793a95585faf59c8f9010d8a419cd31a01f429b1e2b619c387f9",
+        "actual_sha256": "0712622d4523793a95585faf59c8f9010d8a419cd31a01f429b1e2b619c387f9",
+        "hash_match": true,
+        "admitted": true
+      },
+      {
+        "artifact": "untrusted_model.bin",
+        "format": "pickle",
+        "trusted": false,
+        "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "actual_sha256": "a1bf735102f39506845c0018dd8b6490a4aa01f31d9942831032cd6ee9acd5ed",
+        "hash_match": false,
+        "admitted": false
+      }
+    ],
+    "accepted": [
+      "safe_model.safetensors"
+    ],
+    "hash_failures": [
+      "untrusted_model.bin"
+    ]
+  },
+  "resources": {
+    "model_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "runtime_release": "b11696",
+    "gguf_checked": [
+      {
+        "path": "Day5_Resources/models/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "present": true,
+        "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "match": true
+      },
+      {
+        "path": "Day5_Resources/models/qwen2.5-0.5b-instruct-q8_0.gguf",
+        "present": true,
+        "sha256": "ca59ca7f13d0e15a8cfa77bd17e65d24f6844b554a7b6c12e07a5f89ff76844e",
+        "match": true
+      }
+    ],
+    "gguf_matches": 2,
+    "expected_matches": 2
+  },
+  "datasets": {
+    "files": 18,
+    "total_bytes": 233218,
+    "matches": 18,
+    "all_match": true,
+    "failures": []
+  },
+  "ratio": {
+    "ratios": {
+      "M01": 1.0,
+      "M02": 1.0,
+      "M03": 1.0,
+      "M04": 0.1,
+      "M05": 0.041666666666666664,
+      "M06": 1.0,
+      "M07": 1.0,
+      "M08": 1.0,
+      "M09": 1.0,
+      "M10": 0.08571428571428572,
+      "M11": 1.0,
+      "M12": 1.0
+    },
+    "min_ratio": 0.041666666666666664,
+    "min_id": "M05",
+    "chart": "sections\\section05_catalog_audit\\out\\active_ratio.png"
+  },
+  "card": {
+    "keys": 14,
+    "card_path": "Day5_Run_Output/model_card_M04.json",
+    "evaluation_required": true
+  }
+}

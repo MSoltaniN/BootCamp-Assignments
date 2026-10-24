@@ -1,0 +1,46 @@
+{
+  "owner": "bootcamp-day4-student",
+  "goal": "produce a documented skills inventory from verified evidence",
+  "scope": {
+    "tenant": "org-a",
+    "departments": [
+      "finance",
+      "marketing",
+      "sales"
+    ]
+  },
+  "tools": [
+    "get_employee",
+    "get_department_context",
+    "get_evidence"
+  ],
+  "autonomy_level": "L4 Approver",
+  "data_limits": {
+    "fields_excluded": [
+      "email",
+      "resume_text"
+    ],
+    "evidence_rule": "verified only",
+    "decision_scope": "skills_inventory_only"
+  },
+  "budget": {
+    "max_steps": 5,
+    "max_cost": 10.0,
+    "deadline_s": 5.0
+  },
+  "escalation_criteria": [
+    "missing verified evidence for a required skill",
+    "policy violation risk",
+    "low confidence"
+  ],
+  "kill_switch": {
+    "flag": "DAY4_KILL_SWITCH",
+    "blocks_all_tools": true
+  },
+  "eval_metrics": [
+    "success_rate",
+    "violation_rate",
+    "p95_ms",
+    "cost_per_success"
+  ]
+}

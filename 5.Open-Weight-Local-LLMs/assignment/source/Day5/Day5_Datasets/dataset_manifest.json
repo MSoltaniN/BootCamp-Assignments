@@ -1,0 +1,96 @@
+{
+  "seed": 20261017,
+  "synthetic": true,
+  "files": [
+    {
+      "path": "adapter_lab.npz",
+      "bytes": 66357,
+      "sha256": "bbfff42798d6063edaa6da61a61eeeeb4b525aa1e28f174eb516dddd90907f57"
+    },
+    {
+      "path": "artifact_records.jsonl",
+      "bytes": 331,
+      "sha256": "e210329759bcd4986c0cbac753635fb884321e1773309b43122d6b6f5fabf179"
+    },
+    {
+      "path": "artifact_samples/safe_model.safetensors",
+      "bytes": 40,
+      "sha256": "0712622d4523793a95585faf59c8f9010d8a419cd31a01f429b1e2b619c387f9"
+    },
+    {
+      "path": "artifact_samples/untrusted_model.bin",
+      "bytes": 30,
+      "sha256": "a1bf735102f39506845c0018dd8b6490a4aa01f31d9942831032cd6ee9acd5ed"
+    },
+    {
+      "path": "cost_scenarios.json",
+      "bytes": 457,
+      "sha256": "9c0044503d582a7eca18c03aa8878c9cf3b3a00e255b9e04a11f31e47c98c171"
+    },
+    {
+      "path": "deployment_cases.jsonl",
+      "bytes": 699,
+      "sha256": "7f6aff671654a5f8094893d6756d177532bb52f25ec24f71a14b86ac7fe5e4e6"
+    },
+    {
+      "path": "hardware_inventory.csv",
+      "bytes": 387,
+      "sha256": "17fdc4457f63d24c1d9dc8c47dd4c80d9e949fbc112f427bd746f6f91007cbbc"
+    },
+    {
+      "path": "hr_cases.jsonl",
+      "bytes": 552,
+      "sha256": "34cc0c6b13a6a260cdadbe168eb3e0381601951e2c015dd4a6532ba9c104b85e"
+    },
+    {
+      "path": "hr_policies.jsonl",
+      "bytes": 330,
+      "sha256": "0b0259fd6b35c247daf3c4b180c72ace585934ca82aedd8347ccfcb06ffdce36"
+    },
+    {
+      "path": "license_policy.json",
+      "bytes": 328,
+      "sha256": "bad5bf5ab5db5c28696f330f4a7e22da414b8823ff7305224d8421b7bb7eb611"
+    },
+    {
+      "path": "local_eval_dev.jsonl",
+      "bytes": 2748,
+      "sha256": "d9e060658d87501a27102f92c170f7e69ea3f98e2acf5aae672fd4c59dfec083"
+    },
+    {
+      "path": "local_eval_test.jsonl",
+      "bytes": 2532,
+      "sha256": "c35f6aa4defc3ec4faef93dbcedb7a9e72ae7ff920e93c97d93d21d27880a351"
+    },
+    {
+      "path": "model_catalog_raw.csv",
+      "bytes": 1430,
+      "sha256": "9ef854c738cd482bd30136634bee45b70e68adff62799bf1855c2e47aa566d61"
+    },
+    {
+      "path": "quantization_lab.npz",
+      "bytes": 120516,
+      "sha256": "53f6250cde1a2baa1179fa18f3a2fc8affe972c4a4f5d3b4a1688e95e4e04a6a"
+    },
+    {
+      "path": "serving_requests.csv",
+      "bytes": 27663,
+      "sha256": "b6089fb67ad76b60a5c087a9a4c034b0a6c9554471bc6cd6e535b2735eb5b5ca"
+    },
+    {
+      "path": "sft_records_raw.jsonl",
+      "bytes": 8064,
+      "sha256": "0291a8fb8c72c013797a5083d720aa3596125e26cf77995d8f3db92e24b5907e"
+    },
+    {
+      "path": "tokenizer_probes.jsonl",
+      "bytes": 548,
+      "sha256": "f372550c40c1ee3b91a7e15a1802a28a3b2ba1bc9611de99d55e5cfa5bde851f"
+    },
+    {
+      "path": "workloads.csv",
+      "bytes": 206,
+      "sha256": "47df0e6bc879909b04932c438c6f2b8a11335613b367fee4f14189e461e62e9a"
+    }
+  ]
+}

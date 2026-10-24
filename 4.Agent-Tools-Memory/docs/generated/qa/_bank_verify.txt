@@ -1,0 +1,30 @@
+== BANK VERIFICATION ==
+
+questions        : 144
+answered         : 144
+total points     : 100
+empty fields     : 0
+invalid choices  : 0
+invalid numbers  : 0
+
+== POINTS BY SECTION ==
+  section  1:  12 q      6 pts
+  section  2:  12 q      6 pts
+  section  3:  12 q      6 pts
+  section  4:  12 q      6 pts
+  section  5:  12 q      8 pts
+  section  6:  12 q      8 pts
+  section  7:  12 q     10 pts
+  section  8:  12 q     10 pts
+  section  9:  12 q     10 pts
+  section 10:  12 q     10 pts
+  section 11:  12 q     10 pts
+  section 12:  12 q     10 pts
+
+== ANSWER TYPES ==
+  choice    : 120
+  number    : 132
+  short     : 64
+  textarea  : 104
+
+RESULT: PASS

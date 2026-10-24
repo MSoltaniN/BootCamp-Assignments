@@ -1,0 +1,12 @@
+# 6.10: evidence for every reported field.
+S6 = S["section6"]
+show('S6["fingerprint"]', S6["fingerprint"])
+
+--- OUTPUT ---
+S6["fingerprint"]:
+{
+  "sha256": "bd250f5368bb992197b84393f9a1db2e76edd1a651f673055eae86044ba4a20b",
+  "hex_length": 64,
+  "tool_count": 3,
+  "changed_on_add": true
+}

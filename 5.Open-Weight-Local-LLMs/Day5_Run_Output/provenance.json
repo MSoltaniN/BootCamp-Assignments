@@ -1,0 +1,24 @@
+{
+  "assignment": "day5",
+  "section": 5,
+  "seed": 20261017,
+  "python_version": "3.12.6",
+  "python_implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "catalog_source": "Day5_Datasets/model_catalog_raw.csv",
+  "catalog_source_sha256": "9ef854c738cd482bd30136634bee45b70e68adff62799bf1855c2e47aa566d61",
+  "catalog_clean": "Day5_Run_Output/model_catalog_clean.csv",
+  "catalog_clean_sha256": "56bdb6f157c07ee032b10c54110f951a820991cb7d36743915dba7d928129f64",
+  "catalog_clean_rows": 12,
+  "catalog_raw_sorted_sha256": "2783db2ef4f2ba972aef08341b9995df5bcf06075876ef625a42d123a40c6991",
+  "model_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+  "engine_release": "b11696",
+  "datasets_manifest_sha256": "e3dc15d681b7e012f67566152dcdfb0c53b56f16dbe9aed8e04270637d984d78",
+  "all_catalog_models_executed": false,
+  "executed_models": [
+    "qwen2.5-0.5b-instruct-q4_k_m",
+    "qwen2.5-0.5b-instruct-q8_0"
+  ],
+  "execution_scope_note": "Only the two pinned Qwen2.5-0.5B-Instruct GGUF files were executed. The 12 catalog entries are synthetic fixtures and none of them was run.",
+  "planned_real_version": "the real deployment candidate must be re-pinned to an upstream commit"
+}

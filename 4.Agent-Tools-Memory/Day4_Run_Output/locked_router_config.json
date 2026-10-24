@@ -1,0 +1,25 @@
+{
+  "model": "TfidfVectorizer + LogisticRegression",
+  "ngram_range": [
+    1,
+    2
+  ],
+  "sublinear_tf": true,
+  "C": 0.1,
+  "max_iter": 2000,
+  "random_state": 0,
+  "dev_macro_f1": 0.911683,
+  "train_size": 200,
+  "dev_size": 80,
+  "allowed_routes": [
+    "profile",
+    "context",
+    "memory",
+    "unsupported",
+    "clarify"
+  ],
+  "selection_metric": "macro_f1 on dev",
+  "tie_break": "smaller C",
+  "touched_test": false,
+  "config_hash": "0b80909d4eba71e91c1ecdbd3f5fafddddcd4ac85a29fee40bcfe8ac24427a1c"
+}

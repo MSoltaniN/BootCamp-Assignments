@@ -1,0 +1,16 @@
+CELL 2 markdown
+### زیرسؤال 1.1
+
+<div dir="rtl">مسیر استخراج، اعتبارسنجی و گزارش از پیش مشخص است و قانون امتیازدهی قطعی است. نقطهٔ شروع مناسب چیست؟</div>
+
+---
+CELL 3 code
+# Write your implementation here.
+
+---
+CELL 4 markdown
+<div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+
+---
+BANK Q KEYS ['id', 'section', 'points', 'type', 'prompt', 'fields', 'rationale', 'evidence', 'status']
+PROMPT 'اطلاعات تأییدشدهٔ مهارت فرد در چند نشست استفاده می\u200cشود. نوع حافظه چیست؟'

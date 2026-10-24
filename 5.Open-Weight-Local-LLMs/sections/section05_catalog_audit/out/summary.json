@@ -1,0 +1,36 @@
+{
+  "5.1_raw_rows": 13,
+  "5.1_unique_models": 12,
+  "5.1_full_duplicate": 1,
+  "5.2_clean_rows": 12,
+  "5.2_ids_unique": true,
+  "5.3_allow": 8,
+  "5.3_review": 3,
+  "5.3_deny": 1,
+  "5.4_names_with_a": 3,
+  "5.4_m04_active_ratio": 0.1,
+  "5.5_candidates": [
+    "M01",
+    "M03",
+    "M04",
+    "M06"
+  ],
+  "5.5_candidate_count": 4,
+  "5.6_accepted": [
+    "safe_model.safetensors"
+  ],
+  "5.6_hash_failures": [
+    "untrusted_model.bin"
+  ],
+  "5.7_model_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+  "5.7_engine_release": "b11696",
+  "5.7_gguf_matches": "2/2",
+  "5.8_files": 18,
+  "5.8_total_bytes": 233218,
+  "5.8_all_match": true,
+  "5.9_min_ratio": 0.041667,
+  "5.9_min_id": "M05",
+  "5.10_card_keys": 14,
+  "5.11_stage2_criteria": 5,
+  "5.12_all_models_executed": false
+}

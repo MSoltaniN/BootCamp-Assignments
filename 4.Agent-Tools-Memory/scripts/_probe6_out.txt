@@ -1,0 +1,7 @@
+published: {"properties": {"employee_id": {"title": "Employee Id", "type": "string"}}, "required": ["employee_id"], "title": "get_employeeArguments", "type": "object", "additionalProperties": false}
+valid  -> {
+  "employee_id": "x"
+}
+extra  -> {
+  "employee_id": "x"
+}

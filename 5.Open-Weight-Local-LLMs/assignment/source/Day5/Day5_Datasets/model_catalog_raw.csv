@@ -1,0 +1,14 @@
+model_id,name,total_b,active_b,architecture,license_id,commercial_allowed,instruct,context_limit,layers,kv_heads,head_dim,revision,publisher_verified,task
+M01,Atlas-0.5B-Instruct,0.5,0.5,Dense,Apache-2.0,True,True,32768,24,2,64,fixture-r1,True,generation
+M02,Cedar-3B-Base,3.0,3.0,Dense,MIT,True,False,8192,24,2,64,fixture-r2,True,generation
+M03,Harbor-8B-Instruct,8.0,8.0,Dense,Apache-2.0,True,True,32768,32,8,128,fixture-r3,True,generation
+M04,Orchid-30B-A3B-Instruct,30.0,3.0,MoE,MIT,True,True,65536,64,8,128,fixture-r4,True,generation
+M05,Orchid-120B-A5B-Thinking,120.0,5.0,MoE,Community,False,True,131072,64,8,128,fixture-r5,True,generation
+M06,Cedar-13B-Coder,13.0,13.0,Dense,Apache-2.0,True,True,32768,32,8,128,fixture-r6,True,generation
+M07,Harbor-70B-Instruct,70.0,70.0,Dense,Custom,False,True,32768,64,8,128,fixture-r7,True,generation
+M08,Atlas-1B-Embed,1.0,1.0,Dense,MIT,True,False,8192,24,2,64,fixture-r8,True,embedding
+M09,Cedar-7B-Research,7.0,7.0,Dense,NonCommercial,False,True,16384,32,8,128,fixture-r9,True,generation
+M10,Orchid-35B-A3B-Unreviewed,35.0,3.0,MoE,,False,True,32768,64,8,128,fixture-r10,False,generation
+M11,Harbor-4B-VL,4.0,4.0,Dense,Apache-2.0,True,True,16384,32,8,128,fixture-r11,True,vision
+M12,Atlas-2B-Distill,2.0,2.0,Dense,MIT,True,True,16384,24,2,64,fixture-r12,True,generation
+M03,Harbor-8B-Instruct,8.0,8.0,Dense,Apache-2.0,True,True,32768,32,8,128,fixture-r3,True,generation

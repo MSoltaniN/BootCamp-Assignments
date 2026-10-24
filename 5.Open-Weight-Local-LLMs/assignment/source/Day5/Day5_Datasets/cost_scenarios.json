@@ -1,0 +1,21 @@
+{
+  "currency": "USD",
+  "synthetic": true,
+  "capex_usd": 3000,
+  "amortization_months": 36,
+  "hours_per_month": 160,
+  "power_w": 140,
+  "electricity_usd_kwh": 0.15,
+  "ops_usd_month": 35,
+  "input_price_per_million": 1.0,
+  "output_price_per_million": 3.0,
+  "input_tokens_per_request": 800,
+  "output_tokens_per_request": 200,
+  "requests_month": [
+    1000,
+    10000,
+    100000,
+    1000000
+  ],
+  "capacity_requests_hour": 300
+}

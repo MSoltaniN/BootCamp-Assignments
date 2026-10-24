@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\scripts\_probe_schema5.py", line 15, in <module>
+    @srv.tool(name="get_employee")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\server.py", line 725, in decorator
+    self.add_tool(
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\server.py", line 647, in add_tool
+    self._tool_manager.add_tool(
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 51, in add_tool
+    tool = Tool.from_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\tools\base.py", line 102, in from_function
+    func_arg_metadata = func_metadata(
+                        ^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 331, in func_metadata
+    raise InvalidSignature(f"Parameter {param.name} of {func.__name__} cannot start with '_'")
+mcp.server.mcpserver.exceptions.InvalidSignature: Parameter __extra__ of get_employee cannot start with '_'

@@ -1,0 +1,48 @@
+{
+  "model_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+  "runtime_release": "b11696",
+  "files": [
+    {
+      "path": "Day5_Resources/models/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/9217f5db79a29953eb74d5343926648285ec7e67/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db"
+    },
+    {
+      "path": "Day5_Resources/models/qwen2.5-0.5b-instruct-q8_0.gguf",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/9217f5db79a29953eb74d5343926648285ec7e67/qwen2.5-0.5b-instruct-q8_0.gguf",
+      "bytes": 675710816,
+      "sha256": "ca59ca7f13d0e15a8cfa77bd17e65d24f6844b554a7b6c12e07a5f89ff76844e"
+    },
+    {
+      "path": "Day5_Resources/models/LICENSE",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/9217f5db79a29953eb74d5343926648285ec7e67/LICENSE",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "path": "Day5_Resources/models/README.md",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/9217f5db79a29953eb74d5343926648285ec7e67/README.md",
+      "bytes": 4856,
+      "sha256": "fa1fede7f775a20f111cc098c00900092020572ce78976970a5b0ad9ca211999"
+    },
+    {
+      "path": "Day5_Resources/llama-b11696-bin-win-cpu-x64.zip",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11696/llama-b11696-bin-win-cpu-x64.zip",
+      "bytes": 19575690,
+      "sha256": "1e7c47dff58467540d53e6cf302d83951bcb165afb252c2952ed3872190fc60d"
+    },
+    {
+      "path": "Day5_Resources/llama-LICENSE",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b11696/LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "Day5_Resources/llama-server-reference.md",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b11696/tools/server/README.md",
+      "bytes": 117207,
+      "sha256": "6c08fc3b3929bd0c6ca0b3b65ca9fd3b36c6d30f1e7b627d78c1d6b69feffc99"
+    }
+  ]
+}

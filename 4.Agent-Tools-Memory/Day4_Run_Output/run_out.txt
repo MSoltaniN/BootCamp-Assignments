@@ -1,0 +1,17 @@
+[13:33:30] section 6: tools and MCP
+[13:33:31] section 7: bounded loop
+[13:33:31] section 8: sqlite and approvals
+[13:33:31] section 9: router and multi-role
+[13:33:35] section 10: ten threat families
+[13:33:35] section 11: evaluation
+[13:33:35] section 12: rollout and handoff
+[13:33:39] 
+[13:33:39] == KEY NUMBERS ==
+[13:33:39] 6 tools=3 probe_ok=True extra_rejected=True
+[13:33:39] 7 normal=4 rep=repeated_action cap=step_cap retry=3
+[13:33:39] 8 tables=6 commit=True dupe=True
+[13:33:39] 9 router_f1=0.911683 C=0.1 preds=80
+[13:33:39] 10 families=11 passed=11
+[13:33:39] 11 p95=1970 cost=0.262949
+[13:33:39] 12 gate=True canary=37 jobs=300
+[13:33:39] results: C:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\Day4_Run_Output\sections_6_12.json

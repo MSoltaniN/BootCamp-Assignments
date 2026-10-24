@@ -1,0 +1,2 @@
+{"artifact": "safe_model.safetensors", "expected_sha256": "0712622d4523793a95585faf59c8f9010d8a419cd31a01f429b1e2b619c387f9", "format": "safetensors", "trusted": true}
+{"artifact": "untrusted_model.bin", "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000", "format": "pickle", "trusted": false}

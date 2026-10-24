@@ -1,0 +1,12 @@
+{"case_id": "test-01", "family": "test-family-01", "language": "en", "text": "Policy POL-TEST-01: annual leave allowance is 30 days. Extract the number of annual leave days."}
+{"case_id": "test-02", "family": "test-family-02", "language": "en", "text": "Policy POL-TEST-02: annual leave allowance is 14 days. Extract the number of annual leave days."}
+{"case_id": "test-03", "family": "test-family-03", "language": "en", "text": "Policy POL-TEST-03: annual leave allowance is 28 days. Extract the number of annual leave days."}
+{"case_id": "test-04", "family": "test-family-04", "language": "en", "text": "Policy POL-TEST-04: annual leave allowance is 12 days. Extract the number of annual leave days."}
+{"case_id": "test-05", "family": "test-family-05", "language": "en", "text": "Policy POL-TEST-05: annual leave allowance is 23 days. Extract the number of annual leave days."}
+{"case_id": "test-06", "family": "test-family-06", "language": "en", "text": "Policy POL-TEST-06: annual leave allowance is 12 days. Extract the number of annual leave days."}
+{"case_id": "test-07", "family": "test-family-07", "language": "fa", "text": "سیاست POL-TEST-07: سهمیهٔ مرخصی سالانه برابر 25 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}
+{"case_id": "test-08", "family": "test-family-08", "language": "fa", "text": "سیاست POL-TEST-08: سهمیهٔ مرخصی سالانه برابر 25 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}
+{"case_id": "test-09", "family": "test-family-09", "language": "fa", "text": "سیاست POL-TEST-09: سهمیهٔ مرخصی سالانه برابر 22 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}
+{"case_id": "test-10", "family": "test-family-10", "language": "fa", "text": "سیاست POL-TEST-10: سهمیهٔ مرخصی سالانه برابر 26 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}
+{"case_id": "test-11", "family": "test-family-11", "language": "fa", "text": "سیاست POL-TEST-11: سهمیهٔ مرخصی سالانه برابر 25 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}
+{"case_id": "test-12", "family": "test-family-12", "language": "fa", "text": "سیاست POL-TEST-12: سهمیهٔ مرخصی سالانه برابر 16 روز است. تعداد روزهای مرخصی سالانه را استخراج کن."}

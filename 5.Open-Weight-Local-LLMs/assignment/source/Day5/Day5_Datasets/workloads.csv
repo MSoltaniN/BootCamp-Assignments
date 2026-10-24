@@ -1,0 +1,7 @@
+workload_id,model_id,weight_bits,prompt_tokens,concurrency,max_new_tokens
+W01,M03,4,2048,4,128
+W02,M04,4,4096,8,256
+W03,M05,4,8192,4,512
+W04,M07,4,4096,1,256
+W05,M01,8,1024,1,64
+W06,M06,8,8192,8,256

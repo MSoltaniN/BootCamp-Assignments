@@ -1,0 +1,3 @@
+{"policy_id": "P-LEAVE", "text": "Annual leave allowance is 22 days.", "days": 22, "tenant": "org-a"}
+{"policy_id": "P-TRAVEL", "text": "Travel reimbursement requires an approved receipt.", "days": null, "tenant": "org-a"}
+{"policy_id": "P-PRIVATE", "text": "Annual leave allowance is 99 days.", "days": 99, "tenant": "org-b"}

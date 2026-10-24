@@ -1,0 +1,106 @@
+cells=445
+nbformat=4.5
+kernelspec={'display_name': 'Python (bootcamp-day4)', 'language': 'python', 'name': 'bootcamp-day4'}
+
+markdown cells carrying a sub-question number: 0
+
+=== first 24 markers (cell_index, qid, how many cells until next marker) ===
+
+=== raw dump of cells 0..40 ===
+--- cell 0 [markdown] lines=3
+    head: # تکلیف ۴: معماری ایجنت، ابزار، حافظه و انتشار کنترل‌شده
+--- cell 1 [markdown] lines=1
+    head: ## بخش 1: انتخاب معماری و مرز ایجنت
+--- cell 2 [markdown] lines=3
+    head: ### زیرسؤال 1.1
+--- cell 3 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 4 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 5 [markdown] lines=3
+    head: ### زیرسؤال 1.2
+--- cell 6 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 7 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 8 [markdown] lines=3
+    head: ### زیرسؤال 1.3
+--- cell 9 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 10 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 11 [markdown] lines=3
+    head: ### زیرسؤال 1.4
+--- cell 12 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 13 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 14 [markdown] lines=3
+    head: ### زیرسؤال 1.5
+--- cell 15 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 16 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 17 [markdown] lines=3
+    head: ### زیرسؤال 1.6
+--- cell 18 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 19 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 20 [markdown] lines=3
+    head: ### زیرسؤال 1.7
+--- cell 21 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 22 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 23 [markdown] lines=3
+    head: ### زیرسؤال 1.8
+--- cell 24 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 25 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 26 [markdown] lines=3
+    head: ### زیرسؤال 1.9
+--- cell 27 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 28 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 29 [markdown] lines=3
+    head: ### زیرسؤال 1.10
+--- cell 30 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 31 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 32 [markdown] lines=3
+    head: ### زیرسؤال 1.11
+--- cell 33 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 34 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 35 [markdown] lines=3
+    head: ### زیرسؤال 1.12
+--- cell 36 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+--- cell 37 [markdown] lines=1
+    head: <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+--- cell 38 [markdown] lines=1
+    head: ## بخش 2: مهندسی context و قرارداد ابزار
+--- cell 39 [markdown] lines=3
+    head: ### زیرسؤال 2.1
+--- cell 40 [code] lines=1
+    head: # Write your implementation here.
+    body: # Write your implementation here.
+
+empty code cells: 0 of 144

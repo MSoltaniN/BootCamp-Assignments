@@ -1,0 +1,24 @@
+{
+  "connected": true,
+  "errors": [],
+  "tools": [
+    "get_department_context",
+    "get_employee",
+    "get_evidence"
+  ],
+  "resources": [
+    "policy://finance"
+  ],
+  "resource_templates": [],
+  "prompts": [
+    "skills_review"
+  ],
+  "call_ok": true,
+  "call_preview": "{\n  \"tenant\": \"org-a\",\n  \"department\": \"finance\",\n  \"required_skills\": [\n    \"reconciliation\",\n    \"forecasting\",\n    \"reporting\",\n    \"compliance\"\n  ],\n  \"min_evidence\": 2,\n  \"retention_days\": 30,\n  ",
+  "marketing_rejected": true,
+  "marketing_response": "{\n  \"error\": {\n    \"code\": \"department_denied\",\n    \"retryable\": false,\n    \"reason\": \"department outside caller scope\"\n  }\n}",
+  "invalid_department_rejected": true,
+  "invalid_response": "{\n  \"error\": {\n    \"code\": \"out_of_enum\",\n    \"retryable\": false,\n    \"reason\": \"department must be one of ['finance', 'marketing', 'sales']\"\n  }\n}",
+  "extra_argument_rejected": true,
+  "extra_argument_response": "Error executing tool get_employee: 1 validation error for get_employeeArguments\ntenant\n  Extra inputs are not permitted [type=extra_forbidden, input_value='org-"
+}

@@ -1,0 +1,55 @@
+{
+  "plan_id": "day5-acceptance-v1",
+  "stage1_gate": {
+    "name": "capacity_and_license",
+    "criteria": [
+      {
+        "metric": "fits_in_memory",
+        "unit": "boolean",
+        "method": "total_gib <= capacity_gib - reserved_gib for the target hardware"
+      },
+      {
+        "metric": "license_status",
+        "unit": "enum(allow/review/deny)",
+        "method": "apply license_policy.json to license_id and publisher_verified"
+      },
+      {
+        "metric": "artifact_hash_match",
+        "unit": "boolean",
+        "method": "sha256 of the downloaded file equals the pinned value"
+      }
+    ]
+  },
+  "stage2_gate": {
+    "name": "semantic_quality_security_latency",
+    "criteria": [
+      {
+        "metric": "dev_semantic_accuracy",
+        "unit": "ratio 0..1",
+        "method": "compare predicted_days with expected_days on local_eval_dev.jsonl"
+      },
+      {
+        "metric": "schema_validity",
+        "unit": "ratio 0..1",
+        "method": "json parse of raw must equal {'days': int} for every dev case"
+      },
+      {
+        "metric": "cross_tenant_blocked",
+        "unit": "boolean",
+        "method": "dispatcher probe with a foreign tenant must be rejected"
+      },
+      {
+        "metric": "client_p95_latency",
+        "unit": "seconds",
+        "method": "client-clock wall time per request, linear-interpolation P95"
+      },
+      {
+        "metric": "client_output_throughput",
+        "unit": "tokens/second",
+        "method": "sum completion_tokens divided by sum elapsed_s"
+      }
+    ]
+  },
+  "decision_rule": "admit only if every stage1 criterion passes and every stage2 criterion meets its threshold",
+  "note": "thresholds are fixed on dev before any test run; test split is never used to set them"
+}

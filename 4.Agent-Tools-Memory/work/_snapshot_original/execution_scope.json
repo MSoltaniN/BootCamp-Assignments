@@ -1,0 +1,23 @@
+{
+  "real": [
+    "sqlite",
+    "mcp_stdio",
+    "langgraph",
+    "tool_dispatch",
+    "loop_guards",
+    "router_training",
+    "evaluation_metrics"
+  ],
+  "fixture": [
+    "decision_model",
+    "reviewer_identity",
+    "comparison_logs",
+    "model_responses"
+  ],
+  "not_executed": [
+    "live_llm",
+    "public_deployment",
+    "external_auth",
+    "a2a_protocol"
+  ]
+}

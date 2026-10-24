@@ -1,0 +1,43 @@
+{"record_id": "train-0", "split": "train", "source_group": "train-g0", "prompt": "Return the leave days in JSON. Policy ID train-0: 12 days.", "response": "{\"days\": 12}", "pii": false}
+{"record_id": "train-1", "split": "train", "source_group": "train-g1", "prompt": "Extract the annual allowance. Policy ID train-1: 12 days.", "response": "{\"days\": 12}", "pii": false}
+{"record_id": "train-2", "split": "train", "source_group": "train-g2", "prompt": "Return the leave days in JSON. Policy ID train-2: 19 days.", "response": "{\"days\": 19}", "pii": false}
+{"record_id": "train-3", "split": "train", "source_group": "train-g3", "prompt": "Extract the annual allowance. Policy ID train-3: 12 days.", "response": "{\"days\": 12}", "pii": false}
+{"record_id": "train-4", "split": "train", "source_group": "train-g4", "prompt": "Return the leave days in JSON. Policy ID train-4: 30 days.", "response": "{\"days\": 30}", "pii": false}
+{"record_id": "train-5", "split": "train", "source_group": "train-g5", "prompt": "Extract the annual allowance. Policy ID train-5: 25 days.", "response": "{\"days\": 25}", "pii": false}
+{"record_id": "train-6", "split": "train", "source_group": "train-g6", "prompt": "Return the leave days in JSON. Policy ID train-6: 14 days.", "response": "{\"days\": 14}", "pii": false}
+{"record_id": "train-7", "split": "train", "source_group": "train-g7", "prompt": "Extract the annual allowance. Policy ID train-7: 17 days.", "response": "{\"days\": 17}", "pii": false}
+{"record_id": "train-8", "split": "train", "source_group": "train-g8", "prompt": "Return the leave days in JSON. Policy ID train-8: 24 days.", "response": "{\"days\": 24}", "pii": false}
+{"record_id": "train-9", "split": "train", "source_group": "train-g9", "prompt": "Extract the annual allowance. Policy ID train-9: 13 days.", "response": "{\"days\": 13}", "pii": false}
+{"record_id": "train-10", "split": "train", "source_group": "train-g10", "prompt": "Return the leave days in JSON. Policy ID train-10: 11 days.", "response": "{\"days\": 11}", "pii": false}
+{"record_id": "train-11", "split": "train", "source_group": "train-g11", "prompt": "Extract the annual allowance. Policy ID train-11: 20 days.", "response": "{\"days\": 20}", "pii": false}
+{"record_id": "train-12", "split": "train", "source_group": "train-g12", "prompt": "Return the leave days in JSON. Policy ID train-12: 20 days.", "response": "{\"days\": 20}", "pii": false}
+{"record_id": "train-13", "split": "train", "source_group": "train-g13", "prompt": "Extract the annual allowance. Policy ID train-13: 21 days.", "response": "{\"days\": 21}", "pii": false}
+{"record_id": "train-14", "split": "train", "source_group": "train-g14", "prompt": "Return the leave days in JSON. Policy ID train-14: 25 days.", "response": "{\"days\": 25}", "pii": false}
+{"record_id": "train-15", "split": "train", "source_group": "train-g15", "prompt": "Extract the annual allowance. Policy ID train-15: 30 days.", "response": "{\"days\": 30}", "pii": false}
+{"record_id": "train-16", "split": "train", "source_group": "train-g16", "prompt": "Return the leave days in JSON. Policy ID train-16: 10 days.", "response": "{\"days\": 10}", "pii": false}
+{"record_id": "train-17", "split": "train", "source_group": "train-g17", "prompt": "Extract the annual allowance. Policy ID train-17: 13 days.", "response": "{\"days\": 13}", "pii": false}
+{"record_id": "train-18", "split": "train", "source_group": "train-g18", "prompt": "Return the leave days in JSON. Policy ID train-18: 29 days.", "response": "{\"days\": 29}", "pii": false}
+{"record_id": "train-19", "split": "train", "source_group": "train-g19", "prompt": "Extract the annual allowance. Policy ID train-19: 16 days.", "response": "{\"days\": 16}", "pii": false}
+{"record_id": "dev-0", "split": "dev", "source_group": "dev-g0", "prompt": "Read the policy and report days. Policy ID dev-0: 20 days.", "response": "{\"days\": 20}", "pii": false}
+{"record_id": "dev-1", "split": "dev", "source_group": "dev-g1", "prompt": "Read the policy and report days. Policy ID dev-1: 27 days.", "response": "{\"days\": 27}", "pii": false}
+{"record_id": "dev-2", "split": "dev", "source_group": "dev-g2", "prompt": "Read the policy and report days. Policy ID dev-2: 15 days.", "response": "{\"days\": 15}", "pii": false}
+{"record_id": "dev-3", "split": "dev", "source_group": "dev-g3", "prompt": "Read the policy and report days. Policy ID dev-3: 19 days.", "response": "{\"days\": 19}", "pii": false}
+{"record_id": "dev-4", "split": "dev", "source_group": "dev-g4", "prompt": "Read the policy and report days. Policy ID dev-4: 16 days.", "response": "{\"days\": 16}", "pii": false}
+{"record_id": "dev-5", "split": "dev", "source_group": "dev-g5", "prompt": "Read the policy and report days. Policy ID dev-5: 16 days.", "response": "{\"days\": 16}", "pii": false}
+{"record_id": "dev-6", "split": "dev", "source_group": "dev-g6", "prompt": "Read the policy and report days. Policy ID dev-6: 21 days.", "response": "{\"days\": 21}", "pii": false}
+{"record_id": "dev-7", "split": "dev", "source_group": "dev-g7", "prompt": "Read the policy and report days. Policy ID dev-7: 16 days.", "response": "{\"days\": 16}", "pii": false}
+{"record_id": "dev-8", "split": "dev", "source_group": "dev-g8", "prompt": "Read the policy and report days. Policy ID dev-8: 19 days.", "response": "{\"days\": 19}", "pii": false}
+{"record_id": "dev-9", "split": "dev", "source_group": "dev-g9", "prompt": "Read the policy and report days. Policy ID dev-9: 29 days.", "response": "{\"days\": 29}", "pii": false}
+{"record_id": "test-0", "split": "test", "source_group": "test-g0", "prompt": "How many days are allowed by the stated policy? Policy ID test-0: 14 days.", "response": "{\"days\": 14}", "pii": false}
+{"record_id": "test-1", "split": "test", "source_group": "test-g1", "prompt": "How many days are allowed by the stated policy? Policy ID test-1: 17 days.", "response": "{\"days\": 17}", "pii": false}
+{"record_id": "test-2", "split": "test", "source_group": "test-g2", "prompt": "How many days are allowed by the stated policy? Policy ID test-2: 23 days.", "response": "{\"days\": 23}", "pii": false}
+{"record_id": "test-3", "split": "test", "source_group": "test-g3", "prompt": "How many days are allowed by the stated policy? Policy ID test-3: 20 days.", "response": "{\"days\": 20}", "pii": false}
+{"record_id": "test-4", "split": "test", "source_group": "test-g4", "prompt": "How many days are allowed by the stated policy? Policy ID test-4: 18 days.", "response": "{\"days\": 18}", "pii": false}
+{"record_id": "test-5", "split": "test", "source_group": "test-g5", "prompt": "How many days are allowed by the stated policy? Policy ID test-5: 30 days.", "response": "{\"days\": 30}", "pii": false}
+{"record_id": "test-6", "split": "test", "source_group": "test-g6", "prompt": "How many days are allowed by the stated policy? Policy ID test-6: 25 days.", "response": "{\"days\": 25}", "pii": false}
+{"record_id": "test-7", "split": "test", "source_group": "test-g7", "prompt": "How many days are allowed by the stated policy? Policy ID test-7: 30 days.", "response": "{\"days\": 30}", "pii": false}
+{"record_id": "test-8", "split": "test", "source_group": "test-g8", "prompt": "How many days are allowed by the stated policy? Policy ID test-8: 29 days.", "response": "{\"days\": 29}", "pii": false}
+{"record_id": "test-9", "split": "test", "source_group": "test-g9", "prompt": "How many days are allowed by the stated policy? Policy ID test-9: 25 days.", "response": "{\"days\": 25}", "pii": false}
+{"record_id": "bad-1", "split": "train", "source_group": "bad", "prompt": "Contact user at demo.person@example.test", "response": "{}", "pii": true}
+{"record_id": "bad-2", "split": "train", "source_group": "bad", "prompt": " ", "response": "not-json", "pii": false}
+{"record_id": "dup-1", "split": "train", "source_group": "train-g0", "prompt": "Return the leave days in JSON. Policy ID train-0: 12 days.", "response": "{\"days\": 12}", "pii": false}

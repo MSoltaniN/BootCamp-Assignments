@@ -34,6 +34,19 @@ sys.path.insert(0, str(ROOT / "work"))
 from sec01_04_conceptual.answers import ANSWERS  # noqa: E402
 
 MIN_RATIONALE = 80
+SHORT_LIMIT = 220
+
+
+def condense(text: str, limit: int = SHORT_LIMIT) -> str:
+    """Trim a rationale to a single leading sentence for the short field."""
+    flat = " ".join(text.split())
+    for separator in ("؛ ", ". ", "。 "):
+        index = flat.find(separator)
+        if 40 <= index <= limit:
+            return flat[: index + 1].strip()
+    if len(flat) <= limit:
+        return flat
+    return flat[:limit].rsplit(" ", 1)[0].strip() + "…"
 
 
 def main() -> int:
@@ -69,6 +82,15 @@ def main() -> int:
             continue
 
         field["answer"] = option
+
+        # The form has a *separate* `دلیل انتخاب` slot. Filling only `rationale`
+        # left that slot empty, so the reason is condensed to its leading
+        # sentence and written into the field as well.
+        short_fields = [f for f in question["fields"] if f["kind"] == "short"]
+        if short_fields:
+            short_fields[0]["answer"] = condense(rationale)
+            applied += 1
+
         question["rationale"] = rationale.strip()
         question["status"] = "answered"
         applied += 1

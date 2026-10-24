@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "connection",
+      "passed": true,
+      "detail": "Real read-only SQLite connection."
+    },
+    {
+      "name": "integrity",
+      "passed": true,
+      "detail": "SQLite integrity check."
+    },
+    {
+      "name": "tables",
+      "passed": true,
+      "detail": "Six application tables are required."
+    },
+    {
+      "name": "approval_foreign_key",
+      "passed": true,
+      "detail": "writes.approval_id must reference approvals.approval_id."
+    },
+    {
+      "name": "foreign_key_integrity",
+      "passed": true,
+      "detail": "No orphan foreign keys."
+    },
+    {
+      "name": "profile_scope",
+      "passed": true,
+      "detail": "Profiles must belong to real synthetic employees in the same tenant."
+    },
+    {
+      "name": "grounding",
+      "passed": true,
+      "detail": "Claims are rechecked independently against source evidence."
+    },
+    {
+      "name": "approval_rows",
+      "passed": true,
+      "detail": "Approval records require a reviewer, scope, version and payload hash."
+    },
+    {
+      "name": "write_approval_binding",
+      "passed": true,
+      "detail": "Every committed write is bound to an approved body, employee, tenant and base version."
+    },
+    {
+      "name": "idempotency_constraint",
+      "passed": true,
+      "detail": "A nonempty idempotency key must be unique on its own, not merely part of a composite key."
+    },
+    {
+      "name": "audit_matches_writes",
+      "passed": true,
+      "detail": "Exactly one commit audit per committed version."
+    },
+    {
+      "name": "memory_provenance",
+      "passed": true,
+      "detail": "At least one verified, scoped memory with a valid expiry."
+    },
+    {
+      "name": "durable_jobs",
+      "passed": true,
+      "detail": "Durable event keys must be nonempty and have a real single-column uniqueness constraint."
+    },
+    {
+      "name": "persistent_checkpoint",
+      "passed": true,
+      "detail": "Nonempty LangGraph checkpoints are stored in a separate SQLite database."
+    }
+  ],
+  "proof": "grader must execute its own trusted copy; student report alone is not proof"
+}

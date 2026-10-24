@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "reason": "final",
+  "steps": 4,
+  "tool_calls": 3,
+  "cost": 3.0,
+  "final": "profile ready",
+  "rejected": 0,
+  "successful_tools": 3,
+  "trace": [
+    {
+      "kind": "tool",
+      "step": 1,
+      "tool": "get_employee",
+      "arguments": {
+        "employee_id": "X-83c9e5db8f89697f"
+      }
+    },
+    {
+      "kind": "tool",
+      "step": 2,
+      "tool": "get_department_context",
+      "arguments": {
+        "department": "finance"
+      }
+    },
+    {
+      "kind": "tool",
+      "step": 3,
+      "tool": "get_evidence",
+      "arguments": {
+        "employee_id": "X-83c9e5db8f89697f"
+      }
+    },
+    {
+      "kind": "final",
+      "step": 4
+    }
+  ],
+  "trajectory": [
+    "get_employee",
+    "get_department_context",
+    "get_evidence"
+  ]
+}

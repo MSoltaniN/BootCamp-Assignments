@@ -1,0 +1,23 @@
+{
+  "model_id": "M04",
+  "name": "Orchid-30B-A3B-Instruct",
+  "architecture": "MoE",
+  "total_b": 30.0,
+  "active_b": 3.0,
+  "license_snapshot": "MIT",
+  "license_status": "allow",
+  "publisher_verified": true,
+  "provenance": "synthetic fixture (fixture-r4) - not a real model card",
+  "allowed_use": [
+    "offline capacity and cost planning on this artificial catalog",
+    "evaluation harness development against public dev split"
+  ],
+  "limitations": [
+    "synthetic catalog row, no upstream repository or commit exists",
+    "no Persian benchmark has been run for this entry",
+    "context_limit 65536 is a fixture value, not a measured limit"
+  ],
+  "requires_persian_evaluation": true,
+  "requires_capacity_gate": true,
+  "evaluation_required": true
+}

@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────────
+# تکلیف ۵ — مدل‌های باز و اجرای محلی
+#
+# قاعده: هر چیزی که قابل بازتولید یا قابل دانلود است نادیده گرفته
+# می‌شود؛ هر چیزی که شاهد کار یا پاسخ است ردیابی می‌شود.
+# ─────────────────────────────────────────────────────────────
+
+# ── محیط‌های پایتون ───────────────────────────────────────────
+.venv/
+.venv5/
+.venv-day5/
+.trash-*/
+
+# ── پایتون ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# ── منابع سنگین (۲٬۲۹۲ MB) ──────────────────────────────────
+# دو GGUF + llama-server را download_resources.py با بررسی
+# SHA-256 دوباره می‌سازد. مسیر و hash در resource_manifest.json
+# و docs/05_environment.md مستند است.
+assignment/source/Day5/Day5_Resources/models/*.gguf
+assignment/source/Day5/Day5_Resources/models/*.gguf.part
+assignment/source/Day5/Day5_Resources/models/*_chunks/
+assignment/source/Day5/Day5_Resources/llama_cpp/
+assignment/source/Day5/Day5_Resources/llama-b*.zip
+assignment/source/Day5/Day5_Resources/llama-LICENSE
+assignment/source/Day5/Day5_Resources/llama-server-reference.md
+
+# resource_manifest.json ردیابی می‌شود: بخش ۵ آن را می‌خواند
+# (revision مدل، release موتور و hash دو GGUF از آن می‌آید)
+!assignment/source/Day5/Day5_Resources/resource_manifest.json
+
+# آرشیو اصلی بستهٔ دانشجو — همان محتوای assignment/source/Day5
+datasets/*.zip
+
+# ── خروجی‌های موقت ──────────────────────────────────────────
+check.json
+*.log
+
+# ── مواردی که عمداً ردیابی می‌شوند (برای مرجع) ────────────────
+# !Day5_Run_Output/                    ← آرتیفکت‌های تحویلی
+# !sections/*/answers.md               ← پاسخ‌ها
+# !sections/*/README.md                ← چک‌لیست هر بخش
+# !sections/*/src/                     ← کد
+# !sections/*/out/                     ← نمودارها و لاگ شواهد
+# !assignment/source/Day5/Day5_Datasets/ ← fixtureها
+# !assignment/source/Day5/Day5_Grading/  ← داور
+# !assignment/source/Day5/Day5_Starter/  ← قالب و دانلودر
+# !docs/  !lib/  !work/

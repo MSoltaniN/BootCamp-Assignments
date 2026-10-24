@@ -1,0 +1,143 @@
+{
+  "checks_passed": 22,
+  "checks_total": 22,
+  "all_passed": true,
+  "details": [
+    {
+      "check": "notebook: 144 titled sub-questions",
+      "passed": true,
+      "detail": "144"
+    },
+    {
+      "check": "notebook: every code cell has output",
+      "passed": true,
+      "detail": "145/145"
+    },
+    {
+      "check": "notebook: no personal path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "notebook: no secret marker in stored output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "notebook: Persian separator U+066B used in titles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "db: users == 20",
+      "passed": true,
+      "detail": "20"
+    },
+    {
+      "check": "db: cases == 120",
+      "passed": true,
+      "detail": "120"
+    },
+    {
+      "check": "db: documents >= 24",
+      "passed": true,
+      "detail": "28"
+    },
+    {
+      "check": "db: chunks >= max(24, docs)",
+      "passed": true,
+      "detail": "1286"
+    },
+    {
+      "check": "db: every embedding is 384 float32",
+      "passed": true,
+      "detail": "0 bad"
+    },
+    {
+      "check": "db: model metadata present on every chunk",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "check": "db: under the 80 MB upload limit",
+      "passed": true,
+      "detail": "5.30 MB"
+    },
+    {
+      "check": "retrieval: 30 lines",
+      "passed": true,
+      "detail": "30"
+    },
+    {
+      "check": "retrieval: every query_id is a test query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval: three distinct doc ids per row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval: every doc id exists in the database",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval: no labels leaked into the file",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "answerability: 30 lines",
+      "passed": true,
+      "detail": "30"
+    },
+    {
+      "check": "answerability: every query_id is a test query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "answerability: score is a finite float",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "answerability: accepted is boolean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "answerability: same query set as retrieval",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "1_notebook.ipynb",
+      "source": "deliverables\\day3_notebook.ipynb",
+      "bytes": 309716,
+      "sha256": "d85e3e149fec5d2c546f2af4094b32ebef149c3b22d3a5cdc4998617e1990af8"
+    },
+    {
+      "file": "2_day3.sqlite",
+      "source": "day3.sqlite",
+      "bytes": 5562368,
+      "sha256": "5a455aac0b19de43d00962a4e14297064a003974e1dab267a2f24f0658d92356"
+    },
+    {
+      "file": "3_test_predictions.jsonl",
+      "source": "deliverables\\test_predictions.jsonl",
+      "bytes": 2790,
+      "sha256": "6806daa93b3d392766d346914b59395a1d23f5290255778e815b40eca443d2a4"
+    },
+    {
+      "file": "4_answerability_predictions.jsonl",
+      "source": "deliverables\\answerability_predictions.jsonl",
+      "bytes": 2218,
+      "sha256": "a7a8432db521d35a0691d0e2afb8d80a33ab1050adb1161f94536ec360935ebb"
+    }
+  ]
+}

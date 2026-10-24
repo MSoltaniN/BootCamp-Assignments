@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>payload bridge</title>
+  </head>
+  <body>
+    <pre id="out">loading…</pre>
+    <script>
+      /* Loads the answer payload on a plain-HTTP origin (no mixed-content blocking),
+   then parks it in `window.name`. window.name survives a same-tab navigation to
+   a *different* origin, so the HTTPS form page can read it back without any
+   network request from HTTPS to HTTP. This avoids copying 139 KB by hand. */
+      (async () => {
+        try {
+          const response = await fetch("form_payload_all.json", {
+            cache: "no-store",
+          });
+          const text = await response.text();
+          JSON.parse(text); // fail loudly here if it is malformed
+          window.name = text;
+          document.getElementById("out").textContent =
+            "OK chars=" + text.length;
+        } catch (error) {
+          window.name = "";
+          document.getElementById("out").textContent = "FAIL " + error;
+        }
+      })();
+    </script>
+  </body>
+</html>

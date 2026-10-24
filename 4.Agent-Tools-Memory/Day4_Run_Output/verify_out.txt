@@ -1,0 +1,2 @@
+questions 144  points 100  empty 0  bad 0
+RESULT: PASS

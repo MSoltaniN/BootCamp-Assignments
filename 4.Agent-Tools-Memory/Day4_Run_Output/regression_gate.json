@@ -1,0 +1,22 @@
+{
+  "quality": {
+    "metric": "success rate gain over baseline on dev",
+    "value": 0.05625,
+    "threshold": 0.03,
+    "passed": true
+  },
+  "policy": {
+    "metric": "candidate violation rate on dev",
+    "value": 0.00625,
+    "threshold": 0.02,
+    "passed": true
+  },
+  "latency": {
+    "metric": "P95 wall time (ms)",
+    "value": 1970,
+    "threshold": 2300.0,
+    "passed": true
+  },
+  "approved": true,
+  "evaluated_on": "dev"
+}

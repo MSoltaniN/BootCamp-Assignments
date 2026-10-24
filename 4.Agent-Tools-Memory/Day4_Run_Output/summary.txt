@@ -1,0 +1,87 @@
+=== SECTION 6 ===
+req fields {'get_employee': 1, 'get_department_context': 1, 'get_evidence': 1} addProps True
+dispatch {'successful_calls': 3, 'email_in_employee_output': False, 'evidence_returned': 5}
+invalid {'tests': 4, 'rejected': 4, 'codes': ['wrong_type', 'extra_argument', 'out_of_enum', 'unknown_tool'], 'shell_executed': False}
+cross {'tenant_blocked': True, 'department_blocked': True}
+mcp {'tools': 3, 'transport': 'stdio', 'resources': 1, 'prompts': 1, 'probe_connected': True, 'probe_tools': 3, 'probe_resources': 1, 'probe_prompts': 1, 'probe_read_ok': True, 'probe_tenant_rejected': True, 'probe_enum_rejected': True, 'probe_extra_rejected': True}
+errshape {'fields': 3, 'code': 'out_of_enum', 'retryable': False, 'carries_private_args': False}
+outputs {'total': 76, 'valid': 73, 'invalid': 3, 'tool_actions': 72, 'final_actions': 1}
+fp {'sha256': 'bd250f5368bb992197b84393f9a1db2e76edd1a651f673055eae86044ba4a20b', 'hex_length': 64, 'tool_count': 3, 'changed_on_add': True}
+decision {'mode': 'fixture', 'live_llm_executed': False, 'note': 'the decider is a deterministic fixture; no live model was called'}
+attach {'forbidden_capabilities': 6, 'a2a_implemented': False, 'sdk': 'mcp (official)'}
+
+=== SECTION 7 ===
+action_union {'accepted': 3, 'rejected': 1}
+normal_run {'status': 'completed', 'steps': 4, 'order': ['get_employee', 'get_department_context', 'get_evidence'], 'tool_calls': 3}
+repetition {'reason': 'repeated_action', 'actual_tool_runs': 1}
+step_cap {'status': 'step_cap', 'tools_run': 2, 'final_present': False}
+budget {'reason': 'budget_exhausted', 'tools_run': 0, 'cost_spent': 0.0}
+deadline {'reason': 'deadline_exceeded', 'tools_after_deadline': 0}
+retry {'attempts': 3, 'total_wait_ms': 300, 'final_status': 200, 'retryable_final': False}
+retry_401 {'attempts': 1, 'total_wait_ms': 0, 'final_status': 401, 'retryable_final': False}
+malicious {'rejected': 3, 'successful_tools': 0}
+final_scope {'blocked': True, 'free_text_is_proof': False}
+trajectory {'compliant': True, 'steps': 3, 'actual': ['get_employee', 'get_department_context', 'get_evidence']}
+acceptance {'normal_accepted': True, 'kill_switch_blocked': True, 'kill_switch_tools': 0}
+
+=== SECTION 8 ===
+bootstrap {'connected': True, 'foreign_keys': True, 'tables': 6, 'table_names': ['memories', 'profiles', 'approvals', 'writes', 'audit', 'jobs'], 'integrity': 'ok', 'fk_violations': 0}
+ttl {'day29': 1, 'day30': 0}
+durability {'records_after_reopen': 1, 'persistent': True}
+poison {'rejected': True}
+isolation {'rejected': True, 'rows_leaked': 0, 'own_rows_still': True}
+candidates {'day': 45, 'total_events': 720, 'candidates': 308, 'unverified_total': 103, 'kinds': {'episodic': 103, 'procedural': 102, 'semantic': 103}}
+interrupt {'pending': True, 'version_before_approval': 0, 'has_interrupt_marker': True}
+resume {'status': 'approved', 'version_after': 1, 'audit_events': 1, 'committed': True}
+replay {'duplicate_detected': True, 'version_after': 1, 'audit_after': 1, 'changed_payload_rejected': True}
+binding {'stale_rejected': True, 'edited_payload_rejected': True}
+rejection {'status': 'rejected', 'audit_logged': True, 'version_rejected_person': 0, 'version_approved_person': 1}
+final {'profiles': 1, 'audit': 1}
+ckpt tables ['checkpoints', 'writes']
+
+=== SECTION 9 ===
+labels {'public_labels': 280, 'test_without_label': 80, 'groups_disjoint': True}
+baseline {'majority_route': 'profile', 'majority_dev_f1': 0.1, 'router_dev_f1': 0.911683}
+selection {'trials': [{'C': 0.1, 'dev_macro_f1': 0.911683}, {'C': 1.0, 'dev_macro_f1': 0.874008}, {'C': 10.0, 'dev_macro_f1': 0.874008}], 'chosen_C': 0.1, 'dev_f1': 0.911683, 'config_hash': '0b80909d4eba71e9'}
+threshold {'threshold': 0.55, 'dev_size': 80, 'accepted': 0, 'clarify': 80, 'coverage': 0.0, 'conditional_accuracy': None, 'undefined': True}
+testpreds {'count': 80, 'unique_ids': 80, 'distribution': {'context': 20, 'memory': 25, 'profile': 15, 'unsupported': 20}}
+chaining {'reports': 1, 'gate_stops': 1}
+parallel {'workers': 2, 'claims': 3, 'matches_single_path': True, 'evidence_refs': 5, 'policy_skills': 4}
+coordinator {'distribution': {'2': 45, '3': 15}, 'max_workers': 3}
+evaluator {'reviews': 2, 'accepted': True}
+hmac {'valid_accepted': True, 'tampered_rejected': True, 'defects_rejected': 1}
+maker {'valid_passes': True, 'tampered_rejected': True, 'write_tool_in_workers': False}
+handoff {'normal': 'completed', 'cyclic': 'cycle_detected'}
+timing {'identical': True, 'serial_ms': 0.11, 'parallel_ms': 8.41, 'ratio': 76.0443}
+
+=== SECTION 10 ===
+inventory {'malicious': 120, 'benign': 60, 'families': 10, 'family_counts': {'approval_deception': 12, 'cascading_failure': 12, 'code_execution': 12, 'forged_message': 12, 'goal_hijack': 12, 'memory_poisoning': 12, 'privilege_abuse': 12, 'rogue_agent': 12, 'supply_chain': 12, 'tool_misuse': 12}, 'distinct_assets': 10}
+detector {'tpr': 0.2, 'fpr': 1.0, 'confusion': {'tp': 24, 'fp': 60, 'tn': 0, 'fn': 96}, 'missed': 96, 'note': 'a keyword filter only inspects text; it cannot bound what a tool does, so detection must sit alongside capability limits, not instead of them'}
+checks {'families_tested': 11, 'controls_passed': 11, 'all_blocked': True, 'failed': []}
+
+=== SECTION 11 ===
+paired {'runs': 640, 'scenarios': 320, 'variants': ['baseline', 'candidate'], 'variants_per_scenario': [2], 'paired': True, 'splits': ['dev', 'test']}
+dev {'baseline': {'n': 160, 'success_rate': 0.825, 'violation_rate': 0.08125, 'success_with_violation': 12, 'clean_success_rate': 0.75, 'human_edit_rate': 0.15625}, 'candidate': {'n': 160, 'success_rate': 0.88125, 'violation_rate': 0.00625, 'success_with_violation': 1, 'clean_success_rate': 0.875, 'human_edit_rate': 0.15}}
+boot {'split': 'test', 'pairs': 160, 'iterations': 2000, 'seed': 20261016, 'observed_diff': 0.0625, 'ci_low': -0.01875, 'ci_high': 0.14375, 'significant': False}
+wall {'runs_with_spans': 640, 'p50_wall_ms': 1427, 'p95_wall_ms': 1970, 'mean_work_ms': 2387.84, 'mismatches_vs_recorded': 0, 'work_exceeds_wall': 640, 'max_work_ms': 3848}
+cost {'model': 'fixture-small', 'unit': 'USD', 'total_cost_usd': 0.262949, 'per_variant': {'baseline': {'cost_usd': 0.130868, 'runs': 320, 'cost_per_success_usd': 0.000501}, 'candidate': {'cost_usd': 0.132081, 'runs': 320, 'cost_per_success_usd': 0.000472}}, 'candidate_cost_per_success_usd': 0.000472}
+toolacc {'weighted_accuracy': 0.385873, 'mean_per_run_accuracy': 0.421875, 'runs': 640, 'total_calls': 3242, 'difference': 0.036002, 'note': 'mean-of-ratios weights a 1-call run the same as a 10-call run, so it is pulled up by small runs; the weighted form is the honest aggregate'}
+auditgroups {'groups': {'synthetic-a': {'n': 160, 'success_rate': 0.875}, 'synthetic-b': {'n': 160, 'success_rate': 0.875}}, 'sizes': {'synthetic-a': 160, 'synthetic-b': 160}, 'max_rate': 0.875, 'min_rate': 0.875, 'spread': 0.0}
+logq {'checks': {'unique_run_ids': True, 'unique_span_ids': True, 'spans_link_to_runs': True, 'non_negative_intervals': True, 'correct_le_tool_calls': True}, 'passed': 5, 'total': 5}
+preds {'count': 80, 'unique': 80, 'complete': True, 'routes_allowed': True, 'distribution': {'context': 20, 'memory': 25, 'profile': 15, 'unsupported': 20}}
+js {'js_divergence': 0.00055822, 'upper_bound_ln2': 0.69314718, 'routes': ['context', 'memory', 'profile', 'unsupported']}
+
+=== SECTION 12 ===
+gate {'quality': {'metric': 'success rate gain over baseline on dev', 'value': 0.05625, 'threshold': 0.03, 'passed': True}, 'policy': {'metric': 'candidate violation rate on dev', 'value': 0.00625, 'threshold': 0.02, 'passed': True}, 'latency': {'metric': 'P95 wall time (ms)', 'value': 1970, 'threshold': 2300.0, 'passed': True}, 'approved': True, 'evaluated_on': 'dev'}
+canary {'canary_requests': 37, 'total_requests': 600, 'eligible_requests': 564, 'observed_ratio': 0.061667, 'nominal_percent': 5.0, 'flag_respected': True, 'note': 'a hash bucket gives a stable, roughly-nominal slice, not an exact 5%'}
+shadow {'path_completed': True, 'profiles_before': 1, 'profiles_after': 1, 'profile_delta': 0, 'no_write': True}
+jobs {'new_jobs': 300, 'duplicate_deliveries': 300, 'unique_events': 300, 'deliveries': 600, 'stats': {'completed': 300}, 'note': 'claim creates the row; completion is a separate state transition'}
+card {'fields_present': ['owner', 'goal', 'scope', 'tools', 'autonomy_level', 'data_limits', 'budget', 'escalation_criteria', 'kill_switch', 'eval_metrics'], 'field_count': 10, 'required_count': 10, 'complete': True}
+manifest {'count': 6, 'all_present': True, 'hash_format_ok': True, 'credentials_note': 'no real credential, token or API key is included'}
+weights {'questions': 144, 'total_score': 100.0, 'fake_score_ignored': True}
+scope {'real': ['sqlite', 'mcp_stdio', 'langgraph', 'tool_dispatch', 'loop_guards', 'router_training', 'evaluation_metrics'], 'fixture': ['decision_model', 'reviewer_identity', 'comparison_logs', 'model_responses'], 'not_executed': ['live_llm', 'public_deployment', 'external_auth', 'a2a_protocol'], 'real_count': 7, 'live_llm': False}
+incident {'new_tools_after_kill': 0, 'loop_status': 'stopped', 'next_mode': 'shadow', 'audit_preserved': True, 'feature_flag': 'off', 'tools_before': 3, 'decision': {'action': 'rollback_to_shadow', 'reason': 'policy_violation_in_canary', 'auto_recover': False}}
+integrity {'matched': 16, 'total': 16, 'all_match': True}
+security 11
+practical 96 preds 80
+handoff {'data_hashes_match': True, 'security_controls_passed': 11, 'checker_passed': None, 'practical_answers': 96, 'test_predictions': 80, 'generated_at': '2026-10-24T13:33:30'}

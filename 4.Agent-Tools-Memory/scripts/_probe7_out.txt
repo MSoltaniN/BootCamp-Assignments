@@ -1,0 +1,10 @@
+arg_model: <class 'mcp.server.mcpserver.utilities.func_metadata.get_employeeArguments'>
+config    : {'arbitrary_types_allowed': True}
+new config: {'arbitrary_types_allowed': True, 'extra': 'forbid'}
+valid  -> {
+  "employee_id": "x"
+}
+extra  -> RAISED ToolError Error executing tool get_employee: 1 validation error for get_employeeArguments
+tenant
+  Extra inputs are not permitted [type=extra_forbidden, input_value='b', input_type=str]
+    For further informat

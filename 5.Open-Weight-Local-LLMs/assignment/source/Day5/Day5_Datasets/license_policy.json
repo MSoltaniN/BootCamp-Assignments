@@ -1,0 +1,16 @@
+{
+  "policy_id": "exercise-policy-v1",
+  "auto_allow": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "review": [
+    "Community",
+    "Custom"
+  ],
+  "deny": [
+    "NonCommercial"
+  ],
+  "missing": "review",
+  "note": "Synthetic eligibility policy for this exercise. Read the exact upstream license for real deployment."
+}

@@ -1,0 +1,45 @@
+published: {"properties": {"employee_id": {"title": "Employee Id", "type": "string"}}, "required": ["employee_id"], "title": "get_employeeArguments", "type": "object", "additionalProperties": false}
+Traceback (most recent call last):
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\tools\base.py", line 152, in run
+    validated = self.fn_metadata.validate_arguments(arguments)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 146, in validate_arguments
+    arguments_parsed_model = self.arg_model.model_validate(arguments_pre_parsed)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\pydantic\main.py", line 790, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for get_employeeArguments
+extra
+  Field required [type=missing, input_value={'employee_id': 'x'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\scripts\_probe_schema4.py", line 62, in <module>
+    asyncio.run(main())
+  File "C:\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\scripts\_probe_schema4.py", line 51, in main
+    print("valid  ->", render(await srv.call_tool("get_employee", {"employee_id": "x"})))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\mcp\server\mcpserver\tools\base.py", line 156, in run
+    raise ToolError(f"Error executing tool {self.name}: {exc}") from exc
+mcp.server.mcpserver.exceptions.ToolError: Error executing tool get_employee: 1 validation error for get_employeeArguments
+extra
+  Field required [type=missing, input_value={'employee_id': 'x'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing

@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "path": "route_predictions.jsonl",
+      "bytes": 6593,
+      "sha256": "ee827881ce5984101cd487e462ee6f3beca1b8d459bae36a0bb27122f3c170ef"
+    },
+    {
+      "path": "agent_trace.json",
+      "bytes": 834,
+      "sha256": "1ddcc0a7628fb024529221043d6b5110d60f076dd7ea21a6a3c0f84dbf18ae45"
+    },
+    {
+      "path": "locked_router_config.json",
+      "bytes": 541,
+      "sha256": "1ec41014e799723c8f7c3e7d37d6da76c0b2d5c15dd9dc8d8bf7da1390875fcc"
+    },
+    {
+      "path": "agent_card.json",
+      "bytes": 980,
+      "sha256": "f88a04cde11a46d4c5240943d9670f535cce8f556855c4d113372c54e4ac7ee1"
+    },
+    {
+      "path": "regression_gate.json",
+      "bytes": 459,
+      "sha256": "e45d86993ab13cb5c119d18e7be637ccb5d5a725c68bde4bc8983746adf73c36"
+    },
+    {
+      "path": "redteam_reports.json",
+      "bytes": 3172,
+      "sha256": "15980892efd78c04598e166dea07490a54e5426da09c84cd4b4689d01e7ce99b"
+    }
+  ],
+  "count": 6,
+  "all_present": true,
+  "hash_format_ok": true,
+  "credentials_note": "no real credential, token or API key is included"
+}

@@ -100,6 +100,6 @@
 == SUMMARY ==
 conceptual questions : 48
 answers provided     : 48
-answers applied      : 48
+answers applied      : 96
 missing              : none
 errors               : 0

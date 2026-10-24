@@ -1,0 +1,27 @@
+questions to process: 84  audit=False
+opening form…
+Traceback (most recent call last):
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\work\fill_form.py", line 244, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\work\fill_form.py", line 164, in main
+    page.wait_for_selector("article[id^='q-']", timeout=60_000)
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 21370, in wait_for_selector
+    self._sync(
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\_impl\_page.py", line 431, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pc\source\repos\AI\BootCamp Assignments\4.Agent-Tools-Memory\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("article[id^='q-']") to be visible
+

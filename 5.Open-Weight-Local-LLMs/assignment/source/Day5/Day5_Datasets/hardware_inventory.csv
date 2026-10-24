@@ -1,0 +1,9 @@
+hardware_id,label,capacity_gib,reserved_gib,bandwidth_gbs,power_w,capex_usd,backend
+H01,CPU laptop,16,4,68,35,800,CPU
+H02,GPU 24,24,2,900,320,2200,CUDA
+H03,Unified 64,64,12,270,90,2500,Metal
+H04,Unified 128,128,24,215,140,3000,Vulkan
+H05,GPU 48,48,4,860,300,6000,CUDA
+H06,GPU 80,80,8,1900,400,14000,CUDA
+H07,GPU 32,32,3,1400,350,3500,CUDA
+H08,CPU server,128,24,150,180,4200,CPU

@@ -1,0 +1,12 @@
+{"case_id": "dev-01", "family": "dev-family-01", "language": "en", "text": "Policy POL-DEV-01: annual leave allowance is 28 days. Extract the number of annual leave days.", "expected_days": 28}
+{"case_id": "dev-02", "family": "dev-family-02", "language": "en", "text": "Policy POL-DEV-02: annual leave allowance is 15 days. Extract the number of annual leave days.", "expected_days": 15}
+{"case_id": "dev-03", "family": "dev-family-03", "language": "en", "text": "Policy POL-DEV-03: annual leave allowance is 24 days. Extract the number of annual leave days.", "expected_days": 24}
+{"case_id": "dev-04", "family": "dev-family-04", "language": "en", "text": "Policy POL-DEV-04: annual leave allowance is 14 days. Extract the number of annual leave days.", "expected_days": 14}
+{"case_id": "dev-05", "family": "dev-family-05", "language": "en", "text": "Policy POL-DEV-05: annual leave allowance is 30 days. Extract the number of annual leave days.", "expected_days": 30}
+{"case_id": "dev-06", "family": "dev-family-06", "language": "en", "text": "Policy POL-DEV-06: annual leave allowance is 19 days. Extract the number of annual leave days.", "expected_days": 19}
+{"case_id": "dev-07", "family": "dev-family-07", "language": "fa", "text": "سیاست POL-DEV-07: سهمیهٔ مرخصی سالانه برابر 18 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 18}
+{"case_id": "dev-08", "family": "dev-family-08", "language": "fa", "text": "سیاست POL-DEV-08: سهمیهٔ مرخصی سالانه برابر 20 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 20}
+{"case_id": "dev-09", "family": "dev-family-09", "language": "fa", "text": "سیاست POL-DEV-09: سهمیهٔ مرخصی سالانه برابر 12 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 12}
+{"case_id": "dev-10", "family": "dev-family-10", "language": "fa", "text": "سیاست POL-DEV-10: سهمیهٔ مرخصی سالانه برابر 13 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 13}
+{"case_id": "dev-11", "family": "dev-family-11", "language": "fa", "text": "سیاست POL-DEV-11: سهمیهٔ مرخصی سالانه برابر 28 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 28}
+{"case_id": "dev-12", "family": "dev-family-12", "language": "fa", "text": "سیاست POL-DEV-12: سهمیهٔ مرخصی سالانه برابر 10 روز است. تعداد روزهای مرخصی سالانه را استخراج کن.", "expected_days": 10}

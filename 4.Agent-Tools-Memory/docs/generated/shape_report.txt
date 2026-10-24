@@ -1,0 +1,38 @@
+=== question_bank ===
+top keys: ['assignment', 'schema_version', 'revision', 'title', 'student_pack', 'source_page', 'totals', 'sections', 'questions', 'warnings']
+  dict[6] -> ['number', 'title', 'dataset', 'intro', 'points', 'question_count']
+    number.str = '1'
+    title.str = 'انتخاب معماری و مرز ایجنت'
+    dataset.str = 'سناریوهای مفهومی مستقل؛ اسلایدهای ۳ و ۴'
+    intro.str = 'برای هر سناریو یک گزینه و دلیل متکی به قید مسئله ارائه کنید. سطح پیچیدگی معماری را با سطح
+    points.float = 6.0
+    question_count.int = 12
+
+=== section5.json ===
+top keys: ['section', 'title', 'generated_at', 'q5_1_inventory', 'q5_2_scope', 'q5_3_budget', 'q5_4_control', 'q5_5_retrieval', 'q5_6_redaction', 'q5_7_dedupe', 'q5_8_compression', 'q5_9_specialists', 'q5_10_profile', 'q5_11_tamper', 'q5_12_coverage', 'checks']
+  section: int
+  title: str
+  generated_at: str
+  q5_1_inventory: dict[9]
+  q5_2_scope: dict[7]
+  q5_3_budget: dict[9]
+  q5_4_control: dict[7]
+  q5_5_retrieval: dict[7]
+  q5_6_redaction: dict[7]
+  q5_7_dedupe: dict[8]
+  q5_8_compression: dict[9]
+  q5_9_specialists: dict[12]
+  q5_10_profile: dict[9]
+  q5_11_tamper: dict[3]
+
+=== sections_6_12.json ===
+top keys: ['generated_at', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'handoff_check']
+  generated_at: str
+  section6: dict[11]
+  section7: dict[12]
+  section8: dict[12]
+  section9: dict[13]
+  section10: dict[3]
+  section11: dict[10]
+  section12: dict[13]
+  handoff_check: dict[6]

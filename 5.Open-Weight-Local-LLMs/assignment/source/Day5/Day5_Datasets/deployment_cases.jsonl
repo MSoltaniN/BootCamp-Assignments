@@ -1,0 +1,5 @@
+{"case_id": "safe-loopback", "host": "127.0.0.1", "auth": true, "remote_code": false, "telemetry": false, "redact": true, "expected": true}
+{"case_id": "public-no-auth", "host": "0.0.0.0", "auth": false, "remote_code": false, "telemetry": false, "redact": true, "expected": false}
+{"case_id": "remote-code", "host": "127.0.0.1", "auth": true, "remote_code": true, "telemetry": false, "redact": true, "expected": false}
+{"case_id": "telemetry", "host": "127.0.0.1", "auth": true, "remote_code": false, "telemetry": true, "redact": true, "expected": false}
+{"case_id": "unredacted", "host": "127.0.0.1", "auth": true, "remote_code": false, "telemetry": false, "redact": false, "expected": false}

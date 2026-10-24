@@ -1,0 +1,383 @@
+{
+  "section": 5,
+  "title": "آماده‌سازی داده و مهندسی context",
+  "generated_at": "2026-10-24T11:00:24",
+  "q5_1_inventory": {
+    "people": 180,
+    "policies": 6,
+    "documents": 96,
+    "requests": 360,
+    "splits": {
+      "dev": 80,
+      "train": 200,
+      "test": 80
+    },
+    "unique_ids": {
+      "employee_id": 180,
+      "doc_id": 96,
+      "request_id": 360,
+      "policy_scope": 6
+    },
+    "template_groups": {
+      "dev": 4,
+      "train": 10,
+      "test": 4
+    },
+    "overlaps": {
+      "train~dev": {
+        "template_groups": 0,
+        "texts": 0
+      },
+      "train~test": {
+        "template_groups": 0,
+        "texts": 0
+      },
+      "dev~test": {
+        "template_groups": 0,
+        "texts": 0
+      }
+    },
+    "split_text_of": "200/80/80"
+  },
+  "q5_2_scope": {
+    "principal": {
+      "tenant": "org-a",
+      "department": "finance",
+      "role": "hr_reviewer",
+      "employee_id": null,
+      "allowed_departments": []
+    },
+    "allowed": 16,
+    "total": 96,
+    "excluded": 80,
+    "excluded_by_other_tenant": 48,
+    "excluded_by_other_department": 32,
+    "scope_enforced": true
+  },
+  "q5_3_budget": {
+    "window": 1200,
+    "reserve": 200,
+    "capacity": 1000,
+    "selected": [
+      "system",
+      "task",
+      "tools",
+      "policy",
+      "evidence",
+      "memory"
+    ],
+    "skipped": [
+      "history",
+      "noise"
+    ],
+    "used": 900,
+    "remaining": 100,
+    "mandatory_tokens": 520,
+    "utilization": 0.9
+  },
+  "q5_4_control": {
+    "rejected": true,
+    "window": 600,
+    "reserve": 200,
+    "capacity": 400,
+    "mandatory_tokens": 520,
+    "error": "mandatory parts need 520 tokens but only 400 are available (window=600, reserve=200)",
+    "error_type": "BudgetError"
+  },
+  "q5_5_retrieval": {
+    "query": "reconciliation evidence",
+    "corpus_size": 16,
+    "retrieved": 4,
+    "top": [
+      {
+        "doc_id": "X-9624341957bb71ab",
+        "kind": "example",
+        "priority": 2,
+        "score": 0.599288,
+        "text": "finance reconciliation. Evidence must name a documented work record. Use verified sources and preserve uncertainty."
+      },
+      {
+        "doc_id": "X-d85283b0ac9391e3",
+        "kind": "example",
+        "priority": 2,
+        "score": 0.599288,
+        "text": "finance reconciliation. Evidence must name a documented work record. Use verified sources and preserve uncertainty."
+      },
+      {
+        "doc_id": "X-f93fdea50e1651c6",
+        "kind": "example",
+        "priority": 2,
+        "score": 0.599288,
+        "text": "finance reconciliation. Evidence must name a documented work record. Use verified sources and preserve uncertainty."
+      },
+      {
+        "doc_id": "X-a1b94e8f335f39e0",
+        "kind": "policy",
+        "priority": 10,
+        "score": 0.546715,
+        "text": "finance reconciliation. Evidence must name a documented work record. Use verified sources and preserve uncertainty."
+      }
+    ],
+    "distinct_scores": 2,
+    "limit_zero_rejected": true,
+    "limit_zero_error": "limit must be a positive integer, got 0"
+  },
+  "q5_6_redaction": {
+    "original": "Employee contact record for review. Send the summary to ali.reza@example.invalid before Friday. The reconciliation total must match the ledger for Q3.",
+    "redacted": "Employee contact record for review. Send the summary to [EMAIL_REDACTED] before Friday. The reconciliation total must match the ledger for Q3.",
+    "emails_found": [
+      "ali.reza@example.invalid"
+    ],
+    "email_removed": true,
+    "working_text_preserved": true,
+    "original_len": 150,
+    "redacted_len": 142
+  },
+  "q5_7_dedupe": {
+    "before": 16,
+    "after": 4,
+    "removed": 12,
+    "before_chars": 2936,
+    "after_chars": 734,
+    "char_reduction": 0.75,
+    "char_reduction_pct": "75.0%",
+    "duplicates": [
+      {
+        "doc_id": "X-9624341957bb71ab",
+        "duplicate_of": "X-a1b94e8f335f39e0"
+      },
+      {
+        "doc_id": "X-825fd9481a4f23c4",
+        "duplicate_of": "X-0f27ca2580174140"
+      },
+      {
+        "doc_id": "X-3215291f4b7cd467",
+        "duplicate_of": "X-339b48f67e631885"
+      },
+      {
+        "doc_id": "X-6f9d4744ed7632ff",
+        "duplicate_of": "X-5a80872f515a3ef0"
+      },
+      {
+        "doc_id": "X-d85283b0ac9391e3",
+        "duplicate_of": "X-a1b94e8f335f39e0"
+      },
+      {
+        "doc_id": "X-44b9aab1c03a6bee",
+        "duplicate_of": "X-0f27ca2580174140"
+      },
+      {
+        "doc_id": "X-edd8ccdf8a29fb2e",
+        "duplicate_of": "X-339b48f67e631885"
+      },
+      {
+        "doc_id": "X-56a8393d179db93b",
+        "duplicate_of": "X-5a80872f515a3ef0"
+      },
+      {
+        "doc_id": "X-f93fdea50e1651c6",
+        "duplicate_of": "X-a1b94e8f335f39e0"
+      },
+      {
+        "doc_id": "X-4ab15edfa4714311",
+        "duplicate_of": "X-0f27ca2580174140"
+      },
+      {
+        "doc_id": "X-aea9357c4052b6af",
+        "duplicate_of": "X-339b48f67e631885"
+      },
+      {
+        "doc_id": "X-da7ca55802724688",
+        "duplicate_of": "X-5a80872f515a3ef0"
+      }
+    ]
+  },
+  "q5_8_compression": {
+    "employee_id": "X-83c9e5db8f89697f",
+    "references_kept": 5,
+    "full_len": 841,
+    "compact_len": 406,
+    "size_reduction": 0.5172,
+    "size_reduction_pct": "51.7%",
+    "compact": [
+      {
+        "evidence_id": "X-d94d7fdcf41c2ed8",
+        "skill": "reporting",
+        "verified": true
+      },
+      {
+        "evidence_id": "X-44e607c587b8d17b",
+        "skill": "forecasting",
+        "verified": true
+      },
+      {
+        "evidence_id": "X-c34457d6ba0fc478",
+        "skill": "reconciliation",
+        "verified": false
+      },
+      {
+        "evidence_id": "X-bea235b2a0ab26ac",
+        "skill": "compliance",
+        "verified": true
+      },
+      {
+        "evidence_id": "X-a7f5050da4a714d3",
+        "skill": "leadership",
+        "verified": false
+      }
+    ],
+    "full_len_bytes": 841,
+    "compact_len_bytes": 406
+  },
+  "q5_9_specialists": {
+    "policy_context": {
+      "tenant": "org-a",
+      "department": "finance",
+      "required_skills": [
+        "reconciliation",
+        "forecasting",
+        "reporting",
+        "compliance"
+      ],
+      "min_evidence": 2,
+      "approval_role": "hr_reviewer"
+    },
+    "policy_field_count": 5,
+    "policy_bytes": 176,
+    "policy_has_email": false,
+    "policy_has_resume": false,
+    "policy_minimal": true,
+    "evidence_ref_count": 86,
+    "evidence_bytes": 7051,
+    "evidence_has_email": false,
+    "evidence_has_resume": false,
+    "permissions": {
+      "policy_specialist": {
+        "tools": [
+          "get_department_context"
+        ],
+        "write": false
+      },
+      "evidence_specialist": {
+        "tools": [
+          "get_evidence"
+        ],
+        "write": false
+      }
+    },
+    "evidence_read_only": true
+  },
+  "q5_10_profile": {
+    "employee_id": "X-83c9e5db8f89697f",
+    "tenant": "org-a",
+    "department": "finance",
+    "claims": [
+      {
+        "skill": "reporting",
+        "evidence_id": "X-d94d7fdcf41c2ed8",
+        "quote": "Completed documented reporting work in project 0."
+      },
+      {
+        "skill": "forecasting",
+        "evidence_id": "X-44e607c587b8d17b",
+        "quote": "Completed documented forecasting work in project 0."
+      },
+      {
+        "skill": "compliance",
+        "evidence_id": "X-bea235b2a0ab26ac",
+        "quote": "Completed documented compliance work in project 0."
+      }
+    ],
+    "claim_count": 3,
+    "covered_skills": [
+      "compliance",
+      "forecasting",
+      "reporting"
+    ],
+    "missing_skills": [
+      "reconciliation"
+    ],
+    "limitations": [
+      "Only verified evidence is used; unverified claims are excluded.",
+      "Self-reported statements are not treated as evidence.",
+      "This is a skills inventory, not a hiring, pay or promotion decision."
+    ],
+    "decision": "skills_inventory_only"
+  },
+  "q5_11_tamper": {
+    "altered_quote": {
+      "rejected": true,
+      "code": "quote_mismatch",
+      "message": "claim[0] quote was altered"
+    },
+    "forged_evidence_id": {
+      "rejected": true,
+      "code": "unknown_evidence",
+      "message": "claim[0] cites an evidence_id that does not exist"
+    },
+    "baseline": {
+      "valid": true,
+      "claims_verified": 3
+    }
+  },
+  "q5_12_coverage": {
+    "employees": 180,
+    "mean_coverage": 0.5083,
+    "mean_coverage_pct": "50.83%",
+    "by_department": {
+      "org-a/finance": {
+        "employees": 30,
+        "mean_coverage": 0.525,
+        "min": 0.25,
+        "max": 0.75
+      },
+      "org-a/marketing": {
+        "employees": 30,
+        "mean_coverage": 0.5333,
+        "min": 0.25,
+        "max": 0.75
+      },
+      "org-a/sales": {
+        "employees": 30,
+        "mean_coverage": 0.4917,
+        "min": 0.25,
+        "max": 0.75
+      },
+      "org-b/finance": {
+        "employees": 30,
+        "mean_coverage": 0.5,
+        "min": 0.25,
+        "max": 0.75
+      },
+      "org-b/marketing": {
+        "employees": 30,
+        "mean_coverage": 0.5333,
+        "min": 0.25,
+        "max": 0.75
+      },
+      "org-b/sales": {
+        "employees": 30,
+        "mean_coverage": 0.4667,
+        "min": 0.25,
+        "max": 0.75
+      }
+    }
+  },
+  "checks": {
+    "ids_unique": true,
+    "splits_disjoint": true,
+    "scope_excludes_all_foreign": true,
+    "budget_fits": true,
+    "budget_rejects_oversized": true,
+    "limit_zero_rejected": true,
+    "email_removed": true,
+    "working_text_kept": true,
+    "dedupe_reduced": true,
+    "compression_reduced": true,
+    "policy_context_minimal": true,
+    "evidence_read_only": true,
+    "quote_tamper_rejected": true,
+    "forged_ref_rejected": true,
+    "profile_valid": true
+  }
+}
