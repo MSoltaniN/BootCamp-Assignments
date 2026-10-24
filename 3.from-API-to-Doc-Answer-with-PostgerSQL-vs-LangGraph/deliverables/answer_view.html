@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>پاسخ مستند — Day 3</title>
+<style>
+  body { font-family: Tahoma, system-ui, sans-serif; max-width: 46rem; margin: 2rem auto; line-height: 1.9; }
+  .claim { font-weight: 600; }
+  .cite { color: #4b5563; font-size: .85em; }
+  .muted { color: #9ca3af; }
+  ul { padding-inline-start: 1.4rem; }
+  code { background: #f3f4f6; padding: .1rem .35rem; border-radius: 4px; direction: ltr; display: inline-block; }
+</style>
+</head>
+<body>
+  <h1>پاسخ مستند</h1>
+  <p>وضعیت: <strong>answered</strong> — مسیر:
+     <strong>research</strong></p>
+
+  <h2>ادعاها</h2>
+  <ul id="claims"><li><span class="claim">&lt;script&gt;alert(&#x27;xss&#x27;)&lt;/script&gt; Use 4 spaces.</span> <span class="cite">[C-PEP-0008]</span></li></ul>
+
+  <h2>منابع</h2>
+  <ul><li>PEP-0008 — Introduction <code>PEP-0008:vb80c7bf8:0-953</code></li></ul>
+
+  <p class="muted">دادهٔ مصنوعی · پاسخ استخراجی از شواهد بازیابی‌شده · هیچ LLM پولی فراخوانی نشده</p>
+
+  <script id="answer-data" type="application/json">{"claims": [{"text": "\u003cscript\u003ealert('xss')\u003c/script\u003e Use 4 spaces.", "citation_ids": ["C-PEP-0008"]}]}</script>
+  <script>
+    // Answer text is inserted with textContent so a payload like "<script>" is displayed, not executed.
+    const data = JSON.parse(document.getElementById("answer-data").textContent);
+    const list = document.getElementById("claims");
+    if (data.claims && data.claims.length) {
+      list.replaceChildren();
+      for (const claim of data.claims) {
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        span.className = "claim";
+        span.textContent = claim.text;
+        li.appendChild(span);
+        list.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

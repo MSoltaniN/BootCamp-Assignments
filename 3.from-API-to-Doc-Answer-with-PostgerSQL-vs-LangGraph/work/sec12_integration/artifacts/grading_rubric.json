@@ -1,0 +1,48 @@
+{
+  "schema": "day3-grading-rubric/1",
+  "three_error_decisions": [
+    {
+      "error_type": "infrastructure_failure",
+      "examples": [
+        "database file unreadable",
+        "model file missing"
+      ],
+      "decision": "do_not_score_as_wrong_answer; mark the item ungraded and report the cause"
+    },
+    {
+      "error_type": "student_error",
+      "examples": [
+        "number in the site differs from notebook output",
+        "missing notebook title cell"
+      ],
+      "decision": "score the item normally and state the discrepancy"
+    },
+    {
+      "error_type": "fixture_or_scope_limitation",
+      "examples": [
+        "question asks for a live LLM answer",
+        "test gold withheld"
+      ],
+      "decision": "mark as not_applicable and explain the boundary instead of penalising"
+    }
+  ],
+  "checks": [
+    {
+      "name": "schema_and_seed",
+      "what": "six contract tables, 20 users, 120 cases"
+    },
+    {
+      "name": "independent_execution",
+      "what": "the database checker runs on the uploaded file alone"
+    },
+    {
+      "name": "infrastructure_separation",
+      "what": "an unreadable file is 'error', not 'failed'"
+    },
+    {
+      "name": "analysis_review",
+      "what": "the agent reads the Persian analysis and compares it to outputs"
+    }
+  ],
+  "student_json_alone_is_sufficient": false
+}

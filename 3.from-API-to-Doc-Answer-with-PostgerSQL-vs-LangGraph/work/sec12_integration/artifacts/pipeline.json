@@ -1,0 +1,59 @@
+{
+  "schema": "day3-pipeline/1",
+  "stages": [
+    {
+      "name": "install",
+      "run": "python -m pip install -r requirements.txt",
+      "fail_fast": true
+    },
+    {
+      "name": "provision",
+      "run": "python scripts/download_model.py",
+      "fail_fast": true
+    },
+    {
+      "name": "migrate",
+      "run": "python work/sec06_sqlite/run_section6.py",
+      "fail_fast": true
+    },
+    {
+      "name": "seed",
+      "run": "python work/sec06_sqlite/run_section6.py",
+      "fail_fast": true
+    },
+    {
+      "name": "test",
+      "run": "python -m pytest -q",
+      "fail_fast": true
+    },
+    {
+      "name": "db_check",
+      "run": "python grading/check_day3_db.py day3.sqlite",
+      "fail_fast": true
+    },
+    {
+      "name": "regression_gate",
+      "run": "python work/sec12_integration/run_section12.py",
+      "fail_fast": true
+    },
+    {
+      "name": "health",
+      "run": "curl -f http://localhost:8000/api/health",
+      "fail_fast": true
+    }
+  ],
+  "rollback": {
+    "trigger": "db_check fails or health returns non-200",
+    "action": "restore previous day3.sqlite and redeploy previous image"
+  },
+  "secrets": {
+    "source": "environment",
+    "never_in_repository": true,
+    "required": [
+      "SESSION_SECRET",
+      "GOOGLE_CLIENT_ID",
+      "GOOGLE_CLIENT_SECRET"
+    ]
+  },
+  "live_deployment_performed": false
+}

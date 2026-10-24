@@ -1,0 +1,160 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1834.84it/s]
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\pc\\.matplotlib\\fontlist-v390.json.matplotlib-lock'
+
+==============================================================================
+12.1  files/sessions API on the SQLite adapter: health, owner case, non-owner case
+==============================================================================
+database engine reported by /api/health: {'status': 'ok', 'engine': 'sqlite', 'users': 20, 'cases': 120, 'chunks': 1286, 'synthetic': True}
+owner     -> 200
+non-owner -> 403 forbidden
+health    -> ok
+
+==============================================================================
+12.2  answer endpoint: schema, identity/ownership, graph invocation, trace id
+==============================================================================
+status: 200
+trace id: TRACE-4cdf161ff64f
+route: research | claims: 3
+correlation id present: True
+claims carry citation ids: True
+non-owner answer -> 403
+
+==============================================================================
+12.3  four negative paths on the answer endpoint
+==============================================================================
+missing identity   -> 401 (expected 401)  leaks case summary: False
+non-owner          -> 403 (expected 403)  leaks case summary: False
+query too short    -> 422 (expected 422)  leaks case summary: False
+extra field        -> 422 (expected 422)  leaks case summary: False
+statuses: [401, 403, 422, 422] | exactly 401/403/422/422: True
+private case text in any error body: False
+
+==============================================================================
+12.4  idempotent session creation over the SQLite unique constraint
+==============================================================================
+first : 201 {'session_id': 'S-33da70aa7b', 'replayed': False, 'case_id': 'C-001'}
+second: 200 {'session_id': 'S-33da70aa7b', 'replayed': True, 'case_id': 'C-001'}
+conflict: 409 conflict
+same session id: True | rows stored with this key: 1
+
+==============================================================================
+12.5  minimal RTL HTML view with escaping
+==============================================================================
+expected escaped needle: &lt;script&gt;alert
+double-escaped (would break display): False
+page bytes: 1822
+raw <script>alert occurrences: 0
+escaped form present: True
+uses textContent: True | uses innerHTML: False
+view saved: answer_view.html
+
+==============================================================================
+12.6  trace reconstruction from 4800 events
+==============================================================================
+events: 4800
+traces: 800
+events per trace: {6: 800}
+incomplete traces (< 6 events): 0
+error rate per step:
+  answer_generated       n= 800 errors= 22 rate=0.0275
+  citations_validated    n= 800 errors=  0 rate=0.0000
+  question_received      n= 800 errors=  0 rate=0.0000
+  response_sent          n= 800 errors=  0 rate=0.0000
+  retrieval_completed    n= 800 errors=  0 rate=0.0000
+  route_selected         n= 800 errors=  0 rate=0.0000
+total step-latency per trace: p50= 3005.5 ms p95= 4299.3 ms
+chart: artifacts/trace_latency_hist.png
+the latency in this dataset is synthetic: no conclusion about real system speed
+
+==============================================================================
+12.7  regression gate over ownership, idempotency, embedding version, citations, log hygiene
+==============================================================================
+PASS  ownership_denies_non_owner
+PASS  idempotency_replay_same_id
+PASS  idempotency_conflict_409
+PASS  embedding_versions_consistent
+PASS  answer_claims_cite_real_chunks
+PASS  error_body_has_no_case_text
+PASS  html_escapes_script_payload
+PASS  attack_suite_no_secret_leak
+controls: 8 | accepted: 8
+
+==============================================================================
+12.8  CI/CD and health contract as a checkable file
+==============================================================================
+pipeline stages: 8
+  install          python -m pip install -r requirements.txt
+  provision        python scripts/download_model.py
+  migrate          python work/sec06_sqlite/run_section6.py
+  seed             python work/sec06_sqlite/run_section6.py
+  test             python -m pytest -q
+  db_check         python grading/check_day3_db.py day3.sqlite
+  regression_gate  python work/sec12_integration/run_section12.py
+  health           curl -f http://localhost:8000/api/health
+live deployment performed: False
+secrets come from the environment and are never committed
+
+==============================================================================
+12.9  final checker run on day3.sqlite
+==============================================================================
+OK   sqlite_file_ok
+OK   integrity_ok
+OK   schema_users
+OK   schema_cases
+OK   schema_sessions
+OK   schema_messages
+OK   schema_documents
+OK   schema_chunks
+OK   seed_users
+OK   seed_cases
+OK   seed_documents
+OK   seed_chunks
+OK   no_orphan_cases
+OK   no_orphan_chunks
+OK   foreign_keys_declared
+OK   owner_index
+OK   idempotency_unique
+OK   documents_unique
+OK   embedding_dimensions
+OK   embedding_metadata_present
+OK   fk_rejects_orphan_case
+OK   transaction_rollback
+status: passed
+status: passed | exit: 0
+checks run: 22 | accepted: 22
+
+==============================================================================
+12.10  reproduction instruction and delivery manifest with hashes
+==============================================================================
+manifest files: 6
+  day3.sqlite                       5,562,368 B  5a455aac0b19
+  day3_notebook.ipynb                 309,716 B  d85e3e149fec
+  test_predictions.jsonl                2,790 B  6806daa93b3d
+  answerability_predictions.jsonl       2,218 B  a7a8432db521
+  answer_view.html                      1,975 B  0dec65ed6fb0
+  REPRODUCE.md                            903 B  e5b0c2f44529
+files with a personal path or leaked key material: none
+
+==============================================================================
+12.11  grading rubric for an agentic reviewer
+==============================================================================
+error decisions defined: 3
+  infrastructure_failure           -> do_not_score_as_wrong_answer; mark the item ungraded and rep
+  student_error                    -> score the item normally and state the discrepancy
+  fixture_or_scope_limitation      -> mark as not_applicable and explain the boundary instead of p
+student JSON alone is sufficient: False
+
+==============================================================================
+12.12  final report: executed / fixture / not executed, next priorities
+==============================================================================
+executed items: 6
+fixture items : 5
+not executed  : 5
+next priorities: 5
+  1. replace X-User-ID with a verified OIDC session
+  2. add a rule-based unsupported check ahead of the router
+  3. calibrate confidence and measure ECE
+  4. replace the extractive baseline with a real model behind the provider interface
+  5. grow the evaluation set beyond 24 dev queries
+
+artifacts written to C:\Users\pc\source\repos\AI\BootCamp Assignments\3.from-API-to-Doc-Answer-with-PostgerSQL-vs-LangGraph\work\sec12_integration\artifacts

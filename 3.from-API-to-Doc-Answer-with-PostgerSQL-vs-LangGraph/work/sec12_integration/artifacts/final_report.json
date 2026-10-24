@@ -1,0 +1,53 @@
+{
+  "schema": "day3-final-report/1",
+  "executed": [
+    "SQLite schema, constraints, rollback, indexes, 1286 chunks with 384-dim vectors",
+    "real embedding model, cosine, TF-IDF, RRF, ACL before top-k",
+    "dev evaluation, method lock, 30 test predictions, 30 answerability decisions",
+    "rule/linear/MLP router trained and compared",
+    "LangGraph workflow with authorization, tools, extractive answer, citation validation",
+    "final API, RTL HTML view, 4800-event trace analysis, regression gate"
+  ],
+  "fixture": [
+    "20 synthetic users and 120 synthetic cases",
+    "2400 synthetic request logs and fictional pricing",
+    "30 synthetic attacks and 4 answer candidates",
+    "4800 synthetic observability events",
+    "test labels withheld; X-User-ID stands in for OIDC"
+  ],
+  "not_executed": [
+    "live Google OIDC sign-in",
+    "paid LLM calls",
+    "PostgreSQL / pgvector",
+    "internet deployment",
+    "OCR for the scanned PDF fixture"
+  ],
+  "overclaiming_risk": "A passing regression gate on synthetic data is not evidence of production readiness; the numbers describe this corpus, this model, and these fixtures.",
+  "next_priorities": [
+    {
+      "rank": 1,
+      "action": "replace X-User-ID with a verified OIDC session",
+      "why": "identity is currently a fixture; every ownership rule depends on it"
+    },
+    {
+      "rank": 2,
+      "action": "add a rule-based unsupported check ahead of the router",
+      "why": "all 9 router errors were unsupported predicted as research"
+    },
+    {
+      "rank": 3,
+      "action": "calibrate confidence and measure ECE",
+      "why": "softmax confidence is used as a threshold but is not a probability"
+    },
+    {
+      "rank": 4,
+      "action": "replace the extractive baseline with a real model behind the provider interface",
+      "why": "general mode currently cannot answer at all"
+    },
+    {
+      "rank": 5,
+      "action": "grow the evaluation set beyond 24 dev queries",
+      "why": "the 95% interval for Recall@3 spans 0.875 to 1.0"
+    }
+  ]
+}

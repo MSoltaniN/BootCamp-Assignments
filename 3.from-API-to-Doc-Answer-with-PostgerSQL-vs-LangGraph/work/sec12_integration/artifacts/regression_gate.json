@@ -1,0 +1,41 @@
+{
+  "schema": "day3-regression-gate/1",
+  "seed": 20261015,
+  "controls": [
+    {
+      "control": "ownership_denies_non_owner",
+      "passed": true
+    },
+    {
+      "control": "idempotency_replay_same_id",
+      "passed": true
+    },
+    {
+      "control": "idempotency_conflict_409",
+      "passed": true
+    },
+    {
+      "control": "embedding_versions_consistent",
+      "passed": true
+    },
+    {
+      "control": "answer_claims_cite_real_chunks",
+      "passed": true
+    },
+    {
+      "control": "error_body_has_no_case_text",
+      "passed": true
+    },
+    {
+      "control": "html_escapes_script_payload",
+      "passed": true
+    },
+    {
+      "control": "attack_suite_no_secret_leak",
+      "passed": true
+    }
+  ],
+  "accepted": 8,
+  "total": 8,
+  "result": "pass"
+}

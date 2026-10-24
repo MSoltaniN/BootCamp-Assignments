@@ -1,0 +1,120 @@
+{
+  "seed": 20261015,
+  "results": {
+    "12.1": {
+      "engine": "sqlite",
+      "table": [
+        {
+          "request": "health",
+          "status": 200
+        },
+        {
+          "request": "owner case",
+          "status": 200
+        },
+        {
+          "request": "non-owner case",
+          "status": 403
+        }
+      ]
+    },
+    "12.2": {
+      "status": 200,
+      "has_trace_id": true,
+      "route": "research",
+      "claims": 3
+    },
+    "12.3": {
+      "statuses": [
+        401,
+        403,
+        422,
+        422
+      ],
+      "leaked_summary": false,
+      "rows": [
+        {
+          "case": "missing identity",
+          "status": 401,
+          "expected": 401,
+          "leaked_summary": false
+        },
+        {
+          "case": "non-owner",
+          "status": 403,
+          "expected": 403,
+          "leaked_summary": false
+        },
+        {
+          "case": "query too short",
+          "status": 422,
+          "expected": 422,
+          "leaked_summary": false
+        },
+        {
+          "case": "extra field",
+          "status": 422,
+          "expected": 422,
+          "leaked_summary": false
+        }
+      ]
+    },
+    "12.4": {
+      "same_id": true,
+      "stored": 1,
+      "conflict_status": 409,
+      "first": 201,
+      "second": 200
+    },
+    "12.5": {
+      "saved": true,
+      "raw_script": 0,
+      "escaped": true,
+      "double_escaped": false,
+      "textcontent": true,
+      "innerhtml": false
+    },
+    "12.6": {
+      "traces": 800,
+      "incomplete": 0,
+      "p50_total_ms": 3005.5,
+      "p95_total_ms": 4299.3,
+      "error_rates": {
+        "answer_generated": 0.0275,
+        "citations_validated": 0.0,
+        "question_received": 0.0,
+        "response_sent": 0.0,
+        "retrieval_completed": 0.0,
+        "route_selected": 0.0
+      }
+    },
+    "12.7": {
+      "accepted": 8,
+      "total": 8
+    },
+    "12.8": {
+      "stages": 8,
+      "deployed": false
+    },
+    "12.9": {
+      "status": "passed",
+      "exit": 0,
+      "checks": 22,
+      "accepted": 22
+    },
+    "12.10": {
+      "manifest_files": 6,
+      "suspicious": []
+    },
+    "12.11": {
+      "error_decisions": 3,
+      "json_alone_sufficient": false
+    },
+    "12.12": {
+      "executed": 6,
+      "fixture": 5,
+      "not_executed": 5,
+      "priorities": 5
+    }
+  }
+}
