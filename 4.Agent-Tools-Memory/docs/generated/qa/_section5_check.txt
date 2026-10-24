@@ -1,0 +1,22 @@
+== SECTION 5 ANSWER VALIDATION ==
+
+[ok] 5.1   fields=5 all answered
+[ok] 5.2   fields=3 all answered
+[ok] 5.3   fields=4 all answered
+[ok] 5.4   fields=2 all answered
+[ok] 5.5   fields=3 all answered
+[ok] 5.6   fields=3 all answered
+[ok] 5.7   fields=4 all answered
+[ok] 5.8   fields=3 all answered
+[ok] 5.9   fields=3 all answered
+[ok] 5.10  fields=3 all answered
+[ok] 5.11  fields=3 all answered
+[ok] 5.12  fields=3 all answered
+
+== SUMMARY ==
+section 5 questions : 12
+fully answered      : 12
+points              : 8/8
+field answers       : 27
+rationales          : 12
+errors              : 0
