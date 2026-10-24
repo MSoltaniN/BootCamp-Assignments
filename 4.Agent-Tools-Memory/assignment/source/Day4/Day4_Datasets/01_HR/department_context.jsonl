@@ -1,0 +1,6 @@
+{"tenant": "org-a", "department": "finance", "version": "1.0", "required_skills": ["reconciliation", "forecasting", "reporting", "compliance"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}
+{"tenant": "org-a", "department": "marketing", "version": "1.0", "required_skills": ["analytics", "campaigns", "experimentation", "content"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}
+{"tenant": "org-a", "department": "sales", "version": "1.0", "required_skills": ["negotiation", "crm", "discovery", "forecasting"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}
+{"tenant": "org-b", "department": "finance", "version": "1.0", "required_skills": ["reconciliation", "forecasting", "reporting", "compliance"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}
+{"tenant": "org-b", "department": "marketing", "version": "1.0", "required_skills": ["analytics", "campaigns", "experimentation", "content"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}
+{"tenant": "org-b", "department": "sales", "version": "1.0", "required_skills": ["negotiation", "crm", "discovery", "forecasting"], "min_evidence": 2, "retention_days": 30, "approval_role": "hr_reviewer"}

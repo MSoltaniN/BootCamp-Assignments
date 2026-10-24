@@ -1,0 +1,112 @@
+file  : جلسه ۴ — Agentic AI در عمل _ بوتکمپ ایجنت_های هوش مصنوعی.pdf
+pages : 28
+
+--- slide 1 (chars=780)
+    Tools                                                 ◢ SESSION 04 // AGENTIC AI IN DEPTH
+    Guardrails     Observe
+    Human                                                                         ۴ هسلج
+--- slide 2 (chars=2116)
+    ◢ AGENDA
+    زورما تسرهف
+    و دننز یم ادص رازبا ،دنزیر یم همانرب :دنهد یم ماجنا راک هک میور یم ییاه متسیس غارس زورما .دهد یم باوج هک میتخاس یتاب تچ 
+--- slide 3 (chars=2697)
+    ◢  SYSTEM ARCHITECTURE
+    لیمیا و میوقت ات یتوص مایپ زا :متسیس یرامعم
+    مدق ره و دسر یم رازبا هب ربراک دییأت زا دعب طقف مادقا ره ؛تسلااب فیدر یلصا ریسم .هداد هاگیاپ و API ،تابر :Docker Compose
+--- slide 4 (chars=2179)
+    ◢ WORKFLOW VS AGENT
+    دینک عورش لح هار نیرت هداس زا ؟Agent ای Workflow
+    هچ دریگ یم میمصت هقلح کی رد شدوخ LLM :Agent .دهد یم ماجنا ار مدق دنچ LLM نآ رد هک دک اب هدش فیرعت شیپ زا ریسم :Workflow
+--- slide 5 (chars=2690)
+    ◢ ANATOMY OF AN AGENT
+    هقلح کی و ءزج شش :Agent کی یموتانآ
+    .دخرچ یم فقوت طرش ای فده هب ندیسر ات (Reason + Act) ReAct هقلح رد هک ،لیردراگ + شناد + هظفاح + رازبا + روتسد + لدم = Age
+--- slide 6 (chars=1844)
+    ◢ CONTEXT ENGINEERING
+    لدم هرجنپ ندرک رپ رنه :Context Engineering
+    Prompt Engineering .دوش لدم Context Window دراو ،یبلاق هچ اب ،یتاعلاطا هچ ًاقیقد مدق ره رد هکنیا یحارط :Context Engineer
+--- slide 7 (chars=2872)
+    ◢  TOOLS · FUNCTION CALLING · MCP
+    درادناتسا زیرپ ناونع هب MCP و ،Agent یاه تسد :اهرازبا
+    .دنک یم ارجا امش دک ؛(Function Calling) «نزب ادص اهرتماراپ نیا اب ار رازبا نیا» دیوگ یم طقف لدم
+--- slide 8 (chars=2152)
+    ◢  MEMORY & STATE
+    ؟دراپسب رطاخ هب ار یزیچ هچ State: Agent و هظفاح
+    .دوش هتشاد هگن یِک ات و اجک ،یزیچ هچ میریگ یم میمصت و میزاس یم ام ار هظفاح .رفص زا یناوخارف ره ؛تسا هظفاح یب ًاتاذ LLM
+--- slide 9 (chars=2199)
+    ◢  WORKFLOW PATTERNS
+    راتخمدوخ Agent ات Workflow زا :تخاس یاهوگلا
+    هب تسار لااب زا .دنتسه اه نآ زا یبیکرت یعقاو یاه متسیس رتشیب هک (Anthropic زا «Building Effective Agents» ساسا رب) هیاپ 
+--- slide 10 (chars=2439)
+    ◢  MULTI-AGENT ARCHITECTURES
+    ؟دراد ار ششزرا یِک :Agent-دنچ یرامعم
+    .دیزاسب بوخ Agent کی لوا .یا هریجنز یاطخ و ربارب دنچ Token اما ؛یزاوم راک و شقن ره یارب ادج Context
+--- slide 11 (chars=2498)
+    ◢  LEVELS OF AUTONOMY
+    ؟تساجک ناسنا شقن :یراتخمدوخ حوطس
+    کسیر هچ ره ؛(Zhang، ۲۰۲۵ و Feng، McDonald) ربراک شقن ساسا رب حطس جنپ .لدم یگژیو هن ،تسا یحارط میمصت کی یراتخمدوخ
+--- slide 12 (chars=2749)
+    ◢  DEPLOYMENT LEVELS
+    Production تمس هب هلپ هلپ :رارقتسا حوطس
+    .دش هدروآرب لبق هلپ یاهرایعم هک یتقو طقف هلپ ره :دیزاسب هداد اب ار دامتعا .دینکن «نشور» هراب کی ار Agent
+--- slide 13 (chars=2652)
+    ◢ THREATS · OWASP AGENTIC TOP 10
+    اهAgent یارب OWASP Top 10 و Prompt Injection :اهدیدهت
+    .یسرتسد و هداد ،رازبا :دراد تسد لدم نوچ تسا رت کانرطخ Agent رد .دنک یم یقلت روتسد ار نآ لدم هک ینتم :Prompt Injection
+--- slide 14 (chars=3284)
+    ◢  DEFENSE IN DEPTH
+    تسین یفاک ییاهنت هب یا هیلا چیه :هیلادنچ عافد
+    .عونمم Prompt رد طقف هن ،دشاب نکممریغ رازبا دک رد دیاب ،دنکب «دیابن» لدم هچ ره
+--- slide 15 (chars=2454)
+    ◢  PACKAGES · AGENTIC AI ECOSYSTEM
+    ؟یِک ار مادک :Agent تخاس یلصا یاه جیکپ
+    .یبایدر یارب OpenTelemetry و لدم یارب هزاورد کی ،هداد یارب Pydantic ،هقلح یارب SDK ای بوچراچ کی :دنا یبیکرت یعقاو یاهAge
+--- slide 16 (chars=1651)
+    ◢  EVALUATION & OBSERVABILITY
+    ؟دنک یم راک تسرد Agent مینادب اجک زا :یریذپ هدهاشم و یبایزرا
+    Prompt رییغت ره ،Eval نودب .ار (Trajectory) ریسم مه و میجنس یم ار هجیتن مه سپ ؛دنک یم قرف راب ره شریسم و تسا یعطقریغ Age
+--- slide 17 (chars=2335)
+    ◢  DEPLOYMENT CONSIDERATIONS
+    Production زا لبق تسیل کچ :رارقتسا تاظحلام
+    .تسا «دنک یم راک لوبق لباق هنیزه اب ،همه یارب ،زور ره» اب «درک راک» توافت روحم تشه نیا .تسا عورش طقف قفوم یومد
+--- slide 18 (chars=2789)
+    ◢ CASE STUDY · PERSONAL ASSISTANT
+    مارگلت رد یتوص یصخش رایتسد :یدروم هعلاطم
+    ،ربراک دییأت زا دعب و دزاس یم ربتعم JSON کی DeepSeek اب Agent ،دنک یم نتم ار نآ Vosk ؛دتسرف یم یتوص مایپ یسراف هب مارگلت
+--- slide 19 (chars=4878)
+    ◢   PROJECT SPEC · SPEC.md
+    یسیوندک رایتسد هب هژورپ یفرعم :SPEC.md لیاف
+    یزیچ و تسا هژورپ یلک یامن و هنیمز طقف .دیهدب یسیوندک رایتسد هب راک عورش رد و دیراذگب هژورپ رد docs/SPEC.md مان اب ار لیا
+--- slide 20 (chars=2624)
+    ◢  SETUP · TELEGRAM BOT & RESEND
+    Resend دیلک و مارگلت تابر تخاس :اه تپمارپ زا شیپ
+    .دراد ار اهریغتم مان طقف .env.example و دنوش یم هتشاد هگن .env رد طقف ود ره .دراد مزلا ۱ تپمارپ هک یدیلک ود
+--- slide 21 (chars=2788)
+    ◢   SETUP · GOOGLE CALENDAR
+    مدق هب مدق :راک شدرگ هب لگوگ میوقت لاصتا
+    دعب ؛دوش یم ماجنا راب کی میظنت .دتسرف یم همان توعد اه نامهم یارب و دزاس یم دادیور ناتدوخ لگوگ باسح اب create_calendar_ev
+--- slide 22 (chars=3815)
+    ◢    PROMPT 01 · FOUNDATION
+    هداد هاگیاپ و Resend ،مارگلت تابر ،Git، Docker :۱ تپمارپ
+    تپمارپ یپک                                                                                                              
+--- slide 23 (chars=4256)
+    ◢   PROMPT 02 · AGENTIC WORKFLOW
+    هظفاح و اهرازبا ،DeepSeek اب یتنجیا راک شدرگ :۲ تپمارپ
+    تپمارپ یپک                                                                                                              
+--- slide 24 (chars=2128)
+    ◢   PROMPT 03 · API · MCP · BACKEND
+    دنا کب و MCP رورس ،API :۳ تپمارپ
+    تپمارپ یپک                                                                                                              
+--- slide 25 (chars=3987)
+    ◢   PROMPT 04 · TOKEN & QUALITY DASHBOARD
+    لدم تیفیک و نکوت لرتنک یارب BI دروبشاد :۴ تپمارپ
+    تپمارپ یپک                                                                                                              
+--- slide 26 (chars=2983)
+    ◢   PROMPT 05 · FINALIZE & DEPLOY
+    cloud.ir رورس یور رارقتسا و یزاس ییاهن :۵ تپمارپ
+    تپمارپ یپک                                                                                                              
+--- slide 27 (chars=1988)
+    ◢ WRAP-UP & NEXT SESSION
+    دعب هسلج و یدنب عمج
+    .دیما رد هن ،دک رد تینما و .Trace و Eval + تسرد یاج رد ناسنا + زمرت اب هقلح + دودحم رازبا + تسرد Context = بوخ Agent
+--- slide 28 (chars=0)

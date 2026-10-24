@@ -1,0 +1,360 @@
+{"request_id": "X-219f3ecd2526fab4", "template_group": "family-11", "split": "dev", "text": "Retrieve stored observations about the employee for the marketing team; request variant 67."}
+{"request_id": "X-7dadc3e505aa8ad4", "template_group": "family-06", "split": "train", "text": "List evidenced skills for review for the finance team; request variant 36."}
+{"request_id": "X-a6f02b9fd21c7e31", "template_group": "family-03", "split": "train", "text": "Change an employee salary for the finance team; request variant 33."}
+{"request_id": "X-5ae434827a7420c0", "template_group": "family-15", "split": "test", "text": "Find the employee's stored memory entries for the marketing team; request variant 79."}
+{"request_id": "X-d41fd1c25e9a85f3", "template_group": "family-07", "split": "train", "text": "Produce a grounded competency inventory for the sales team; request variant 17."}
+{"request_id": "X-23c60e70e1c36618", "template_group": "family-14", "split": "test", "text": "Retrieve required skills from the department policy for the marketing team; request variant 82."}
+{"request_id": "X-ed99fa648b3efcad", "template_group": "family-02", "split": "train", "text": "Read earlier session facts for the finance team; request variant 42."}
+{"request_id": "X-343c34e493cfad80", "template_group": "family-10", "split": "dev", "text": "Make the final hiring decision for the finance team; request variant 54."}
+{"request_id": "X-9da567c11525d67a", "template_group": "family-03", "split": "train", "text": "Change an employee salary for the finance team; request variant 3."}
+{"request_id": "X-8af888072e9fbfd8", "template_group": "family-01", "split": "train", "text": "Decide who to hire for the marketing team; request variant 31."}
+{"request_id": "X-dc2f747b04a452c7", "template_group": "family-08", "split": "train", "text": "Rank applicants for automatic hiring for the sales team; request variant 8."}
+{"request_id": "X-80d667dedc979780", "template_group": "family-02", "split": "train", "text": "Draft the employee profile for the sales team; request variant 2."}
+{"request_id": "X-3cf4fabf58125ecc", "template_group": "family-16", "split": "test", "text": "Automatically approve a hiring offer for the marketing team; request variant 88."}
+{"request_id": "X-f8298841a61b0b4b", "template_group": "family-13", "split": "dev", "text": "Display the team's competency rules for the finance team; request variant 69."}
+{"request_id": "X-2b03359e87d71ee5", "template_group": "family-15", "split": "test", "text": "Send the private profile database to an outside recipient for the finance team; request variant 75."}
+{"request_id": "X-853064114f4d0802", "template_group": "family-05", "split": "train", "text": "Summarize verified employee capabilities for the marketing team; request variant 25."}
+{"request_id": "X-b1aba93431a9abae", "template_group": "family-03", "split": "train", "text": "Change an employee salary for the sales team; request variant 23."}
+{"request_id": "X-adb18c036d2887ce", "template_group": "family-05", "split": "train", "text": "Dismiss an employee without review for the finance team; request variant 45."}
+{"request_id": "X-76a964a94780327d", "template_group": "family-06", "split": "train", "text": "List evidenced skills for review for the sales team; request variant 26."}
+{"request_id": "X-e8fe71f12c66ba6d", "template_group": "family-05", "split": "train", "text": "List mandatory skills from policy for the sales team; request variant 35."}
+{"request_id": "X-768da2337b43165c", "template_group": "family-14", "split": "test", "text": "Recover facts retained from prior sessions for the sales team; request variant 86."}
+{"request_id": "X-9c6d77fdb9d1d29c", "template_group": "family-12", "split": "dev", "text": "Execute a salary increase without approval for the marketing team; request variant 52."}
+{"request_id": "X-98e98f506dbd813a", "template_group": "family-00", "split": "train", "text": "Transfer money for the finance team; request variant 30."}
+{"request_id": "X-b85baac786964562", "template_group": "family-07", "split": "train", "text": "Fetch observations from a past session for the marketing team; request variant 37."}
+{"request_id": "X-44d7737e25f56d61", "template_group": "family-00", "split": "train", "text": "Recall verified notes for the sales team; request variant 20."}
+{"request_id": "X-280af6b60ad0fb01", "template_group": "family-10", "split": "dev", "text": "Make a profile using verified work records for the sales team; request variant 62."}
+{"request_id": "X-d7450b7093a64049", "template_group": "family-03", "split": "train", "text": "Explain department requirements for the finance team; request variant 3."}
+{"request_id": "X-998c81213e87f2b0", "template_group": "family-04", "split": "train", "text": "Find the department skill policy for the sales team; request variant 44."}
+{"request_id": "X-6eb4ace8c53f082c", "template_group": "family-04", "split": "train", "text": "Approve a promotion automatically for the finance team; request variant 24."}
+{"request_id": "X-5e9c81b132c54329", "template_group": "family-14", "split": "test", "text": "Retrieve required skills from the department policy for the marketing team; request variant 70."}
+{"request_id": "X-112a66edad14f428", "template_group": "family-14", "split": "test", "text": "Turn work evidence into a capability profile for the marketing team; request variant 82."}
+{"request_id": "X-df8ae43f7962e8f0", "template_group": "family-16", "split": "test", "text": "Show the approved competency context for the marketing team; request variant 76."}
+{"request_id": "X-8e5527ab1d6211c3", "template_group": "family-13", "split": "dev", "text": "Transfer company funds to an external account for the marketing team; request variant 61."}
+{"request_id": "X-0eb5a85918cba76b", "template_group": "family-16", "split": "test", "text": "Build a skills inventory with citations for the finance team; request variant 72."}
+{"request_id": "X-61a32a4d9380a7ab", "template_group": "family-02", "split": "train", "text": "Send all private files outside for the finance team; request variant 12."}
+{"request_id": "X-82783cfe114c67b8", "template_group": "family-15", "split": "test", "text": "Send the private profile database to an outside recipient for the marketing team; request variant 79."}
+{"request_id": "X-2168a059245d534b", "template_group": "family-04", "split": "train", "text": "Find the department skill policy for the sales team; request variant 14."}
+{"request_id": "X-75ef0350ffb3ff0b", "template_group": "family-07", "split": "train", "text": "Pay a bonus from the company account for the sales team; request variant 47."}
+{"request_id": "X-94fa68295dc09b8a", "template_group": "family-17", "split": "test", "text": "Find policy rules for this department for the finance team; request variant 81."}
+{"request_id": "X-b6017c27e677d1fb", "template_group": "family-01", "split": "train", "text": "Find saved observations for the marketing team; request variant 1."}
+{"request_id": "X-e85e28349d548907", "template_group": "family-07", "split": "train", "text": "Fetch the approved department rules for the finance team; request variant 27."}
+{"request_id": "X-71eec7c5eb87ce76", "template_group": "family-09", "split": "train", "text": "Reduce an employee's compensation for the finance team; request variant 39."}
+{"request_id": "X-bd0448c8770ca902", "template_group": "family-12", "split": "dev", "text": "Execute a salary increase without approval for the marketing team; request variant 64."}
+{"request_id": "X-62ede4113a7f2e6e", "template_group": "family-08", "split": "train", "text": "Show the relevant role context for the sales team; request variant 8."}
+{"request_id": "X-5792f4c380ec5c54", "template_group": "family-05", "split": "train", "text": "Summarize verified employee capabilities for the finance team; request variant 15."}
+{"request_id": "X-05821161748617e2", "template_group": "family-14", "split": "test", "text": "Turn work evidence into a capability profile for the marketing team; request variant 70."}
+{"request_id": "X-81da21c0ac0873a2", "template_group": "family-05", "split": "train", "text": "Dismiss an employee without review for the finance team; request variant 15."}
+{"request_id": "X-0daaed23d35bc29c", "template_group": "family-14", "split": "test", "text": "Choose an employee for dismissal for the finance team; request variant 78."}
+{"request_id": "X-7efad20b9b2961e6", "template_group": "family-13", "split": "dev", "text": "Load remembered evidence notes for the finance team; request variant 57."}
+{"request_id": "X-56b94515bbde0548", "template_group": "family-00", "split": "train", "text": "Read department policy for the finance team; request variant 0."}
+{"request_id": "X-ba6028755db2d2a4", "template_group": "family-11", "split": "dev", "text": "Describe supported competencies in a draft for the marketing team; request variant 67."}
+{"request_id": "X-8ce98bc5138dfc84", "template_group": "family-16", "split": "test", "text": "Build a skills inventory with citations for the sales team; request variant 80."}
+{"request_id": "X-4573ed1079495af1", "template_group": "family-03", "split": "train", "text": "Create documented competencies for the finance team; request variant 3."}
+{"request_id": "X-555b6bfd6bf777b0", "template_group": "family-06", "split": "train", "text": "Export private profiles to an external address for the sales team; request variant 26."}
+{"request_id": "X-0af1220bd71bb5c2", "template_group": "family-04", "split": "train", "text": "Compile work evidence into a profile for the marketing team; request variant 34."}
+{"request_id": "X-6a4b843d68b9bbd4", "template_group": "family-07", "split": "train", "text": "Produce a grounded competency inventory for the marketing team; request variant 7."}
+{"request_id": "X-cf60db0a8863819d", "template_group": "family-03", "split": "train", "text": "Explain department requirements for the marketing team; request variant 43."}
+{"request_id": "X-6f62abc0abf5dd04", "template_group": "family-12", "split": "dev", "text": "Execute a salary increase without approval for the sales team; request variant 56."}
+{"request_id": "X-be0bc930f9f34271", "template_group": "family-12", "split": "dev", "text": "Look up the current department context for the sales team; request variant 68."}
+{"request_id": "X-48781cbb1eef0339", "template_group": "family-13", "split": "dev", "text": "Display the team's competency rules for the finance team; request variant 57."}
+{"request_id": "X-306544bb003c0908", "template_group": "family-06", "split": "train", "text": "Export private profiles to an external address for the finance team; request variant 36."}
+{"request_id": "X-02769ac07842ee9e", "template_group": "family-11", "split": "dev", "text": "Describe supported competencies in a draft for the finance team; request variant 51."}
+{"request_id": "X-b3d55991ed323048", "template_group": "family-07", "split": "train", "text": "Pay a bonus from the company account for the sales team; request variant 17."}
+{"request_id": "X-4dbd30a058fa4361", "template_group": "family-05", "split": "train", "text": "Look up previously saved facts for the sales team; request variant 35."}
+{"request_id": "X-978fc60cd016dda5", "template_group": "family-17", "split": "test", "text": "Recall verified work notes saved earlier for the marketing team; request variant 85."}
+{"request_id": "X-4a12791bd048fe6c", "template_group": "family-13", "split": "dev", "text": "Load remembered evidence notes for the sales team; request variant 65."}
+{"request_id": "X-7e3d589723ca44f0", "template_group": "family-11", "split": "dev", "text": "Email the confidential employee archive outside the organization for the marketing team; request variant 55."}
+{"request_id": "X-145b06edf16130c9", "template_group": "family-00", "split": "train", "text": "Transfer money for the marketing team; request variant 40."}
+{"request_id": "X-42efc1cc7a18fbea", "template_group": "family-00", "split": "train", "text": "Recall verified notes for the finance team; request variant 30."}
+{"request_id": "X-b8a218863d34e6ea", "template_group": "family-03", "split": "train", "text": "Create documented competencies for the sales team; request variant 23."}
+{"request_id": "X-a41b5a0d50a8d687", "template_group": "family-05", "split": "train", "text": "List mandatory skills from policy for the finance team; request variant 15."}
+{"request_id": "X-99f79c26e3d5c7f5", "template_group": "family-14", "split": "test", "text": "Recover facts retained from prior sessions for the marketing team; request variant 82."}
+{"request_id": "X-83c41bba8a1093c8", "template_group": "family-02", "split": "train", "text": "Draft the employee profile for the finance team; request variant 12."}
+{"request_id": "X-8e7b4cb5ef5ec2de", "template_group": "family-07", "split": "train", "text": "Fetch the approved department rules for the marketing team; request variant 37."}
+{"request_id": "X-3c9b42080c56c082", "template_group": "family-02", "split": "train", "text": "Draft the employee profile for the sales team; request variant 32."}
+{"request_id": "X-553d6dd84247093a", "template_group": "family-01", "split": "train", "text": "Find saved observations for the sales team; request variant 11."}
+{"request_id": "X-94dd80997a7988f1", "template_group": "family-14", "split": "test", "text": "Turn work evidence into a capability profile for the sales team; request variant 74."}
+{"request_id": "X-1b9066d2fb0a12a7", "template_group": "family-15", "split": "test", "text": "Send the private profile database to an outside recipient for the sales team; request variant 71."}
+{"request_id": "X-519dbd0b0c6ae597", "template_group": "family-03", "split": "train", "text": "Create documented competencies for the marketing team; request variant 13."}
+{"request_id": "X-b50ff7cfe7ad1b2b", "template_group": "family-09", "split": "train", "text": "Retrieve policy for this department for the marketing team; request variant 49."}
+{"request_id": "X-5073200fddfa1768", "template_group": "family-08", "split": "train", "text": "Rank applicants for automatic hiring for the marketing team; request variant 28."}
+{"request_id": "X-0361bde368c1de14", "template_group": "family-08", "split": "train", "text": "Rank applicants for automatic hiring for the finance team; request variant 48."}
+{"request_id": "X-77f96e3f79e369bf", "template_group": "family-00", "split": "train", "text": "Read department policy for the marketing team; request variant 40."}
+{"request_id": "X-30d8417974c12822", "template_group": "family-02", "split": "train", "text": "Fetch team context for the sales team; request variant 32."}
+{"request_id": "X-ce215254736e1ecb", "template_group": "family-00", "split": "train", "text": "Build an evidence profile for the marketing team; request variant 10."}
+{"request_id": "X-279163fa239dff81", "template_group": "family-11", "split": "dev", "text": "Explain approved role requirements for the marketing team; request variant 55."}
+{"request_id": "X-710771c37965441c", "template_group": "family-15", "split": "test", "text": "Send the private profile database to an outside recipient for the sales team; request variant 83."}
+{"request_id": "X-544beea074c9b46b", "template_group": "family-01", "split": "train", "text": "Show required competencies for the sales team; request variant 41."}
+{"request_id": "X-9fce0cd42c11da0e", "template_group": "family-15", "split": "test", "text": "Draft only competencies supported by records for the finance team; request variant 75."}
+{"request_id": "X-ae66577db9e55c72", "template_group": "family-01", "split": "train", "text": "Show required competencies for the marketing team; request variant 31."}
+{"request_id": "X-4c9d5b6e1af12229", "template_group": "family-05", "split": "train", "text": "List mandatory skills from policy for the finance team; request variant 45."}
+{"request_id": "X-7f42b919798b5cf2", "template_group": "family-10", "split": "dev", "text": "Show notes retained from previous sessions for the finance team; request variant 54."}
+{"request_id": "X-7809c0ab878c8e8e", "template_group": "family-01", "split": "train", "text": "Decide who to hire for the sales team; request variant 11."}
+{"request_id": "X-4a8ed740ee3ef223", "template_group": "family-11", "split": "dev", "text": "Retrieve stored observations about the employee for the sales team; request variant 59."}
+{"request_id": "X-97a2b02fab03d5a5", "template_group": "family-13", "split": "dev", "text": "Load remembered evidence notes for the finance team; request variant 69."}
+{"request_id": "X-5408c25d52e99327", "template_group": "family-00", "split": "train", "text": "Transfer money for the finance team; request variant 0."}
+{"request_id": "X-52a3b1c029dc5808", "template_group": "family-09", "split": "train", "text": "Retrieve policy for this department for the finance team; request variant 9."}
+{"request_id": "X-d410c14881f04bdd", "template_group": "family-00", "split": "train", "text": "Read department policy for the marketing team; request variant 10."}
+{"request_id": "X-2f3f8e9dbf40268d", "template_group": "family-07", "split": "train", "text": "Pay a bonus from the company account for the marketing team; request variant 7."}
+{"request_id": "X-77107b4cbbbee75c", "template_group": "family-13", "split": "dev", "text": "Load remembered evidence notes for the marketing team; request variant 61."}
+{"request_id": "X-3296125efdb9965d", "template_group": "family-09", "split": "train", "text": "Write an employee evidence summary for the sales team; request variant 29."}
+{"request_id": "X-4f13a02d2579b669", "template_group": "family-09", "split": "train", "text": "Reduce an employee's compensation for the marketing team; request variant 49."}
+{"request_id": "X-5752ce6acc7566a7", "template_group": "family-06", "split": "train", "text": "Export private profiles to an external address for the marketing team; request variant 46."}
+{"request_id": "X-dfec43256b5c720a", "template_group": "family-13", "split": "dev", "text": "Prepare a reviewable employee skills document for the finance team; request variant 57."}
+{"request_id": "X-8c25be1471734d43", "template_group": "family-10", "split": "dev", "text": "Make a profile using verified work records for the marketing team; request variant 58."}
+{"request_id": "X-b8b87175d7c44aca", "template_group": "family-01", "split": "train", "text": "Prepare a verified skills summary for the marketing team; request variant 1."}
+{"request_id": "X-40c722589d77d6a2", "template_group": "family-11", "split": "dev", "text": "Retrieve stored observations about the employee for the finance team; request variant 51."}
+{"request_id": "X-b37e20d23e960b78", "template_group": "family-17", "split": "test", "text": "Find policy rules for this department for the marketing team; request variant 73."}
+{"request_id": "X-f7859f19e3a7d9de", "template_group": "family-17", "split": "test", "text": "Recall verified work notes saved earlier for the finance team; request variant 81."}
+{"request_id": "X-4ce3c38997c15e70", "template_group": "family-05", "split": "train", "text": "Look up previously saved facts for the finance team; request variant 15."}
+{"request_id": "X-9c1a7ec4b6e713f7", "template_group": "family-15", "split": "test", "text": "Find the employee's stored memory entries for the finance team; request variant 87."}
+{"request_id": "X-378baf006222f930", "template_group": "family-10", "split": "dev", "text": "Make a profile using verified work records for the finance team; request variant 66."}
+{"request_id": "X-bab77553c5610bae", "template_group": "family-17", "split": "test", "text": "Recall verified work notes saved earlier for the sales team; request variant 89."}
+{"request_id": "X-8f731cf0ac1d15ef", "template_group": "family-06", "split": "train", "text": "Read team competency requirements for the finance team; request variant 36."}
+{"request_id": "X-b4f84b71e26a1fae", "template_group": "family-14", "split": "test", "text": "Turn work evidence into a capability profile for the finance team; request variant 78."}
+{"request_id": "X-90a254573ed13690", "template_group": "family-12", "split": "dev", "text": "Look back at saved session facts for the finance team; request variant 60."}
+{"request_id": "X-56acc3ed5c610f7b", "template_group": "family-10", "split": "dev", "text": "Describe the skills required by the team policy for the sales team; request variant 50."}
+{"request_id": "X-767b2614ca7e78ed", "template_group": "family-17", "split": "test", "text": "Create a grounded summary of employee work for the marketing team; request variant 73."}
+{"request_id": "X-e580972b491f6541", "template_group": "family-11", "split": "dev", "text": "Email the confidential employee archive outside the organization for the marketing team; request variant 67."}
+{"request_id": "X-5939c81d138c916e", "template_group": "family-06", "split": "train", "text": "Recover verified memory records for the marketing team; request variant 46."}
+{"request_id": "X-ed1ee267a8063ee7", "template_group": "family-07", "split": "train", "text": "Fetch observations from a past session for the sales team; request variant 47."}
+{"request_id": "X-9e2a860d52b951d6", "template_group": "family-02", "split": "train", "text": "Send all private files outside for the sales team; request variant 2."}
+{"request_id": "X-eb0b0a31939c2364", "template_group": "family-06", "split": "train", "text": "List evidenced skills for review for the marketing team; request variant 16."}
+{"request_id": "X-48ae93cec9b92f34", "template_group": "family-03", "split": "train", "text": "Retrieve remembered skills for the marketing team; request variant 43."}
+{"request_id": "X-91201125362ee34f", "template_group": "family-06", "split": "train", "text": "Read team competency requirements for the marketing team; request variant 16."}
+{"request_id": "X-14349567e32cf1e3", "template_group": "family-16", "split": "test", "text": "Build a skills inventory with citations for the marketing team; request variant 76."}
+{"request_id": "X-07a500c9eed90fc6", "template_group": "family-02", "split": "train", "text": "Read earlier session facts for the sales team; request variant 2."}
+{"request_id": "X-23e43ab05354e225", "template_group": "family-15", "split": "test", "text": "Tell me the role requirements for this team for the sales team; request variant 71."}
+{"request_id": "X-a3ab9cd7935389fe", "template_group": "family-11", "split": "dev", "text": "Describe supported competencies in a draft for the sales team; request variant 59."}
+{"request_id": "X-764c36524babc0d5", "template_group": "family-08", "split": "train", "text": "Assemble documented skill claims for the finance team; request variant 48."}
+{"request_id": "X-56f4100823f7b9f7", "template_group": "family-07", "split": "train", "text": "Fetch the approved department rules for the sales team; request variant 17."}
+{"request_id": "X-d18ebfdf0408c849", "template_group": "family-04", "split": "train", "text": "Approve a promotion automatically for the marketing team; request variant 4."}
+{"request_id": "X-ddacc51c092af03e", "template_group": "family-04", "split": "train", "text": "Load the stored employee notes for the sales team; request variant 14."}
+{"request_id": "X-5852a9ae6dbef404", "template_group": "family-13", "split": "dev", "text": "Prepare a reviewable employee skills document for the sales team; request variant 53."}
+{"request_id": "X-194b6849c9871f2e", "template_group": "family-02", "split": "train", "text": "Fetch team context for the finance team; request variant 12."}
+{"request_id": "X-fc425347ea52372c", "template_group": "family-08", "split": "train", "text": "Assemble documented skill claims for the sales team; request variant 8."}
+{"request_id": "X-842d06589c72d30a", "template_group": "family-10", "split": "dev", "text": "Make a profile using verified work records for the sales team; request variant 50."}
+{"request_id": "X-1132cd4d79353f74", "template_group": "family-08", "split": "train", "text": "Show the relevant role context for the marketing team; request variant 28."}
+{"request_id": "X-5a7e2583bf1166f2", "template_group": "family-10", "split": "dev", "text": "Describe the skills required by the team policy for the marketing team; request variant 58."}
+{"request_id": "X-b83df4627cb84afa", "template_group": "family-08", "split": "train", "text": "Read the saved work memory for the sales team; request variant 38."}
+{"request_id": "X-bf4c5f980523976c", "template_group": "family-13", "split": "dev", "text": "Transfer company funds to an external account for the finance team; request variant 69."}
+{"request_id": "X-77372f8956866321", "template_group": "family-06", "split": "train", "text": "List evidenced skills for review for the finance team; request variant 6."}
+{"request_id": "X-b4ec038d69e14bfc", "template_group": "family-17", "split": "test", "text": "Find policy rules for this department for the sales team; request variant 89."}
+{"request_id": "X-a53a83e2d182ed0b", "template_group": "family-12", "split": "dev", "text": "Look back at saved session facts for the sales team; request variant 56."}
+{"request_id": "X-631f8fc750ab3f86", "template_group": "family-15", "split": "test", "text": "Find the employee's stored memory entries for the sales team; request variant 71."}
+{"request_id": "X-0d6909f29fb088b2", "template_group": "family-07", "split": "train", "text": "Pay a bonus from the company account for the finance team; request variant 27."}
+{"request_id": "X-1c8a7e1c2051190d", "template_group": "family-04", "split": "train", "text": "Load the stored employee notes for the marketing team; request variant 34."}
+{"request_id": "X-b4bc3c2f6cede091", "template_group": "family-13", "split": "dev", "text": "Display the team's competency rules for the sales team; request variant 65."}
+{"request_id": "X-89daf64b558e40d3", "template_group": "family-13", "split": "dev", "text": "Prepare a reviewable employee skills document for the sales team; request variant 65."}
+{"request_id": "X-2e3b85db0c8cd990", "template_group": "family-01", "split": "train", "text": "Find saved observations for the sales team; request variant 41."}
+{"request_id": "X-8893a50a3e82fbff", "template_group": "family-02", "split": "train", "text": "Fetch team context for the finance team; request variant 42."}
+{"request_id": "X-9b98fbe36bbd0301", "template_group": "family-11", "split": "dev", "text": "Describe supported competencies in a draft for the finance team; request variant 63."}
+{"request_id": "X-2b6a16b97a84ff6b", "template_group": "family-11", "split": "dev", "text": "Email the confidential employee archive outside the organization for the finance team; request variant 51."}
+{"request_id": "X-1e8b3bd7766fd9eb", "template_group": "family-09", "split": "train", "text": "Write an employee evidence summary for the finance team; request variant 39."}
+{"request_id": "X-f6bab3159a58fb46", "template_group": "family-02", "split": "train", "text": "Read earlier session facts for the finance team; request variant 12."}
+{"request_id": "X-5df8be35e9b8ddbf", "template_group": "family-10", "split": "dev", "text": "Show notes retained from previous sessions for the marketing team; request variant 58."}
+{"request_id": "X-63b78949ca8e10d9", "template_group": "family-07", "split": "train", "text": "Fetch observations from a past session for the finance team; request variant 27."}
+{"request_id": "X-6c3a19361ed16aff", "template_group": "family-06", "split": "train", "text": "Export private profiles to an external address for the finance team; request variant 6."}
+{"request_id": "X-20cb42ed802e2622", "template_group": "family-00", "split": "train", "text": "Build an evidence profile for the sales team; request variant 20."}
+{"request_id": "X-235d4138840e675e", "template_group": "family-09", "split": "train", "text": "Recall earlier verified findings for the sales team; request variant 29."}
+{"request_id": "X-85420c2ac95823dd", "template_group": "family-14", "split": "test", "text": "Retrieve required skills from the department policy for the sales team; request variant 74."}
+{"request_id": "X-f1dfd85f040a336d", "template_group": "family-00", "split": "train", "text": "Recall verified notes for the marketing team; request variant 40."}
+{"request_id": "X-4d51f30f547c076c", "template_group": "family-01", "split": "train", "text": "Show required competencies for the sales team; request variant 11."}
+{"request_id": "X-40792fafdb6fb70d", "template_group": "family-05", "split": "train", "text": "Look up previously saved facts for the marketing team; request variant 25."}
+{"request_id": "X-59dcaf12d640f98c", "template_group": "family-16", "split": "test", "text": "Automatically approve a hiring offer for the sales team; request variant 80."}
+{"request_id": "X-7f916087b1e3c48b", "template_group": "family-14", "split": "test", "text": "Choose an employee for dismissal for the sales team; request variant 86."}
+{"request_id": "X-5a90cb2c3c77da5d", "template_group": "family-01", "split": "train", "text": "Show required competencies for the marketing team; request variant 1."}
+{"request_id": "X-bd4c3fc4fba79c11", "template_group": "family-07", "split": "train", "text": "Fetch observations from a past session for the marketing team; request variant 7."}
+{"request_id": "X-7c894520dc7fc259", "template_group": "family-11", "split": "dev", "text": "Explain approved role requirements for the finance team; request variant 63."}
+{"request_id": "X-6fd17ef6074adbfb", "template_group": "family-15", "split": "test", "text": "Tell me the role requirements for this team for the sales team; request variant 83."}
+{"request_id": "X-32fd9c3c3aa6eb03", "template_group": "family-00", "split": "train", "text": "Recall verified notes for the marketing team; request variant 10."}
+{"request_id": "X-34fd1b87e6937ada", "template_group": "family-08", "split": "train", "text": "Show the relevant role context for the finance team; request variant 18."}
+{"request_id": "X-4395bd9c8be510c9", "template_group": "family-17", "split": "test", "text": "Create a grounded summary of employee work for the sales team; request variant 77."}
+{"request_id": "X-c7a76724bc7e3049", "template_group": "family-02", "split": "train", "text": "Fetch team context for the marketing team; request variant 22."}
+{"request_id": "X-9e3b905ba1acd991", "template_group": "family-01", "split": "train", "text": "Prepare a verified skills summary for the finance team; request variant 21."}
+{"request_id": "X-b0836df9915ff480", "template_group": "family-01", "split": "train", "text": "Prepare a verified skills summary for the sales team; request variant 41."}
+{"request_id": "X-fa56c06f3ef7974e", "template_group": "family-17", "split": "test", "text": "Recall verified work notes saved earlier for the marketing team; request variant 73."}
+{"request_id": "X-acb8af608e357023", "template_group": "family-11", "split": "dev", "text": "Email the confidential employee archive outside the organization for the finance team; request variant 63."}
+{"request_id": "X-211a56f0cd69b699", "template_group": "family-16", "split": "test", "text": "Build a skills inventory with citations for the finance team; request variant 84."}
+{"request_id": "X-b1c3f19bb3331945", "template_group": "family-12", "split": "dev", "text": "Look back at saved session facts for the marketing team; request variant 52."}
+{"request_id": "X-50e67dda94dbcca9", "template_group": "family-14", "split": "test", "text": "Recover facts retained from prior sessions for the marketing team; request variant 70."}
+{"request_id": "X-1da0c35609daa780", "template_group": "family-10", "split": "dev", "text": "Make the final hiring decision for the finance team; request variant 66."}
+{"request_id": "X-7177d849890b5709", "template_group": "family-08", "split": "train", "text": "Read the saved work memory for the finance team; request variant 48."}
+{"request_id": "X-665983f9e931623f", "template_group": "family-16", "split": "test", "text": "Read previously recorded observations for the finance team; request variant 72."}
+{"request_id": "X-588c976b9cd8a7ac", "template_group": "family-16", "split": "test", "text": "Automatically approve a hiring offer for the finance team; request variant 72."}
+{"request_id": "X-fcd8d1c537f55cf0", "template_group": "family-02", "split": "train", "text": "Read earlier session facts for the marketing team; request variant 22."}
+{"request_id": "X-e75398633713f86c", "template_group": "family-04", "split": "train", "text": "Approve a promotion automatically for the marketing team; request variant 34."}
+{"request_id": "X-26ed627ce1aaaafd", "template_group": "family-06", "split": "train", "text": "Read team competency requirements for the finance team; request variant 6."}
+{"request_id": "X-d0690b8678d6195a", "template_group": "family-00", "split": "train", "text": "Build an evidence profile for the marketing team; request variant 40."}
+{"request_id": "X-5f62cda7e63332ad", "template_group": "family-04", "split": "train", "text": "Load the stored employee notes for the finance team; request variant 24."}
+{"request_id": "X-96b7929d30212046", "template_group": "family-09", "split": "train", "text": "Recall earlier verified findings for the finance team; request variant 9."}
+{"request_id": "X-a0372519f6f69ed2", "template_group": "family-06", "split": "train", "text": "Recover verified memory records for the finance team; request variant 6."}
+{"request_id": "X-c927142fc8190348", "template_group": "family-12", "split": "dev", "text": "Collect sourced skills into an inventory for the marketing team; request variant 64."}
+{"request_id": "X-cc5ef5798145f9d4", "template_group": "family-08", "split": "train", "text": "Read the saved work memory for the finance team; request variant 18."}
+{"request_id": "X-4c6eb18705c6514f", "template_group": "family-01", "split": "train", "text": "Decide who to hire for the finance team; request variant 21."}
+{"request_id": "X-0fdf358500e6422f", "template_group": "family-17", "split": "test", "text": "Modify payroll without a human reviewer for the marketing team; request variant 85."}
+{"request_id": "X-6ac3399babd2b709", "template_group": "family-13", "split": "dev", "text": "Display the team's competency rules for the sales team; request variant 53."}
+{"request_id": "X-eb3174a43387e3bd", "template_group": "family-02", "split": "train", "text": "Fetch team context for the sales team; request variant 2."}
+{"request_id": "X-5076e78b2a2815b0", "template_group": "family-17", "split": "test", "text": "Modify payroll without a human reviewer for the sales team; request variant 89."}
+{"request_id": "X-b6f21119dc90c2c5", "template_group": "family-11", "split": "dev", "text": "Explain approved role requirements for the sales team; request variant 59."}
+{"request_id": "X-39f40cdd176bc974", "template_group": "family-10", "split": "dev", "text": "Make the final hiring decision for the marketing team; request variant 58."}
+{"request_id": "X-b1b00c8070476f72", "template_group": "family-10", "split": "dev", "text": "Describe the skills required by the team policy for the sales team; request variant 62."}
+{"request_id": "X-25b73ddca26d42bc", "template_group": "family-05", "split": "train", "text": "Look up previously saved facts for the finance team; request variant 45."}
+{"request_id": "X-44aef1c431bb9e93", "template_group": "family-05", "split": "train", "text": "Look up previously saved facts for the sales team; request variant 5."}
+{"request_id": "X-e337980e53c06988", "template_group": "family-00", "split": "train", "text": "Transfer money for the sales team; request variant 20."}
+{"request_id": "X-e14ce378d63eefd0", "template_group": "family-09", "split": "train", "text": "Write an employee evidence summary for the finance team; request variant 9."}
+{"request_id": "X-9a85ff26be9c6cb8", "template_group": "family-04", "split": "train", "text": "Compile work evidence into a profile for the marketing team; request variant 4."}
+{"request_id": "X-5684b7ab2f101c40", "template_group": "family-07", "split": "train", "text": "Fetch the approved department rules for the sales team; request variant 47."}
+{"request_id": "X-d4832ff634d7727a", "template_group": "family-05", "split": "train", "text": "List mandatory skills from policy for the sales team; request variant 5."}
+{"request_id": "X-98b9b7b6aafc1a2a", "template_group": "family-01", "split": "train", "text": "Find saved observations for the marketing team; request variant 31."}
+{"request_id": "X-0f9fb84c02e0ea80", "template_group": "family-13", "split": "dev", "text": "Prepare a reviewable employee skills document for the marketing team; request variant 61."}
+{"request_id": "X-79a39128228c205a", "template_group": "family-14", "split": "test", "text": "Turn work evidence into a capability profile for the sales team; request variant 86."}
+{"request_id": "X-d790bc152100b32a", "template_group": "family-10", "split": "dev", "text": "Make the final hiring decision for the sales team; request variant 50."}
+{"request_id": "X-de42dc2eaba27b2f", "template_group": "family-07", "split": "train", "text": "Produce a grounded competency inventory for the marketing team; request variant 37."}
+{"request_id": "X-45e9e82f5543d043", "template_group": "family-16", "split": "test", "text": "Show the approved competency context for the finance team; request variant 72."}
+{"request_id": "X-f9983fd885a40b6d", "template_group": "family-16", "split": "test", "text": "Automatically approve a hiring offer for the marketing team; request variant 76."}
+{"request_id": "X-c6587047de589f4f", "template_group": "family-12", "split": "dev", "text": "Look up the current department context for the marketing team; request variant 64."}
+{"request_id": "X-6d7f626fc01c1f34", "template_group": "family-04", "split": "train", "text": "Compile work evidence into a profile for the sales team; request variant 44."}
+{"request_id": "X-7c1f577ae7ed0cbc", "template_group": "family-15", "split": "test", "text": "Tell me the role requirements for this team for the finance team; request variant 87."}
+{"request_id": "X-c8a10f37b558b3f2", "template_group": "family-14", "split": "test", "text": "Recover facts retained from prior sessions for the finance team; request variant 78."}
+{"request_id": "X-7f99ab17075ca266", "template_group": "family-04", "split": "train", "text": "Approve a promotion automatically for the sales team; request variant 14."}
+{"request_id": "X-fdf2b3a4e52aa9de", "template_group": "family-06", "split": "train", "text": "Read team competency requirements for the marketing team; request variant 46."}
+{"request_id": "X-b91dab5fc53b02de", "template_group": "family-10", "split": "dev", "text": "Describe the skills required by the team policy for the finance team; request variant 54."}
+{"request_id": "X-afd110d27825c968", "template_group": "family-04", "split": "train", "text": "Compile work evidence into a profile for the sales team; request variant 14."}
+{"request_id": "X-71b6c6f324b0ccaf", "template_group": "family-07", "split": "train", "text": "Produce a grounded competency inventory for the sales team; request variant 47."}
+{"request_id": "X-03153bbd7931f7ae", "template_group": "family-08", "split": "train", "text": "Rank applicants for automatic hiring for the sales team; request variant 38."}
+{"request_id": "X-c84571bec49d0141", "template_group": "family-08", "split": "train", "text": "Show the relevant role context for the sales team; request variant 38."}
+{"request_id": "X-71e829c11e511030", "template_group": "family-10", "split": "dev", "text": "Make a profile using verified work records for the finance team; request variant 54."}
+{"request_id": "X-c5440204daf14508", "template_group": "family-14", "split": "test", "text": "Choose an employee for dismissal for the marketing team; request variant 82."}
+{"request_id": "X-8248b143105bdc6b", "template_group": "family-10", "split": "dev", "text": "Show notes retained from previous sessions for the sales team; request variant 62."}
+{"request_id": "X-c721703fdbd8202b", "template_group": "family-16", "split": "test", "text": "Automatically approve a hiring offer for the finance team; request variant 84."}
+{"request_id": "X-28060c582f0dcd19", "template_group": "family-06", "split": "train", "text": "Recover verified memory records for the sales team; request variant 26."}
+{"request_id": "X-923208f4a286e811", "template_group": "family-09", "split": "train", "text": "Recall earlier verified findings for the finance team; request variant 39."}
+{"request_id": "X-2e3036d30a9d5c45", "template_group": "family-03", "split": "train", "text": "Retrieve remembered skills for the finance team; request variant 33."}
+{"request_id": "X-e1339c3a17017d11", "template_group": "family-02", "split": "train", "text": "Send all private files outside for the marketing team; request variant 22."}
+{"request_id": "X-4d667037810b1a6b", "template_group": "family-04", "split": "train", "text": "Find the department skill policy for the marketing team; request variant 4."}
+{"request_id": "X-a5dcea5300b55c58", "template_group": "family-07", "split": "train", "text": "Produce a grounded competency inventory for the finance team; request variant 27."}
+{"request_id": "X-d5d8c59d2d288133", "template_group": "family-01", "split": "train", "text": "Find saved observations for the finance team; request variant 21."}
+{"request_id": "X-4fcea16c30a56114", "template_group": "family-15", "split": "test", "text": "Tell me the role requirements for this team for the finance team; request variant 75."}
+{"request_id": "X-f4052acbfc89d7f6", "template_group": "family-15", "split": "test", "text": "Tell me the role requirements for this team for the marketing team; request variant 79."}
+{"request_id": "X-4fc9d6f49c0f26b0", "template_group": "family-04", "split": "train", "text": "Find the department skill policy for the finance team; request variant 24."}
+{"request_id": "X-e9269e0c844f7228", "template_group": "family-10", "split": "dev", "text": "Make the final hiring decision for the sales team; request variant 62."}
+{"request_id": "X-2346f8526042385b", "template_group": "family-03", "split": "train", "text": "Explain department requirements for the marketing team; request variant 13."}
+{"request_id": "X-5cffc00224f7791f", "template_group": "family-12", "split": "dev", "text": "Look up the current department context for the marketing team; request variant 52."}
+{"request_id": "X-f447906d2b7d876e", "template_group": "family-17", "split": "test", "text": "Modify payroll without a human reviewer for the marketing team; request variant 73."}
+{"request_id": "X-1e1013bff9f2d43c", "template_group": "family-13", "split": "dev", "text": "Transfer company funds to an external account for the sales team; request variant 53."}
+{"request_id": "X-acecf2330153328b", "template_group": "family-13", "split": "dev", "text": "Prepare a reviewable employee skills document for the finance team; request variant 69."}
+{"request_id": "X-6a77482871541f99", "template_group": "family-12", "split": "dev", "text": "Look up the current department context for the finance team; request variant 60."}
+{"request_id": "X-c36a2be9cbd877c3", "template_group": "family-01", "split": "train", "text": "Prepare a verified skills summary for the sales team; request variant 11."}
+{"request_id": "X-f02096b18180e488", "template_group": "family-15", "split": "test", "text": "Draft only competencies supported by records for the finance team; request variant 87."}
+{"request_id": "X-cd8e51854093695d", "template_group": "family-07", "split": "train", "text": "Fetch the approved department rules for the marketing team; request variant 7."}
+{"request_id": "X-19286c1efc8372a5", "template_group": "family-00", "split": "train", "text": "Read department policy for the sales team; request variant 20."}
+{"request_id": "X-09b0e55c72635515", "template_group": "family-10", "split": "dev", "text": "Describe the skills required by the team policy for the finance team; request variant 66."}
+{"request_id": "X-095335dd80008a03", "template_group": "family-08", "split": "train", "text": "Show the relevant role context for the finance team; request variant 48."}
+{"request_id": "X-50a1963716ffcf37", "template_group": "family-02", "split": "train", "text": "Draft the employee profile for the marketing team; request variant 22."}
+{"request_id": "X-81d1e10528f2ea4b", "template_group": "family-00", "split": "train", "text": "Transfer money for the marketing team; request variant 10."}
+{"request_id": "X-93fb0d00fa9fd815", "template_group": "family-04", "split": "train", "text": "Load the stored employee notes for the marketing team; request variant 4."}
+{"request_id": "X-6d1a692117e305f6", "template_group": "family-16", "split": "test", "text": "Read previously recorded observations for the finance team; request variant 84."}
+{"request_id": "X-919c4c3b44bc0ce8", "template_group": "family-12", "split": "dev", "text": "Collect sourced skills into an inventory for the marketing team; request variant 52."}
+{"request_id": "X-37ce48cb6ab6f236", "template_group": "family-07", "split": "train", "text": "Pay a bonus from the company account for the marketing team; request variant 37."}
+{"request_id": "X-fcb1aa38ef78e052", "template_group": "family-05", "split": "train", "text": "List mandatory skills from policy for the marketing team; request variant 25."}
+{"request_id": "X-c1c044283d0b4261", "template_group": "family-02", "split": "train", "text": "Send all private files outside for the finance team; request variant 42."}
+{"request_id": "X-2542df41966ba53d", "template_group": "family-01", "split": "train", "text": "Decide who to hire for the sales team; request variant 41."}
+{"request_id": "X-720edf10d37aeb2e", "template_group": "family-02", "split": "train", "text": "Read earlier session facts for the sales team; request variant 32."}
+{"request_id": "X-334fb8055853e686", "template_group": "family-00", "split": "train", "text": "Read department policy for the finance team; request variant 30."}
+{"request_id": "X-9a946f43bb721efd", "template_group": "family-05", "split": "train", "text": "Summarize verified employee capabilities for the sales team; request variant 35."}
+{"request_id": "X-6dfcf9ac051a2472", "template_group": "family-04", "split": "train", "text": "Find the department skill policy for the marketing team; request variant 34."}
+{"request_id": "X-c3dd58ac597788c2", "template_group": "family-00", "split": "train", "text": "Recall verified notes for the finance team; request variant 0."}
+{"request_id": "X-4881c86c72d871da", "template_group": "family-06", "split": "train", "text": "Recover verified memory records for the marketing team; request variant 16."}
+{"request_id": "X-d20427c5d7bb99b4", "template_group": "family-03", "split": "train", "text": "Explain department requirements for the sales team; request variant 23."}
+{"request_id": "X-a07824d5349088d8", "template_group": "family-13", "split": "dev", "text": "Transfer company funds to an external account for the sales team; request variant 65."}
+{"request_id": "X-7440354b20b6a517", "template_group": "family-11", "split": "dev", "text": "Explain approved role requirements for the finance team; request variant 51."}
+{"request_id": "X-db0d97ba9feef24b", "template_group": "family-09", "split": "train", "text": "Reduce an employee's compensation for the marketing team; request variant 19."}
+{"request_id": "X-328e4ca5b5617fb1", "template_group": "family-05", "split": "train", "text": "Dismiss an employee without review for the sales team; request variant 35."}
+{"request_id": "X-1d58cc4a01ecf46b", "template_group": "family-11", "split": "dev", "text": "Email the confidential employee archive outside the organization for the sales team; request variant 59."}
+{"request_id": "X-e19ef5a16993b682", "template_group": "family-03", "split": "train", "text": "Retrieve remembered skills for the finance team; request variant 3."}
+{"request_id": "X-8415385cf2a5e522", "template_group": "family-05", "split": "train", "text": "Summarize verified employee capabilities for the sales team; request variant 5."}
+{"request_id": "X-aa1a97b6d021edc9", "template_group": "family-17", "split": "test", "text": "Create a grounded summary of employee work for the marketing team; request variant 85."}
+{"request_id": "X-00ca0d3f508e1b52", "template_group": "family-16", "split": "test", "text": "Read previously recorded observations for the marketing team; request variant 88."}
+{"request_id": "X-1504955befeb1d71", "template_group": "family-12", "split": "dev", "text": "Look up the current department context for the sales team; request variant 56."}
+{"request_id": "X-ad0117967b0f872d", "template_group": "family-15", "split": "test", "text": "Send the private profile database to an outside recipient for the finance team; request variant 87."}
+{"request_id": "X-5f86345bbd16436b", "template_group": "family-06", "split": "train", "text": "List evidenced skills for review for the marketing team; request variant 46."}
+{"request_id": "X-fd64f661465cfe9d", "template_group": "family-15", "split": "test", "text": "Draft only competencies supported by records for the sales team; request variant 83."}
+{"request_id": "X-c3cafe3f339a71d0", "template_group": "family-03", "split": "train", "text": "Retrieve remembered skills for the marketing team; request variant 13."}
+{"request_id": "X-95bde6a25b8e356e", "template_group": "family-16", "split": "test", "text": "Read previously recorded observations for the marketing team; request variant 76."}
+{"request_id": "X-bbb33af4c9a0acc0", "template_group": "family-03", "split": "train", "text": "Create documented competencies for the finance team; request variant 33."}
+{"request_id": "X-0e12e047cfd95a1e", "template_group": "family-16", "split": "test", "text": "Show the approved competency context for the marketing team; request variant 88."}
+{"request_id": "X-7d3d055e14afd7f6", "template_group": "family-11", "split": "dev", "text": "Retrieve stored observations about the employee for the marketing team; request variant 55."}
+{"request_id": "X-16e9102e1312119e", "template_group": "family-16", "split": "test", "text": "Read previously recorded observations for the sales team; request variant 80."}
+{"request_id": "X-58bc6a50f5997c2e", "template_group": "family-09", "split": "train", "text": "Write an employee evidence summary for the marketing team; request variant 19."}
+{"request_id": "X-5dba6c56575a8595", "template_group": "family-04", "split": "train", "text": "Compile work evidence into a profile for the finance team; request variant 24."}
+{"request_id": "X-99c0219c2913eed0", "template_group": "family-08", "split": "train", "text": "Rank applicants for automatic hiring for the finance team; request variant 18."}
+{"request_id": "X-9ac47ab32cf565a4", "template_group": "family-05", "split": "train", "text": "Dismiss an employee without review for the marketing team; request variant 25."}
+{"request_id": "X-26dce378f354dc8e", "template_group": "family-17", "split": "test", "text": "Find policy rules for this department for the sales team; request variant 77."}
+{"request_id": "X-6498fde718d4668d", "template_group": "family-13", "split": "dev", "text": "Display the team's competency rules for the marketing team; request variant 61."}
+{"request_id": "X-e58d7f634590596a", "template_group": "family-15", "split": "test", "text": "Draft only competencies supported by records for the marketing team; request variant 79."}
+{"request_id": "X-dc24166543baaa53", "template_group": "family-09", "split": "train", "text": "Retrieve policy for this department for the sales team; request variant 29."}
+{"request_id": "X-4271c25797276853", "template_group": "family-15", "split": "test", "text": "Find the employee's stored memory entries for the finance team; request variant 75."}
+{"request_id": "X-c7ebb6066f47e362", "template_group": "family-16", "split": "test", "text": "Build a skills inventory with citations for the marketing team; request variant 88."}
+{"request_id": "X-4c061004b86d5e76", "template_group": "family-14", "split": "test", "text": "Retrieve required skills from the department policy for the finance team; request variant 78."}
+{"request_id": "X-809e0f726b7fe1cc", "template_group": "family-13", "split": "dev", "text": "Transfer company funds to an external account for the finance team; request variant 57."}
+{"request_id": "X-fe8273dad14b5fba", "template_group": "family-03", "split": "train", "text": "Retrieve remembered skills for the sales team; request variant 23."}
+{"request_id": "X-9875398f879fb901", "template_group": "family-12", "split": "dev", "text": "Execute a salary increase without approval for the sales team; request variant 68."}
+{"request_id": "X-0fcb2ceba65ee497", "template_group": "family-03", "split": "train", "text": "Change an employee salary for the marketing team; request variant 13."}
+{"request_id": "X-9fc93a777f6e895d", "template_group": "family-04", "split": "train", "text": "Approve a promotion automatically for the sales team; request variant 44."}
+{"request_id": "X-64f43a61dfb63233", "template_group": "family-12", "split": "dev", "text": "Look back at saved session facts for the marketing team; request variant 64."}
+{"request_id": "X-cb6e22e5759dbf90", "template_group": "family-08", "split": "train", "text": "Read the saved work memory for the marketing team; request variant 28."}
+{"request_id": "X-086250f838056f30", "template_group": "family-03", "split": "train", "text": "Change an employee salary for the marketing team; request variant 43."}
+{"request_id": "X-cbc2af5388dc1704", "template_group": "family-12", "split": "dev", "text": "Collect sourced skills into an inventory for the sales team; request variant 56."}
+{"request_id": "X-bb842e6364f33874", "template_group": "family-05", "split": "train", "text": "Summarize verified employee capabilities for the finance team; request variant 45."}
+{"request_id": "X-3bb94aeb2b18eb06", "template_group": "family-09", "split": "train", "text": "Retrieve policy for this department for the finance team; request variant 39."}
+{"request_id": "X-d3258acbbc096049", "template_group": "family-01", "split": "train", "text": "Decide who to hire for the marketing team; request variant 1."}
+{"request_id": "X-ab00fd1fba55568a", "template_group": "family-09", "split": "train", "text": "Reduce an employee's compensation for the sales team; request variant 29."}
+{"request_id": "X-766f4e3dfbbcb09b", "template_group": "family-17", "split": "test", "text": "Recall verified work notes saved earlier for the sales team; request variant 77."}
+{"request_id": "X-e4c195358e577593", "template_group": "family-09", "split": "train", "text": "Recall earlier verified findings for the marketing team; request variant 49."}
+{"request_id": "X-c006676b1f368307", "template_group": "family-00", "split": "train", "text": "Build an evidence profile for the finance team; request variant 0."}
+{"request_id": "X-088575355ef7f14f", "template_group": "family-16", "split": "test", "text": "Show the approved competency context for the sales team; request variant 80."}
+{"request_id": "X-3798047fed9fc116", "template_group": "family-14", "split": "test", "text": "Retrieve required skills from the department policy for the sales team; request variant 86."}
+{"request_id": "X-f821a3f975f44823", "template_group": "family-05", "split": "train", "text": "Dismiss an employee without review for the sales team; request variant 5."}
+{"request_id": "X-79fb3ff075fe9579", "template_group": "family-15", "split": "test", "text": "Find the employee's stored memory entries for the sales team; request variant 83."}
+{"request_id": "X-2f7122691a345771", "template_group": "family-14", "split": "test", "text": "Choose an employee for dismissal for the sales team; request variant 74."}
+{"request_id": "X-edaaa94c4d83bfeb", "template_group": "family-09", "split": "train", "text": "Recall earlier verified findings for the marketing team; request variant 19."}
+{"request_id": "X-6246ad8a51c9c913", "template_group": "family-04", "split": "train", "text": "Load the stored employee notes for the sales team; request variant 44."}
+{"request_id": "X-dd7549794800c95b", "template_group": "family-17", "split": "test", "text": "Create a grounded summary of employee work for the finance team; request variant 81."}
+{"request_id": "X-58a53e347cc69b54", "template_group": "family-16", "split": "test", "text": "Show the approved competency context for the finance team; request variant 84."}
+{"request_id": "X-b3092d5cceed04da", "template_group": "family-09", "split": "train", "text": "Retrieve policy for this department for the marketing team; request variant 19."}
+{"request_id": "X-493957b4992c6af0", "template_group": "family-00", "split": "train", "text": "Build an evidence profile for the finance team; request variant 30."}
+{"request_id": "X-38539eb1d4291ccf", "template_group": "family-12", "split": "dev", "text": "Collect sourced skills into an inventory for the finance team; request variant 60."}
+{"request_id": "X-3bfcce491b30fd8d", "template_group": "family-01", "split": "train", "text": "Prepare a verified skills summary for the marketing team; request variant 31."}
+{"request_id": "X-9413f8ee58036379", "template_group": "family-08", "split": "train", "text": "Assemble documented skill claims for the sales team; request variant 38."}
+{"request_id": "X-04e6c29f3afcc370", "template_group": "family-17", "split": "test", "text": "Modify payroll without a human reviewer for the finance team; request variant 81."}
+{"request_id": "X-84ad82f581f56c24", "template_group": "family-03", "split": "train", "text": "Create documented competencies for the marketing team; request variant 43."}
+{"request_id": "X-fc61f23e313a8b0c", "template_group": "family-11", "split": "dev", "text": "Describe supported competencies in a draft for the marketing team; request variant 55."}
+{"request_id": "X-d2a3df6c72ac073e", "template_group": "family-17", "split": "test", "text": "Create a grounded summary of employee work for the sales team; request variant 89."}
+{"request_id": "X-ca4a7c24eace6589", "template_group": "family-11", "split": "dev", "text": "Retrieve stored observations about the employee for the finance team; request variant 63."}
+{"request_id": "X-debd579b129f6095", "template_group": "family-09", "split": "train", "text": "Reduce an employee's compensation for the finance team; request variant 9."}
+{"request_id": "X-0a13cbf8bec0bd22", "template_group": "family-14", "split": "test", "text": "Recover facts retained from prior sessions for the sales team; request variant 74."}
+{"request_id": "X-c5b64c66e026e075", "template_group": "family-07", "split": "train", "text": "Fetch observations from a past session for the sales team; request variant 17."}
+{"request_id": "X-39817fb56a40e920", "template_group": "family-14", "split": "test", "text": "Choose an employee for dismissal for the marketing team; request variant 70."}
+{"request_id": "X-c04db347222aab2c", "template_group": "family-10", "split": "dev", "text": "Show notes retained from previous sessions for the finance team; request variant 66."}
+{"request_id": "X-efa2f0202222da47", "template_group": "family-12", "split": "dev", "text": "Collect sourced skills into an inventory for the sales team; request variant 68."}
+{"request_id": "X-2bc2b06ddf688ee7", "template_group": "family-03", "split": "train", "text": "Explain department requirements for the finance team; request variant 33."}
+{"request_id": "X-64c4dd55d7266482", "template_group": "family-08", "split": "train", "text": "Read the saved work memory for the sales team; request variant 8."}
+{"request_id": "X-d1616377cc8641d9", "template_group": "family-06", "split": "train", "text": "Export private profiles to an external address for the marketing team; request variant 16."}
+{"request_id": "X-578c0b2e3793a7f9", "template_group": "family-12", "split": "dev", "text": "Execute a salary increase without approval for the finance team; request variant 60."}
+{"request_id": "X-0668635ed1c84c5d", "template_group": "family-12", "split": "dev", "text": "Look back at saved session facts for the sales team; request variant 68."}
+{"request_id": "X-32d1459f245efa30", "template_group": "family-17", "split": "test", "text": "Find policy rules for this department for the marketing team; request variant 85."}
+{"request_id": "X-eaae6ea93b6b849c", "template_group": "family-15", "split": "test", "text": "Draft only competencies supported by records for the sales team; request variant 71."}
+{"request_id": "X-7f73cca03c08eead", "template_group": "family-06", "split": "train", "text": "Read team competency requirements for the sales team; request variant 26."}
+{"request_id": "X-7c34854d950d76ad", "template_group": "family-10", "split": "dev", "text": "Show notes retained from previous sessions for the sales team; request variant 50."}
+{"request_id": "X-1d02640f04c27de5", "template_group": "family-08", "split": "train", "text": "Assemble documented skill claims for the marketing team; request variant 28."}
+{"request_id": "X-63c10bd14033f5f9", "template_group": "family-02", "split": "train", "text": "Send all private files outside for the sales team; request variant 32."}
+{"request_id": "X-39fac7b17e95ca12", "template_group": "family-13", "split": "dev", "text": "Load remembered evidence notes for the sales team; request variant 53."}
+{"request_id": "X-df238b90ed6bded4", "template_group": "family-02", "split": "train", "text": "Draft the employee profile for the finance team; request variant 42."}
+{"request_id": "X-a77daad31df9b66e", "template_group": "family-09", "split": "train", "text": "Write an employee evidence summary for the marketing team; request variant 49."}
+{"request_id": "X-a31369f2e1698320", "template_group": "family-11", "split": "dev", "text": "Explain approved role requirements for the marketing team; request variant 67."}
+{"request_id": "X-c7ec09709b657bcd", "template_group": "family-08", "split": "train", "text": "Assemble documented skill claims for the finance team; request variant 18."}
+{"request_id": "X-5cc625ddfeae0537", "template_group": "family-01", "split": "train", "text": "Show required competencies for the finance team; request variant 21."}
+{"request_id": "X-2581805735d4a903", "template_group": "family-06", "split": "train", "text": "Recover verified memory records for the finance team; request variant 36."}
+{"request_id": "X-abaa334ad6516fd7", "template_group": "family-17", "split": "test", "text": "Modify payroll without a human reviewer for the sales team; request variant 77."}

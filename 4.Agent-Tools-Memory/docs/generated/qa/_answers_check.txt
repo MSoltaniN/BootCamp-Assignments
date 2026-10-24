@@ -1,0 +1,105 @@
+== CONCEPTUAL ANSWER VALIDATION ==
+
+[ok] 1.1    -> Workflow قطعی
+       rationale: 320 chars
+[ok] 1.2    -> Agent با حلقهٔ محدود
+       rationale: 243 chars
+[ok] 1.3    -> L0 ساده
+       rationale: 209 chars
+[ok] 1.4    -> Augmented LLM در یک Workflow
+       rationale: 252 chars
+[ok] 1.5    -> کد dispatcher پس از اعتبارسنجی
+       rationale: 276 chars
+[ok] 1.6    -> اثر انگشت عمل تکراری همراه سقف قدم
+       rationale: 284 chars
+[ok] 1.7    -> نتیجه موفق ولی مسیر نامعتبر
+       rationale: 185 chars
+[ok] 1.8    -> کنترل دامنه و اعتبارسنجی خروجی
+       rationale: 257 chars
+[ok] 1.9    -> مقایسهٔ قابل سنجش با baseline تک‌ایجنت
+       rationale: 269 chars
+[ok] 1.10   -> کلید idempotency و بازیابی وضعیت
+       rationale: 229 chars
+[ok] 1.11   -> کنترل پیش از اقدام انجام نشده است
+       rationale: 228 chars
+[ok] 1.12   -> شکست زنجیره‌ای
+       rationale: 221 chars
+[ok] 2.1    -> Select
+       rationale: 279 chars
+[ok] 2.2    -> Write
+       rationale: 235 chars
+[ok] 2.3    -> Compress
+       rationale: 209 chars
+[ok] 2.4    -> Isolate
+       rationale: 227 chars
+[ok] 2.5    -> ۱۰۰۰
+       rationale: 171 chars
+[ok] 2.6    -> تابع محدود با schema و enum مشخص
+       rationale: 217 chars
+[ok] 2.7    -> اختلاط ورودی مدل با هویت قابل اعتماد
+       rationale: 218 chars
+[ok] 2.8    -> Tools و Resources و Prompts
+       rationale: 194 chars
+[ok] 2.9    -> پیام‌های پروتکل
+       rationale: 205 chars
+[ok] 2.10   -> پیشنهاد ابزار توسط مدل باید در برنامه اجرا و اعتبارسنجی شود
+       rationale: 209 chars
+[ok] 2.11   -> MCP قرارداد دسترسی به قابلیت‌هاست؛ ارتباط agentها مسئلهٔ جداگانه دارد
+       rationale: 190 chars
+[ok] 2.12   -> دادهٔ نامطمئن بدون اختیار تغییر سیاست
+       rationale: 192 chars
+[ok] 3.1    -> Semantic بلندمدت
+       rationale: 186 chars
+[ok] 3.2    -> Episodic
+       rationale: 186 chars
+[ok] 3.3    -> Procedural
+       rationale: 167 chars
+[ok] 3.4    -> Working memory
+       rationale: 190 chars
+[ok] 3.5    -> checkpoint پایدار و شناسهٔ وظیفه
+       rationale: 195 chars
+[ok] 3.6    -> Prompt Chaining
+       rationale: 202 chars
+[ok] 3.7    -> Routing
+       rationale: 197 chars
+[ok] 3.8    -> Parallelization با sectioning
+       rationale: 200 chars
+[ok] 3.9    -> Orchestrator–Workers
+       rationale: 200 chars
+[ok] 3.10   -> Evaluator–Optimizer
+       rationale: 185 chars
+[ok] 3.11   -> نقش‌ها به context و مجوزهای متفاوت نیاز دارند
+       rationale: 219 chars
+[ok] 3.12   -> بازپخش یا تحویل به نقش نامناسب
+       rationale: 203 chars
+[ok] 4.1    -> L1 Operator
+       rationale: 231 chars
+[ok] 4.2    -> L4 Approver
+       rationale: 211 chars
+[ok] 4.3    -> Shadow
+       rationale: 202 chars
+[ok] 4.4    -> Canary
+       rationale: 175 chars
+[ok] 4.5    -> Indirect
+       rationale: 220 chars
+[ok] 4.6    -> قطع یا محدودکردن حداقل یک ضلع این ترکیب
+       rationale: 255 chars
+[ok] 4.7    -> Automation bias
+       rationale: 205 chars
+[ok] 4.8    -> Memory poisoning
+       rationale: 199 chars
+[ok] 4.9    -> ابزار و آرگومان و ترتیب مجاز
+       rationale: 177 chars
+[ok] 4.10   -> بیشینهٔ پایان منهای کمینهٔ شروع
+       rationale: 200 chars
+[ok] 4.11   -> نمونه برای ادعای برابری کافی نیست
+       rationale: 177 chars
+[ok] 4.12   -> مالک و هدف و ابزار و سطح اختیار و معیار ارجاع و بودجه
+       rationale: 214 chars
+
+== SUMMARY ==
+conceptual questions : 48
+answers provided     : 48
+answers applied      : 48
+missing              : none
+errors               : 0

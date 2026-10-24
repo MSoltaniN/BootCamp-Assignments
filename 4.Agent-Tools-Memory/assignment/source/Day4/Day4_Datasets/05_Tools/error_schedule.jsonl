@@ -1,0 +1,6 @@
+{"status": 429, "retry_after_ms": 100}
+{"status": 503, "retry_after_ms": 200}
+{"status": 200, "retry_after_ms": 0}
+{"status": 401, "retry_after_ms": 0}
+{"status": 403, "retry_after_ms": 0}
+{"status": 422, "retry_after_ms": 0}

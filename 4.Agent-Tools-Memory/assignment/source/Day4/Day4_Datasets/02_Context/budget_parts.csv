@@ -1,0 +1,9 @@
+part,estimated_tokens,priority,mandatory
+system,120,100,True
+task,80,100,True
+tools,140,90,True
+policy,180,80,True
+history,350,15,False
+memory,160,40,False
+evidence,220,70,False
+noise,500,1,False

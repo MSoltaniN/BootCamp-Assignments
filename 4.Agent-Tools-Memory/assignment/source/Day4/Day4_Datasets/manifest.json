@@ -1,0 +1,82 @@
+[
+  {
+    "path": "01_HR/department_context.jsonl",
+    "bytes": 1280,
+    "sha256": "9a46ad47e05764335f2943ab4adf214c3114a8be833c34ea135babe73376c2c1"
+  },
+  {
+    "path": "01_HR/people.jsonl",
+    "bytes": 131965,
+    "sha256": "dacadc783133ece5f11f996699e523cb43df5a915ac83ca4cf5cf55ca63da527"
+  },
+  {
+    "path": "02_Context/budget_parts.csv",
+    "bytes": 205,
+    "sha256": "60a65fe3096361ed6bb80c66965ad2f9ac91f72f3dd3ab288b6073b587435ab7"
+  },
+  {
+    "path": "02_Context/documents.jsonl",
+    "bytes": 31136,
+    "sha256": "33c13c9a28161333f6c680e0fd804756e14a107260f80e77b1c7b7419020ab6c"
+  },
+  {
+    "path": "03_Requests/labels_train_dev.jsonl",
+    "bytes": 21330,
+    "sha256": "bf085832ef65b08e277605b15f3f6b1604473f8567c331a995e813b25a123d4d"
+  },
+  {
+    "path": "03_Requests/requests.jsonl",
+    "bytes": 63105,
+    "sha256": "2dd35fbaa8cb233451a30832c8038dd888e8b7ba220005b4d574720f93f3e0e5"
+  },
+  {
+    "path": "04_Memory/events.jsonl",
+    "bytes": 174192,
+    "sha256": "9313592e8fef54738e863cdb85e118818e2ca1f4559818625f252ed9622ba42e"
+  },
+  {
+    "path": "05_Tools/error_schedule.jsonl",
+    "bytes": 232,
+    "sha256": "3866ca7176a3c625c723e49fcc69443fef0fea2f520d1eaed98e6d06002702a8"
+  },
+  {
+    "path": "05_Tools/model_responses.jsonl",
+    "bytes": 13687,
+    "sha256": "4cbe71a9c634e26348056ea672f6bc0ddf7bd47531ac2e3c8dd5c31cca56a465"
+  },
+  {
+    "path": "06_Security/redteam.jsonl",
+    "bytes": 33774,
+    "sha256": "0b4b7d8645146784b9bdb369a1e57366d0adb5fd9b53f01c692bd6decd82683a"
+  },
+  {
+    "path": "07_Evaluation/audit_groups.csv",
+    "bytes": 5785,
+    "sha256": "06309002b7ef1565bef5081871683e3b5c473eaa205dac8bd8898cc3706c7655"
+  },
+  {
+    "path": "07_Evaluation/prices.csv",
+    "bytes": 75,
+    "sha256": "dd1e5210143eeecb2b592834ece849c765917b06a8fdb98ec9ffd2d1d5bdd38c"
+  },
+  {
+    "path": "07_Evaluation/runs.csv",
+    "bytes": 68221,
+    "sha256": "b2668b528ad8c9860bf2e7a9fb99add1491d95d6fead7c6d56ce373192a52b8a"
+  },
+  {
+    "path": "07_Evaluation/spans.csv",
+    "bytes": 159286,
+    "sha256": "518b19c3d68db3f7e11cfc3bed17dcf7f11229fb52175ad8eaec0a64016eccc5"
+  },
+  {
+    "path": "08_Rollout/traffic.csv",
+    "bytes": 28579,
+    "sha256": "ce66ac0bcbf902926341175d3e26c28c5077bf248c104d97fe6d5c157c4df1ef"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3809,
+    "sha256": "063ae91750b1fdecb6e0122254ce4891c5aa730d05603d87ab8793c9db996959"
+  }
+]

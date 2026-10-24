@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+*.nbconvert.ipynb
+jupyter_execute/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local scratch
+work/**/scratch/
+*.log
+*.tmp
+
+# Build artifacts that should be regenerated
+deliverables/*.zip

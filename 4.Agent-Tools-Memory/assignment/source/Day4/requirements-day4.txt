@@ -1,0 +1,11 @@
+numpy==2.4.2
+pandas==3.0.0
+matplotlib==3.10.8
+scikit-learn==1.8.0
+pydantic==2.14.1
+mcp==2.3.0
+langgraph==1.2.15
+langgraph-checkpoint-sqlite==3.1.2
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.30.1

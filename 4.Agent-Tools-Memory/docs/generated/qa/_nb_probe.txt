@@ -1,0 +1,685 @@
+total cells: 445
+
+by type: {'markdown': 301, 'code': 144}
+
+== CELL INDEX ==
+[  0] markdown  # تکلیف ۴: معماری ایجنت، ابزار، حافظه و انتشار کنترل‌شده
+[  1] markdown  ## بخش 1: انتخاب معماری و مرز ایجنت
+[  2] markdown  ### زیرسؤال 1.1
+[  3] code     exec=None outputs=0  # Write your implementation here.
+[  4] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[  5] markdown  ### زیرسؤال 1.2
+[  6] code     exec=None outputs=0  # Write your implementation here.
+[  7] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[  8] markdown  ### زیرسؤال 1.3
+[  9] code     exec=None outputs=0  # Write your implementation here.
+[ 10] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 11] markdown  ### زیرسؤال 1.4
+[ 12] code     exec=None outputs=0  # Write your implementation here.
+[ 13] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 14] markdown  ### زیرسؤال 1.5
+[ 15] code     exec=None outputs=0  # Write your implementation here.
+[ 16] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 17] markdown  ### زیرسؤال 1.6
+[ 18] code     exec=None outputs=0  # Write your implementation here.
+[ 19] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 20] markdown  ### زیرسؤال 1.7
+[ 21] code     exec=None outputs=0  # Write your implementation here.
+[ 22] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 23] markdown  ### زیرسؤال 1.8
+[ 24] code     exec=None outputs=0  # Write your implementation here.
+[ 25] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 26] markdown  ### زیرسؤال 1.9
+[ 27] code     exec=None outputs=0  # Write your implementation here.
+[ 28] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 29] markdown  ### زیرسؤال 1.10
+[ 30] code     exec=None outputs=0  # Write your implementation here.
+[ 31] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 32] markdown  ### زیرسؤال 1.11
+[ 33] code     exec=None outputs=0  # Write your implementation here.
+[ 34] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 35] markdown  ### زیرسؤال 1.12
+[ 36] code     exec=None outputs=0  # Write your implementation here.
+[ 37] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 38] markdown  ## بخش 2: مهندسی context و قرارداد ابزار
+[ 39] markdown  ### زیرسؤال 2.1
+[ 40] code     exec=None outputs=0  # Write your implementation here.
+[ 41] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 42] markdown  ### زیرسؤال 2.2
+[ 43] code     exec=None outputs=0  # Write your implementation here.
+[ 44] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 45] markdown  ### زیرسؤال 2.3
+[ 46] code     exec=None outputs=0  # Write your implementation here.
+[ 47] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 48] markdown  ### زیرسؤال 2.4
+[ 49] code     exec=None outputs=0  # Write your implementation here.
+[ 50] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 51] markdown  ### زیرسؤال 2.5
+[ 52] code     exec=None outputs=0  # Write your implementation here.
+[ 53] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 54] markdown  ### زیرسؤال 2.6
+[ 55] code     exec=None outputs=0  # Write your implementation here.
+[ 56] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 57] markdown  ### زیرسؤال 2.7
+[ 58] code     exec=None outputs=0  # Write your implementation here.
+[ 59] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 60] markdown  ### زیرسؤال 2.8
+[ 61] code     exec=None outputs=0  # Write your implementation here.
+[ 62] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 63] markdown  ### زیرسؤال 2.9
+[ 64] code     exec=None outputs=0  # Write your implementation here.
+[ 65] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 66] markdown  ### زیرسؤال 2.10
+[ 67] code     exec=None outputs=0  # Write your implementation here.
+[ 68] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 69] markdown  ### زیرسؤال 2.11
+[ 70] code     exec=None outputs=0  # Write your implementation here.
+[ 71] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 72] markdown  ### زیرسؤال 2.12
+[ 73] code     exec=None outputs=0  # Write your implementation here.
+[ 74] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 75] markdown  ## بخش 3: حافظه و الگوهای گردش کار
+[ 76] markdown  ### زیرسؤال 3.1
+[ 77] code     exec=None outputs=0  # Write your implementation here.
+[ 78] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 79] markdown  ### زیرسؤال 3.2
+[ 80] code     exec=None outputs=0  # Write your implementation here.
+[ 81] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 82] markdown  ### زیرسؤال 3.3
+[ 83] code     exec=None outputs=0  # Write your implementation here.
+[ 84] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 85] markdown  ### زیرسؤال 3.4
+[ 86] code     exec=None outputs=0  # Write your implementation here.
+[ 87] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 88] markdown  ### زیرسؤال 3.5
+[ 89] code     exec=None outputs=0  # Write your implementation here.
+[ 90] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 91] markdown  ### زیرسؤال 3.6
+[ 92] code     exec=None outputs=0  # Write your implementation here.
+[ 93] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 94] markdown  ### زیرسؤال 3.7
+[ 95] code     exec=None outputs=0  # Write your implementation here.
+[ 96] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[ 97] markdown  ### زیرسؤال 3.8
+[ 98] code     exec=None outputs=0  # Write your implementation here.
+[ 99] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[100] markdown  ### زیرسؤال 3.9
+[101] code     exec=None outputs=0  # Write your implementation here.
+[102] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[103] markdown  ### زیرسؤال 3.10
+[104] code     exec=None outputs=0  # Write your implementation here.
+[105] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[106] markdown  ### زیرسؤال 3.11
+[107] code     exec=None outputs=0  # Write your implementation here.
+[108] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[109] markdown  ### زیرسؤال 3.12
+[110] code     exec=None outputs=0  # Write your implementation here.
+[111] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[112] markdown  ## بخش 4: اختیار انسانی و ارزیابی استقرار
+[113] markdown  ### زیرسؤال 4.1
+[114] code     exec=None outputs=0  # Write your implementation here.
+[115] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[116] markdown  ### زیرسؤال 4.2
+[117] code     exec=None outputs=0  # Write your implementation here.
+[118] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[119] markdown  ### زیرسؤال 4.3
+[120] code     exec=None outputs=0  # Write your implementation here.
+[121] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[122] markdown  ### زیرسؤال 4.4
+[123] code     exec=None outputs=0  # Write your implementation here.
+[124] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[125] markdown  ### زیرسؤال 4.5
+[126] code     exec=None outputs=0  # Write your implementation here.
+[127] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[128] markdown  ### زیرسؤال 4.6
+[129] code     exec=None outputs=0  # Write your implementation here.
+[130] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[131] markdown  ### زیرسؤال 4.7
+[132] code     exec=None outputs=0  # Write your implementation here.
+[133] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[134] markdown  ### زیرسؤال 4.8
+[135] code     exec=None outputs=0  # Write your implementation here.
+[136] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[137] markdown  ### زیرسؤال 4.9
+[138] code     exec=None outputs=0  # Write your implementation here.
+[139] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[140] markdown  ### زیرسؤال 4.10
+[141] code     exec=None outputs=0  # Write your implementation here.
+[142] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[143] markdown  ### زیرسؤال 4.11
+[144] code     exec=None outputs=0  # Write your implementation here.
+[145] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[146] markdown  ### زیرسؤال 4.12
+[147] code     exec=None outputs=0  # Write your implementation here.
+[148] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[149] markdown  ## بخش 5: آماده‌سازی داده و مهندسی context
+[150] markdown  ### زیرسؤال 5.1
+[151] code     exec=None outputs=0  # Write your implementation here.
+[152] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[153] markdown  ### زیرسؤال 5.2
+[154] code     exec=None outputs=0  # Write your implementation here.
+[155] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[156] markdown  ### زیرسؤال 5.3
+[157] code     exec=None outputs=0  # Write your implementation here.
+[158] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[159] markdown  ### زیرسؤال 5.4
+[160] code     exec=None outputs=0  # Write your implementation here.
+[161] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[162] markdown  ### زیرسؤال 5.5
+[163] code     exec=None outputs=0  # Write your implementation here.
+[164] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[165] markdown  ### زیرسؤال 5.6
+[166] code     exec=None outputs=0  # Write your implementation here.
+[167] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[168] markdown  ### زیرسؤال 5.7
+[169] code     exec=None outputs=0  # Write your implementation here.
+[170] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[171] markdown  ### زیرسؤال 5.8
+[172] code     exec=None outputs=0  # Write your implementation here.
+[173] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[174] markdown  ### زیرسؤال 5.9
+[175] code     exec=None outputs=0  # Write your implementation here.
+[176] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[177] markdown  ### زیرسؤال 5.10
+[178] code     exec=None outputs=0  # Write your implementation here.
+[179] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[180] markdown  ### زیرسؤال 5.11
+[181] code     exec=None outputs=0  # Write your implementation here.
+[182] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[183] markdown  ### زیرسؤال 5.12
+[184] code     exec=None outputs=0  # Write your implementation here.
+[185] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[186] markdown  ## بخش 6: ابزارهای محدود و اتصال واقعی MCP
+[187] markdown  ### زیرسؤال 6.1
+[188] code     exec=None outputs=0  # Write your implementation here.
+[189] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[190] markdown  ### زیرسؤال 6.2
+[191] code     exec=None outputs=0  # Write your implementation here.
+[192] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[193] markdown  ### زیرسؤال 6.3
+[194] code     exec=None outputs=0  # Write your implementation here.
+[195] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[196] markdown  ### زیرسؤال 6.4
+[197] code     exec=None outputs=0  # Write your implementation here.
+[198] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[199] markdown  ### زیرسؤال 6.5
+[200] code     exec=None outputs=0  # Write your implementation here.
+[201] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[202] markdown  ### زیرسؤال 6.6
+[203] code     exec=None outputs=0  # Write your implementation here.
+[204] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[205] markdown  ### زیرسؤال 6.7
+[206] code     exec=None outputs=0  # Write your implementation here.
+[207] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[208] markdown  ### زیرسؤال 6.8
+[209] code     exec=None outputs=0  # Write your implementation here.
+[210] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[211] markdown  ### زیرسؤال 6.9
+[212] code     exec=None outputs=0  # Write your implementation here.
+[213] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[214] markdown  ### زیرسؤال 6.10
+[215] code     exec=None outputs=0  # Write your implementation here.
+[216] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[217] markdown  ### زیرسؤال 6.11
+[218] code     exec=None outputs=0  # Write your implementation here.
+[219] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[220] markdown  ### زیرسؤال 6.12
+[221] code     exec=None outputs=0  # Write your implementation here.
+[222] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[223] markdown  ## بخش 7: حلقهٔ ابزار و توقف قابل آزمون
+[224] markdown  ### زیرسؤال 7.1
+[225] code     exec=None outputs=0  # Write your implementation here.
+[226] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[227] markdown  ### زیرسؤال 7.2
+[228] code     exec=None outputs=0  # Write your implementation here.
+[229] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[230] markdown  ### زیرسؤال 7.3
+[231] code     exec=None outputs=0  # Write your implementation here.
+[232] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[233] markdown  ### زیرسؤال 7.4
+[234] code     exec=None outputs=0  # Write your implementation here.
+[235] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[236] markdown  ### زیرسؤال 7.5
+[237] code     exec=None outputs=0  # Write your implementation here.
+[238] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[239] markdown  ### زیرسؤال 7.6
+[240] code     exec=None outputs=0  # Write your implementation here.
+[241] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[242] markdown  ### زیرسؤال 7.7
+[243] code     exec=None outputs=0  # Write your implementation here.
+[244] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[245] markdown  ### زیرسؤال 7.8
+[246] code     exec=None outputs=0  # Write your implementation here.
+[247] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[248] markdown  ### زیرسؤال 7.9
+[249] code     exec=None outputs=0  # Write your implementation here.
+[250] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[251] markdown  ### زیرسؤال 7.10
+[252] code     exec=None outputs=0  # Write your implementation here.
+[253] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[254] markdown  ### زیرسؤال 7.11
+[255] code     exec=None outputs=0  # Write your implementation here.
+[256] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[257] markdown  ### زیرسؤال 7.12
+[258] code     exec=None outputs=0  # Write your implementation here.
+[259] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[260] markdown  ## بخش 8: حافظهٔ پایدار و تأیید انسانی
+[261] markdown  ### زیرسؤال 8.1
+[262] code     exec=None outputs=0  # Write your implementation here.
+[263] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[264] markdown  ### زیرسؤال 8.2
+[265] code     exec=None outputs=0  # Write your implementation here.
+[266] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[267] markdown  ### زیرسؤال 8.3
+[268] code     exec=None outputs=0  # Write your implementation here.
+[269] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[270] markdown  ### زیرسؤال 8.4
+[271] code     exec=None outputs=0  # Write your implementation here.
+[272] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[273] markdown  ### زیرسؤال 8.5
+[274] code     exec=None outputs=0  # Write your implementation here.
+[275] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[276] markdown  ### زیرسؤال 8.6
+[277] code     exec=None outputs=0  # Write your implementation here.
+[278] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[279] markdown  ### زیرسؤال 8.7
+[280] code     exec=None outputs=0  # Write your implementation here.
+[281] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[282] markdown  ### زیرسؤال 8.8
+[283] code     exec=None outputs=0  # Write your implementation here.
+[284] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[285] markdown  ### زیرسؤال 8.9
+[286] code     exec=None outputs=0  # Write your implementation here.
+[287] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[288] markdown  ### زیرسؤال 8.10
+[289] code     exec=None outputs=0  # Write your implementation here.
+[290] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[291] markdown  ### زیرسؤال 8.11
+[292] code     exec=None outputs=0  # Write your implementation here.
+[293] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[294] markdown  ### زیرسؤال 8.12
+[295] code     exec=None outputs=0  # Write your implementation here.
+[296] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[297] markdown  ## بخش 9: مسیریابی و معماری چندنقشی
+[298] markdown  ### زیرسؤال 9.1
+[299] code     exec=None outputs=0  # Write your implementation here.
+[300] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[301] markdown  ### زیرسؤال 9.2
+[302] code     exec=None outputs=0  # Write your implementation here.
+[303] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[304] markdown  ### زیرسؤال 9.3
+[305] code     exec=None outputs=0  # Write your implementation here.
+[306] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[307] markdown  ### زیرسؤال 9.4
+[308] code     exec=None outputs=0  # Write your implementation here.
+[309] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[310] markdown  ### زیرسؤال 9.5
+[311] code     exec=None outputs=0  # Write your implementation here.
+[312] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[313] markdown  ### زیرسؤال 9.6
+[314] code     exec=None outputs=0  # Write your implementation here.
+[315] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[316] markdown  ### زیرسؤال 9.7
+[317] code     exec=None outputs=0  # Write your implementation here.
+[318] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[319] markdown  ### زیرسؤال 9.8
+[320] code     exec=None outputs=0  # Write your implementation here.
+[321] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[322] markdown  ### زیرسؤال 9.9
+[323] code     exec=None outputs=0  # Write your implementation here.
+[324] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[325] markdown  ### زیرسؤال 9.10
+[326] code     exec=None outputs=0  # Write your implementation here.
+[327] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[328] markdown  ### زیرسؤال 9.11
+[329] code     exec=None outputs=0  # Write your implementation here.
+[330] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[331] markdown  ### زیرسؤال 9.12
+[332] code     exec=None outputs=0  # Write your implementation here.
+[333] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[334] markdown  ## بخش 10: دفاع چندلایه و ده آزمون تهدید
+[335] markdown  ### زیرسؤال 10.1
+[336] code     exec=None outputs=0  # Write your implementation here.
+[337] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[338] markdown  ### زیرسؤال 10.2
+[339] code     exec=None outputs=0  # Write your implementation here.
+[340] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[341] markdown  ### زیرسؤال 10.3
+[342] code     exec=None outputs=0  # Write your implementation here.
+[343] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[344] markdown  ### زیرسؤال 10.4
+[345] code     exec=None outputs=0  # Write your implementation here.
+[346] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[347] markdown  ### زیرسؤال 10.5
+[348] code     exec=None outputs=0  # Write your implementation here.
+[349] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[350] markdown  ### زیرسؤال 10.6
+[351] code     exec=None outputs=0  # Write your implementation here.
+[352] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[353] markdown  ### زیرسؤال 10.7
+[354] code     exec=None outputs=0  # Write your implementation here.
+[355] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[356] markdown  ### زیرسؤال 10.8
+[357] code     exec=None outputs=0  # Write your implementation here.
+[358] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[359] markdown  ### زیرسؤال 10.9
+[360] code     exec=None outputs=0  # Write your implementation here.
+[361] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[362] markdown  ### زیرسؤال 10.10
+[363] code     exec=None outputs=0  # Write your implementation here.
+[364] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[365] markdown  ### زیرسؤال 10.11
+[366] code     exec=None outputs=0  # Write your implementation here.
+[367] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[368] markdown  ### زیرسؤال 10.12
+[369] code     exec=None outputs=0  # Write your implementation here.
+[370] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[371] markdown  ## بخش 11: ارزیابی نتیجه و مسیر و مشاهده‌پذیری
+[372] markdown  ### زیرسؤال 11.1
+[373] code     exec=None outputs=0  # Write your implementation here.
+[374] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[375] markdown  ### زیرسؤال 11.2
+[376] code     exec=None outputs=0  # Write your implementation here.
+[377] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[378] markdown  ### زیرسؤال 11.3
+[379] code     exec=None outputs=0  # Write your implementation here.
+[380] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[381] markdown  ### زیرسؤال 11.4
+[382] code     exec=None outputs=0  # Write your implementation here.
+[383] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[384] markdown  ### زیرسؤال 11.5
+[385] code     exec=None outputs=0  # Write your implementation here.
+[386] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[387] markdown  ### زیرسؤال 11.6
+[388] code     exec=None outputs=0  # Write your implementation here.
+[389] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[390] markdown  ### زیرسؤال 11.7
+[391] code     exec=None outputs=0  # Write your implementation here.
+[392] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[393] markdown  ### زیرسؤال 11.8
+[394] code     exec=None outputs=0  # Write your implementation here.
+[395] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[396] markdown  ### زیرسؤال 11.9
+[397] code     exec=None outputs=0  # Write your implementation here.
+[398] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[399] markdown  ### زیرسؤال 11.10
+[400] code     exec=None outputs=0  # Write your implementation here.
+[401] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[402] markdown  ### زیرسؤال 11.11
+[403] code     exec=None outputs=0  # Write your implementation here.
+[404] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[405] markdown  ### زیرسؤال 11.12
+[406] code     exec=None outputs=0  # Write your implementation here.
+[407] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[408] markdown  ## بخش 12: انتشار کنترل‌شده و تحویل قابل تصحیح
+[409] markdown  ### زیرسؤال 12.1
+[410] code     exec=None outputs=0  # Write your implementation here.
+[411] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[412] markdown  ### زیرسؤال 12.2
+[413] code     exec=None outputs=0  # Write your implementation here.
+[414] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[415] markdown  ### زیرسؤال 12.3
+[416] code     exec=None outputs=0  # Write your implementation here.
+[417] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[418] markdown  ### زیرسؤال 12.4
+[419] code     exec=None outputs=0  # Write your implementation here.
+[420] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[421] markdown  ### زیرسؤال 12.5
+[422] code     exec=None outputs=0  # Write your implementation here.
+[423] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[424] markdown  ### زیرسؤال 12.6
+[425] code     exec=None outputs=0  # Write your implementation here.
+[426] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[427] markdown  ### زیرسؤال 12.7
+[428] code     exec=None outputs=0  # Write your implementation here.
+[429] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[430] markdown  ### زیرسؤال 12.8
+[431] code     exec=None outputs=0  # Write your implementation here.
+[432] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[433] markdown  ### زیرسؤال 12.9
+[434] code     exec=None outputs=0  # Write your implementation here.
+[435] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[436] markdown  ### زیرسؤال 12.10
+[437] code     exec=None outputs=0  # Write your implementation here.
+[438] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[439] markdown  ### زیرسؤال 12.11
+[440] code     exec=None outputs=0  # Write your implementation here.
+[441] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+[442] markdown  ### زیرسؤال 12.12
+[443] code     exec=None outputs=0  # Write your implementation here.
+[444] markdown  <div dir="rtl">روش اجرا و تحلیل خود را اینجا بنویسید.</div>
+
+== MARKDOWN HEADINGS ==
+[  0] # تکلیف ۴: معماری ایجنت، ابزار، حافظه و انتشار کنترل‌شده
+[  1] ## بخش 1: انتخاب معماری و مرز ایجنت
+[  2] ### زیرسؤال 1.1
+[  5] ### زیرسؤال 1.2
+[  8] ### زیرسؤال 1.3
+[ 11] ### زیرسؤال 1.4
+[ 14] ### زیرسؤال 1.5
+[ 17] ### زیرسؤال 1.6
+[ 20] ### زیرسؤال 1.7
+[ 23] ### زیرسؤال 1.8
+[ 26] ### زیرسؤال 1.9
+[ 29] ### زیرسؤال 1.10
+[ 32] ### زیرسؤال 1.11
+[ 35] ### زیرسؤال 1.12
+[ 38] ## بخش 2: مهندسی context و قرارداد ابزار
+[ 39] ### زیرسؤال 2.1
+[ 42] ### زیرسؤال 2.2
+[ 45] ### زیرسؤال 2.3
+[ 48] ### زیرسؤال 2.4
+[ 51] ### زیرسؤال 2.5
+[ 54] ### زیرسؤال 2.6
+[ 57] ### زیرسؤال 2.7
+[ 60] ### زیرسؤال 2.8
+[ 63] ### زیرسؤال 2.9
+[ 66] ### زیرسؤال 2.10
+[ 69] ### زیرسؤال 2.11
+[ 72] ### زیرسؤال 2.12
+[ 75] ## بخش 3: حافظه و الگوهای گردش کار
+[ 76] ### زیرسؤال 3.1
+[ 79] ### زیرسؤال 3.2
+[ 82] ### زیرسؤال 3.3
+[ 85] ### زیرسؤال 3.4
+[ 88] ### زیرسؤال 3.5
+[ 91] ### زیرسؤال 3.6
+[ 94] ### زیرسؤال 3.7
+[ 97] ### زیرسؤال 3.8
+[100] ### زیرسؤال 3.9
+[103] ### زیرسؤال 3.10
+[106] ### زیرسؤال 3.11
+[109] ### زیرسؤال 3.12
+[112] ## بخش 4: اختیار انسانی و ارزیابی استقرار
+[113] ### زیرسؤال 4.1
+[116] ### زیرسؤال 4.2
+[119] ### زیرسؤال 4.3
+[122] ### زیرسؤال 4.4
+[125] ### زیرسؤال 4.5
+[128] ### زیرسؤال 4.6
+[131] ### زیرسؤال 4.7
+[134] ### زیرسؤال 4.8
+[137] ### زیرسؤال 4.9
+[140] ### زیرسؤال 4.10
+[143] ### زیرسؤال 4.11
+[146] ### زیرسؤال 4.12
+[149] ## بخش 5: آماده‌سازی داده و مهندسی context
+[150] ### زیرسؤال 5.1
+[153] ### زیرسؤال 5.2
+[156] ### زیرسؤال 5.3
+[159] ### زیرسؤال 5.4
+[162] ### زیرسؤال 5.5
+[165] ### زیرسؤال 5.6
+[168] ### زیرسؤال 5.7
+[171] ### زیرسؤال 5.8
+[174] ### زیرسؤال 5.9
+[177] ### زیرسؤال 5.10
+[180] ### زیرسؤال 5.11
+[183] ### زیرسؤال 5.12
+[186] ## بخش 6: ابزارهای محدود و اتصال واقعی MCP
+[187] ### زیرسؤال 6.1
+[190] ### زیرسؤال 6.2
+[193] ### زیرسؤال 6.3
+[196] ### زیرسؤال 6.4
+[199] ### زیرسؤال 6.5
+[202] ### زیرسؤال 6.6
+[205] ### زیرسؤال 6.7
+[208] ### زیرسؤال 6.8
+[211] ### زیرسؤال 6.9
+[214] ### زیرسؤال 6.10
+[217] ### زیرسؤال 6.11
+[220] ### زیرسؤال 6.12
+[223] ## بخش 7: حلقهٔ ابزار و توقف قابل آزمون
+[224] ### زیرسؤال 7.1
+[227] ### زیرسؤال 7.2
+[230] ### زیرسؤال 7.3
+[233] ### زیرسؤال 7.4
+[236] ### زیرسؤال 7.5
+[239] ### زیرسؤال 7.6
+[242] ### زیرسؤال 7.7
+[245] ### زیرسؤال 7.8
+[248] ### زیرسؤال 7.9
+[251] ### زیرسؤال 7.10
+[254] ### زیرسؤال 7.11
+[257] ### زیرسؤال 7.12
+[260] ## بخش 8: حافظهٔ پایدار و تأیید انسانی
+[261] ### زیرسؤال 8.1
+[264] ### زیرسؤال 8.2
+[267] ### زیرسؤال 8.3
+[270] ### زیرسؤال 8.4
+[273] ### زیرسؤال 8.5
+[276] ### زیرسؤال 8.6
+[279] ### زیرسؤال 8.7
+[282] ### زیرسؤال 8.8
+[285] ### زیرسؤال 8.9
+[288] ### زیرسؤال 8.10
+[291] ### زیرسؤال 8.11
+[294] ### زیرسؤال 8.12
+[297] ## بخش 9: مسیریابی و معماری چندنقشی
+[298] ### زیرسؤال 9.1
+[301] ### زیرسؤال 9.2
+[304] ### زیرسؤال 9.3
+[307] ### زیرسؤال 9.4
+[310] ### زیرسؤال 9.5
+[313] ### زیرسؤال 9.6
+[316] ### زیرسؤال 9.7
+[319] ### زیرسؤال 9.8
+[322] ### زیرسؤال 9.9
+[325] ### زیرسؤال 9.10
+[328] ### زیرسؤال 9.11
+[331] ### زیرسؤال 9.12
+[334] ## بخش 10: دفاع چندلایه و ده آزمون تهدید
+[335] ### زیرسؤال 10.1
+[338] ### زیرسؤال 10.2
+[341] ### زیرسؤال 10.3
+[344] ### زیرسؤال 10.4
+[347] ### زیرسؤال 10.5
+[350] ### زیرسؤال 10.6
+[353] ### زیرسؤال 10.7
+[356] ### زیرسؤال 10.8
+[359] ### زیرسؤال 10.9
+[362] ### زیرسؤال 10.10
+[365] ### زیرسؤال 10.11
+[368] ### زیرسؤال 10.12
+[371] ## بخش 11: ارزیابی نتیجه و مسیر و مشاهده‌پذیری
+[372] ### زیرسؤال 11.1
+[375] ### زیرسؤال 11.2
+[378] ### زیرسؤال 11.3
+[381] ### زیرسؤال 11.4
+[384] ### زیرسؤال 11.5
+[387] ### زیرسؤال 11.6
+[390] ### زیرسؤال 11.7
+[393] ### زیرسؤال 11.8
+[396] ### زیرسؤال 11.9
+[399] ### زیرسؤال 11.10
+[402] ### زیرسؤال 11.11
+[405] ### زیرسؤال 11.12
+[408] ## بخش 12: انتشار کنترل‌شده و تحویل قابل تصحیح
+[409] ### زیرسؤال 12.1
+[412] ### زیرسؤال 12.2
+[415] ### زیرسؤال 12.3
+[418] ### زیرسؤال 12.4
+[421] ### زیرسؤال 12.5
+[424] ### زیرسؤال 12.6
+[427] ### زیرسؤال 12.7
+[430] ### زیرسؤال 12.8
+[433] ### زیرسؤال 12.9
+[436] ### زیرسؤال 12.10
+[439] ### زیرسؤال 12.11
+[442] ### زیرسؤال 12.12
+
+== CODE STUBS (first 25 code cells, first 20 lines each) ==
+--- cell 3 (1 lines)
+    # Write your implementation here.
+
+--- cell 6 (1 lines)
+    # Write your implementation here.
+
+--- cell 9 (1 lines)
+    # Write your implementation here.
+
+--- cell 12 (1 lines)
+    # Write your implementation here.
+
+--- cell 15 (1 lines)
+    # Write your implementation here.
+
+--- cell 18 (1 lines)
+    # Write your implementation here.
+
+--- cell 21 (1 lines)
+    # Write your implementation here.
+
+--- cell 24 (1 lines)
+    # Write your implementation here.
+
+--- cell 27 (1 lines)
+    # Write your implementation here.
+
+--- cell 30 (1 lines)
+    # Write your implementation here.
+
+--- cell 33 (1 lines)
+    # Write your implementation here.
+
+--- cell 36 (1 lines)
+    # Write your implementation here.
+
+--- cell 40 (1 lines)
+    # Write your implementation here.
+
+--- cell 43 (1 lines)
+    # Write your implementation here.
+
+--- cell 46 (1 lines)
+    # Write your implementation here.
+
+--- cell 49 (1 lines)
+    # Write your implementation here.
+
+--- cell 52 (1 lines)
+    # Write your implementation here.
+
+--- cell 55 (1 lines)
+    # Write your implementation here.
+
+--- cell 58 (1 lines)
+    # Write your implementation here.
+
+--- cell 61 (1 lines)
+    # Write your implementation here.
+
+--- cell 64 (1 lines)
+    # Write your implementation here.
+
+--- cell 67 (1 lines)
+    # Write your implementation here.
+
+--- cell 70 (1 lines)
+    # Write your implementation here.
+
+--- cell 73 (1 lines)
+    # Write your implementation here.
+
+--- cell 77 (1 lines)
+    # Write your implementation here.
